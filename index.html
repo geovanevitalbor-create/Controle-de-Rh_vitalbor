@@ -13,11 +13,12 @@
      ===================================================================== -->
 <meta name="rh-supabase-url" content="https://cawzivyyfustseghxvzc.supabase.co">
 <meta name="rh-supabase-chave" content="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhd3ppdnl5ZnVzdHNlZ2h4dnpjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM2Nzk0NTAsImV4cCI6MjEwOTI1NTQ1MH0.VqP1FY8OWqyM6pZ2KzO8tw84A8uP8G_NjLeAkKr28hs">
+<meta name="rh-versao" content="05/11/2026 17:10">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="no-referrer">
 <meta name="robots" content="noindex, nofollow">
 <meta name="color-scheme" content="light dark">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-wL8fYZ5B05Fi0XxHrx4E6bDmqiUBifvsIArulfp2+fM=' 'sha256-eg2tvUmM0zPDPLE96KiUs0GVGiLBCVrsK7K+OLqFI78=' 'sha256-xjovIafD6+3ikRQ+8+grn9jD4j7GA6LnyN6jFLquimw=' 'sha256-W1eZ5vjGgGYyB6xbQu4U7tKkBvp69I9QwVTwwLFWaUY=' 'sha256-/qvfMJdw7SS7oxpUZ4Ns3Iz2OccFryfVK1hbBBu4Uns=' 'sha256-sKMqwON9YhKRXFiUKJ/cgsDuZQD+7grVOuY7S6zrE6I='; style-src 'unsafe-inline'; font-src data:; img-src data: blob:; connect-src https://cawzivyyfustseghxvzc.supabase.co; base-uri 'none'; form-action 'none'; object-src 'none'; manifest-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-wL8fYZ5B05Fi0XxHrx4E6bDmqiUBifvsIArulfp2+fM=' 'sha256-eg2tvUmM0zPDPLE96KiUs0GVGiLBCVrsK7K+OLqFI78=' 'sha256-xjovIafD6+3ikRQ+8+grn9jD4j7GA6LnyN6jFLquimw=' 'sha256-W1eZ5vjGgGYyB6xbQu4U7tKkBvp69I9QwVTwwLFWaUY=' 'sha256-/qvfMJdw7SS7oxpUZ4Ns3Iz2OccFryfVK1hbBBu4Uns=' 'sha256-1MB+4stA+zzQcsX6/T4jmwwWCTNs0Ree4uUyU1wq5tg='; style-src 'unsafe-inline'; font-src data:; img-src data: blob:; connect-src https://cawzivyyfustseghxvzc.supabase.co; base-uri 'none'; form-action 'none'; object-src 'none'; manifest-src 'none'">
 <title>Vitalbor RH</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 26'%3E%3Cpath d='M2 2h30l-5 5H2zM2 10h26l-5 5H2zM2 18h20l-4 5H2z' fill='%23F58634'/%3E%3C/svg%3E">
 <script>(function(){try{var t=localStorage.getItem('vb_tema');if(!t)t=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
@@ -136,6 +137,7 @@ a{color:var(--brand-ink);}
 .campo textarea{height:auto;min-height:76px;padding:10px 12px;resize:vertical;line-height:1.45;}
 .inp:focus,.campo input:focus,.campo select:focus,.campo textarea:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 3px var(--brand-soft);}
 .campo .dica{font-size:12px;color:var(--ink-3);}
+.campo .dica:empty{display:none;}
 .campo input:disabled:not([type=checkbox]):not([type=radio]),.campo select:disabled,.campo textarea:disabled{background-color:var(--surface-2);color:var(--ink-3);cursor:not-allowed;}
 .campo .erro{font-size:12px;color:var(--bad-ink);}
 .campo.invalido input,.campo.invalido select{border-color:var(--bad);box-shadow:0 0 0 3px var(--bad-soft);}
@@ -200,6 +202,7 @@ select.inp,.campo select{appearance:none;-webkit-appearance:none;padding-right:3
 .login-caixa>p{margin:0 0 26px;color:var(--ink-2);}
 .login-caixa .campo{margin-bottom:16px;}
 .login-caixa .btn{width:100%;height:44px;font-size:14.5px;margin-top:6px;}
+.login-versao{margin:18px 0 0;font-size:11.5px;color:var(--ink-3);text-align:center;}
 .login-nota{margin:22px 0 0;padding:12px 14px;border-radius:12px;background:var(--surface);border:1px dashed var(--line-2);font-size:12.5px;color:var(--ink-2);line-height:1.55;}
 .login-nota b{color:var(--ink);}
 .login-erro{min-height:20px;margin-top:10px;font-size:13px;color:var(--bad-ink);}
@@ -580,6 +583,8 @@ table.t{width:100%;border-collapse:separate;border-spacing:0;font-size:13.5px;}
 .ex-kpis b{display:block;font-size:15px;font-weight:650;color:var(--ink);font-variant-numeric:tabular-nums;}
 .insight.erro-ins{background:var(--bad-soft);border-color:var(--bad-soft);}
 .insight.erro-ins svg{stroke:var(--bad-ink);}
+.insight.aviso-ins{background:var(--warn-soft);border-color:var(--warn-soft);margin:0 0 10px;}
+.insight.aviso-ins svg{stroke:var(--warn-ink);}
 @media (max-width:560px){.ex-p{flex-direction:column;align-items:stretch;}.ex-dec{width:100%;}.ex-kpis{grid-template-columns:repeat(2,minmax(0,1fr));}}
 
 /* agenda */
@@ -694,6 +699,7 @@ table.t{width:100%;border-collapse:separate;border-spacing:0;font-size:13.5px;}
 .suspenso .op svg{width:17px;height:17px;flex:none;fill:none;stroke:var(--ink-2);stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;}
 .suspenso .op small{display:block;color:var(--ink-3);font-size:12px;}
 .suspenso hr{border:none;border-top:1px solid var(--line);margin:6px 4px;}
+.suspenso .versao-menu{display:block;padding:8px 10px 2px;font-size:11px;}
 .suspenso .cab-s{padding:8px 10px 10px;border-bottom:1px solid var(--line);margin-bottom:4px;}
 .suspenso .cab-s b{display:block;font-size:14px;}
 .rel{position:relative;}
@@ -934,6 +940,7 @@ button.stat:hover{background:var(--surface-2);}
 .conf-nav button{white-space:nowrap;flex:none;}
 .conf-l.tu-l{grid-template-columns:minmax(0,1fr) auto auto;}
 .tu-tags{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;}
+.st-acoes{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;}
 @media (max-width:600px){.conf-l.tu-l{grid-template-columns:minmax(0,1fr) auto;row-gap:8px;}.tu-tags{grid-column:1 / -1;grid-row:2;justify-content:flex-start;}}
 
 /* botão flutuante + (ações rápidas) */
@@ -1076,11 +1083,82 @@ body.gaveta-aberta .fab{opacity:0;pointer-events:none;}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important;}
 }
+/* ---------------------------------------------------------------- calculadoras (rescisão, férias, 13º) */
+.calc{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:16px;align-items:start;margin-top:16px;}
+.cl-form{display:flex;flex-direction:column;gap:12px;min-width:0;}
+.cl-res{position:sticky;top:calc(var(--top) + 12px);}
+.cl-pessoa{display:flex;align-items:flex-end;gap:14px;flex-wrap:wrap;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:var(--surface);}
+.cl-pessoa .campo{flex:1;min-width:220px;}
+.cl-pessoa .chk{height:40px;}
+.cl-sub{margin:0 0 10px;font-size:12.5px;}
+.cl-venc{margin:0 0 10px;padding-left:18px;font-size:13px;line-height:1.7;}
+.cl-chk{display:flex;align-items:flex-start;gap:9px;}
+.cl-chk>span{display:flex;flex-direction:column;}
+.cl-chk small{display:block;font-size:11.5px;margin-top:1px;}
+.cl-chk-campo{justify-content:flex-end;padding-bottom:4px;}
+.cl-opcoes{display:flex;flex-direction:column;gap:10px;}
+.cl-com-botao{display:flex;gap:8px;align-items:center;}
+.cl-com-botao .inp{flex:1;}
+.cl-extras{display:flex;flex-direction:column;gap:8px;align-items:flex-start;}
+.cl-extra{display:grid;grid-template-columns:minmax(0,1fr) 130px auto;gap:8px;width:100%;}
+.cl-extras .dica{font-size:12px;color:var(--ink-3);}
+.cl-num{text-align:right;font-variant-numeric:tabular-nums;}
+.cl-cab{display:flex;flex-direction:column;gap:2px;margin-bottom:12px;}
+.cl-cab b{font-size:16px;}
+.cl-cab span{font-size:13px;color:var(--ink-2);}
+.cl-info{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:10px 0 4px;}
+.cl-info>div{display:flex;flex-direction:column;gap:1px;padding:9px 12px;border:1px solid var(--line);border-radius:12px;min-width:0;}
+.cl-info small{font-size:11.5px;color:var(--ink-3);}
+.cl-info b{font-size:14px;font-variant-numeric:tabular-nums;}
+.cl-grupo{margin-top:14px;}
+.cl-grupo h4{margin:0 0 4px;font-size:11.5px;font-weight:650;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-3);}
+.cl-l{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:8px 2px;border-bottom:1px solid var(--line);font-size:13.5px;}
+.cl-l>span:first-child{min-width:0;}
+.cl-l b{font-weight:560;}
+.cl-l small{display:block;color:var(--ink-3);font-size:12px;margin-top:1px;}
+.cl-l .v{font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:560;}
+.cl-l.tot{border-bottom:none;font-weight:650;}
+.cl-liq{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-top:12px;padding:14px 16px;border-radius:14px;background:var(--brand-softer);border:1px solid var(--brand-soft);}
+.cl-liq span{font-weight:600;}
+.cl-liq b{font-size:26px;font-weight:650;font-stretch:var(--larga);font-variant-numeric:tabular-nums;white-space:nowrap;}
+.cl-fgts{margin-top:12px;}
+.cl-custo{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 12px;margin-top:10px;padding:12px 16px;border:1px dashed var(--line-2);border-radius:14px;}
+.cl-custo span{font-weight:600;}
+.cl-custo b{font-variant-numeric:tabular-nums;white-space:nowrap;}
+.cl-custo small{grid-column:1/-1;color:var(--ink-3);font-size:12px;}
+.cl-notas{margin:14px 0 0;padding-left:18px;font-size:12.5px;line-height:1.55;color:var(--ink-2);}
+.cl-notas li+li{margin-top:4px;}
+.cl-acoes{display:flex;justify-content:flex-end;margin-top:14px;}
+@media (max-width:980px){.calc{grid-template-columns:minmax(0,1fr);}.cl-res{position:static;}}
+@media (max-width:520px){.cl-info{grid-template-columns:minmax(0,1fr);}.cl-extra{grid-template-columns:minmax(0,1fr) 104px auto;}.cl-liq b{font-size:22px;}}
+
 @media print{
   @page{size:A4 landscape;margin:10mm;}
   @page doc{size:A4 portrait;margin:0;}
   body.imprimindo-doc>*:not(#impressao){display:none !important;}
   body.imprimindo-doc #impressao{display:block !important;page:doc;}
+  .cl-doc{box-sizing:border-box;padding:0;color:#000;background:#fff;font-size:10.5pt;}
+  .cl-doc header{display:flex;justify-content:space-between;gap:12mm;align-items:flex-start;padding-bottom:4mm;margin-bottom:5mm;border-bottom:.6pt solid #000;}
+  .cl-doc header small{display:block;font-size:8.5pt;color:#333;}
+  .cl-doc h1{margin:0;font-size:15pt;}
+  .cl-doc-t{text-align:right;}
+  .cl-doc-p{margin:0 0 4mm;}
+  .cl-doc .painel-corpo{padding:0;}
+  .cl-doc .cl-info>div,.cl-doc .cl-liq,.cl-doc .cl-custo{border-color:#999;background:#fff;}
+  .cl-doc .cl-l{border-color:#ccc;padding:1.6mm 0;}
+  .cl-doc .cl-liq b{font-size:15pt;}
+  .cl-doc .cl-info,.cl-doc .cl-liq,.cl-doc .cl-custo,.cl-doc .cl-l{break-inside:avoid;}
+  .cl-doc .cl-cab{margin-bottom:2mm;}
+  .cl-doc .cl-info{grid-template-columns:repeat(4,minmax(0,1fr));gap:2mm;margin:2mm 0;}
+  .cl-doc .cl-info>div{padding:1.6mm 2.4mm;border-radius:2mm;}
+  .cl-doc .cl-info b{font-size:9.5pt;}
+  .cl-doc .cl-info small{font-size:7.5pt;}
+  .cl-doc .cl-grupo{margin-top:3mm;}
+  .cl-doc .cl-l{padding:1.1mm 0;font-size:9.5pt;}
+  .cl-doc .cl-l small{font-size:7.5pt;}
+  .cl-doc .cl-liq{margin-top:3mm;padding:2.4mm 4mm;border-radius:2mm;}
+  .cl-doc .cl-custo{margin-top:2mm;padding:2mm 4mm;border-radius:2mm;}
+  .cl-doc .cl-notas{margin-top:3mm;font-size:8.5pt;}
   .recibo{box-sizing:border-box;width:210mm;min-height:296mm;padding:25mm 32mm 20mm 30mm;color:#000;background:#fff;font-family:Calibri,Carlito,'Segoe UI',Arial,sans-serif;font-size:11pt;}
   .recibo h1{margin:0 0 18mm;font-family:'Times New Roman',Times,serif;font-size:20pt;font-weight:400;text-align:center;letter-spacing:0;}
   .recibo p{margin:0;line-height:1.78;}
@@ -1159,6 +1237,7 @@ body.gaveta-aberta .fab{opacity:0;pointer-events:none;}
       </div>
       <div class="login-nota" id="lg-config" role="status" hidden></div>
     </form>
+    <p class="login-versao" id="lg-versao"></p>
   </div>
 </section>
 
@@ -1451,6 +1530,8 @@ const ICONES = {
   lapis: '<path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/>',
   trocas: '<polyline points="16 3 20 7 16 11"/><line x1="20" y1="7" x2="6" y2="7"/><polyline points="8 21 4 17 8 13"/><line x1="4" y1="17" x2="18" y2="17"/>',
   fabrica: '<path d="M2 20V9l6 4V9l6 4V4h4l2 16z"/><line x1="2" y1="20" x2="22" y2="20"/>',
+  calc: '<rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="11" x2="8.01" y2="11"/><line x1="12" y1="11" x2="12.01" y2="11"/><line x1="16" y1="11" x2="16.01" y2="11"/><line x1="8" y1="15" x2="8.01" y2="15"/><line x1="12" y1="15" x2="12.01" y2="15"/><line x1="16" y1="15" x2="16" y2="18"/><line x1="8" y1="18" x2="12" y2="18"/>',
+  lixo: '<polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/><path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/>',
   cronometro: '<circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2"/><path d="M9 2h6"/>',
   lista: '<line x1="9" y1="6" x2="20" y2="6"/><line x1="9" y1="12" x2="20" y2="12"/><line x1="9" y1="18" x2="20" y2="18"/><circle cx="4.5" cy="6" r="1"/><circle cx="4.5" cy="12" r="1"/><circle cx="4.5" cy="18" r="1"/>',
   moeda: '<circle cx="12" cy="12" r="9"/><path d="M15 9.5c-.6-1-1.7-1.5-3-1.5-1.9 0-3 1-3 2.2 0 3 6 1.6 6 4.6 0 1.2-1.2 2.2-3 2.2-1.4 0-2.6-.6-3.1-1.6"/><line x1="12" y1="6" x2="12" y2="8"/><line x1="12" y1="16" x2="12" y2="18"/>'
@@ -2131,6 +2212,18 @@ const API = (function () {
         if (ant) registrar('alterou', 'o nome do setor ' + antigo, 'Cadastros', { de: antigo, para: nome }); else registrar('criou', 'o setor ' + nome, 'Cadastros');
         await carregarBase();
         return nome;
+      },
+      /** exclui um setor; se ele tiver cargos, eles vão antes para o setor "destino" (nome) */
+      async excluirSetor({ nome, destino }) {
+        await garantirBase();
+        const st = Base.SETORES_REG.find(s => s.nome === nome);
+        if (!st) throw new Error('Setor não encontrado.');
+        const de = destino ? Base.SETORES_REG.find(s => s.nome === destino) : null;
+        if (destino && !de) throw new Error('Setor de destino não encontrado.');
+        const r = await q(cliente().rpc('rh_excluir_setor', { p: { id: st.id, destino: de ? de.id : null } }));
+        registrar('excluiu', 'o setor ' + nome + (de && r && r.cargos ? ' (os cargos foram para ' + destino + ')' : ''), 'Cadastros', de ? { de: nome, para: destino } : undefined);
+        await carregarBase();
+        return r || {};
       },
       /** cria ou edita um turno (nome, horário "06:00 às 14:20", adicional noturno) */
       async salvarTurno(t) {
@@ -3059,7 +3152,9 @@ const NAV = [
     { id: 'aniversariantes', rot: 'Aniversariantes', ic: 'presente' },
     { id: 'desligamentos', rot: 'Desligamentos', ic: 'pessoaMenos' },
     { id: 'adiantamentos', rot: 'Adiantamentos', ic: 'moeda', editor: true, sub: [
-      { rot: 'Descontos do mês', aba: 'mes' }, { rot: 'Em aberto', aba: 'abertos' }, { rot: 'Quitados e cancelados', aba: 'quitados' }] }] },
+      { rot: 'Descontos do mês', aba: 'mes' }, { rot: 'Em aberto', aba: 'abertos' }, { rot: 'Quitados e cancelados', aba: 'quitados' }] },
+    { id: 'calculadoras', rot: 'Calculadoras', ic: 'calc', editor: true, sub: [
+      { rot: 'Rescisão', aba: 'rescisao' }, { rot: 'Férias', aba: 'ferias' }, { rot: '13º salário', aba: 'decimo' }] }] },
   { grupo: 'Análise', itens: [
     { id: 'indicadores', rot: 'Indicadores', ic: 'tendencia', sub: [
       { rot: 'Quadro de pessoal', aba: 'quadro' }, { rot: 'Entradas e saídas', aba: 'movimento' }, { rot: 'Horas extras', aba: 'horas', editor: true }, { rot: 'Faltas e atestados', aba: 'faltas', editor: true }, { rot: 'Custo', aba: 'custo', editor: true }] },
@@ -3080,11 +3175,13 @@ const navItens = () => NAV.flatMap(x => x.itens ? x.itens : [x]);
 /** o perfil de quem está logado pode ver este item? (Consulta não vê valores nem grava nada) */
 const navPode = x => (!x.gestor || API.pode.gestor()) && (!x.editor || API.pode.editar());
 // telas que só Gestor e RH abrem (o banco também barra: aqui é só para não mostrar tela vazia)
-const SO_EDITOR = ['adiantamentos', 'folha', 'comparativo', 'cadastros', 'historico'];
+const SO_EDITOR = ['adiantamentos', 'calculadoras', 'folha', 'comparativo', 'cadastros', 'historico'];
 
 const Telas = {};   // cada tela se registra aqui: Telas.inicio = {titulo, render(el, params)}
 
 const App = (function () {
+  /** data e hora em que este index.html foi gerado (meta rh-versao): mostra qual versão está no ar */
+  const VERSAO = ((document.querySelector('meta[name="rh-versao"]') || {}).content || '').trim();
   let sessao = null, rotaAtual = null, graficos = [], trocando = false, contagens = {};
   const tela = () => document.getElementById('tela');
 
@@ -3507,6 +3604,7 @@ const App = (function () {
       if (r === 'desligado') sair('O seu acesso ao sistema foi desligado pelo gestor.');
       else if (r === 'perfil') sair('O seu perfil de acesso mudou. Entre de novo para continuar.');
     }, 30000);
+    const vEl = document.getElementById('lg-versao'); if (vEl && VERSAO) vEl.textContent = 'Versão de ' + VERSAO;
     if (!API.configurado()) {
       const n = document.getElementById('lg-config'); n.hidden = false;
       n.innerHTML = '<b>Este arquivo ainda não está ligado ao banco.</b> Falta ' + esc(API.motivoConfig()) + ' nas primeiras linhas do arquivo. Veja o passo 6 do guia de instalação.';
@@ -3530,7 +3628,7 @@ const App = (function () {
     document.getElementById('btn-user').addEventListener('click', e => {
       e.stopPropagation();
       UI.alternarSuspenso(e.currentTarget, document.getElementById('menu-user'), () => '<div class="cab-s"><b>' + esc(sessao.nome) + '</b><small class="dim" style="display:block;margin-top:2px;word-break:break-all">' + esc(sessao.email) + '</small><span class="tag brand" style="margin-top:6px">' + esc(sessao.perfil) + (sessao.perfil === 'Consulta' ? ' · só leitura' : '') + '</span></div>' +
-        '<button type="button" class="op" data-u="perfil">' + ic('cadeado') + 'Trocar a minha senha</button><button type="button" class="op" data-u="tema">' + ic('sol') + 'Tema claro ou escuro</button><hr><button type="button" class="op" data-u="sair">' + ic('sair') + 'Sair</button>');
+        '<button type="button" class="op" data-u="perfil">' + ic('cadeado') + 'Trocar a minha senha</button><button type="button" class="op" data-u="tema">' + ic('sol') + 'Tema claro ou escuro</button><hr><button type="button" class="op" data-u="sair">' + ic('sair') + 'Sair</button>' + (VERSAO ? '<small class="dim versao-menu">Versão de ' + esc(VERSAO) + '</small>' : ''));
     });
     document.getElementById('menu-user').addEventListener('click', e => { const b = e.target.closest('[data-u]'); if (!b) return; UI.fecharSuspenso(); if (b.dataset.u === 'sair') sair(); else if (b.dataset.u === 'tema') UI.Tema.trocar(); else Telas.perfil.abrir(); });
     document.getElementById('fab-btn').addEventListener('click', e => { e.stopPropagation(); document.getElementById('fab').classList.contains('on') ? fecharFab() : abrirFab(); });
@@ -4679,7 +4777,8 @@ Telas.folha = (function () {
       if (a.bloqueado) { ok.disabled = true; msg.textContent = 'A conferência não fechou: o mês não pode ser gravado'; return; }
       const pe = pendentes();
       ok.disabled = !!pe.length;
-      msg.textContent = pe.length ? 'Decida o que fazer com ' + pe.length + ' pessoa(s) que não estão no cadastro' : (jaTem ? 'Substitui o que já estava gravado de ' + Fmt.mes(a.cab.comp) : 'Tudo conferido: pode gravar');
+      const avs = a.conferencia.filter(c => c.aviso).length;
+      msg.textContent = pe.length ? 'Decida o que fazer com ' + pe.length + ' pessoa(s) que não estão no cadastro' : (jaTem ? 'Substitui o que já estava gravado de ' + Fmt.mes(a.cab.comp) + (avs ? ' · ' + avs + ' conferência(s) em amarelo: o PDF não traz essa parte' : '') : avs ? 'Pode gravar (' + avs + ' conferência(s) em amarelo: o PDF não traz essa parte)' : 'Tudo conferido: pode gravar');
       ok.innerHTML = ic('check') + 'Gravar ' + esc(Fmt.mesCurto(a.cab.comp));
     }
     function desenhar() {
@@ -4692,7 +4791,8 @@ Telas.folha = (function () {
       const importados = R.filter(r => r.pessoa || (dec[r.x.codigo] && dec[r.x.codigo].acao && dec[r.x.codigo].acao !== 'ignorar'));
       const soma = k => importados.reduce((s, r) => s + ((r.x.rodape || {})[k] || 0), 0);
       const fol = importados.map(r => Extrato.paraFolha(r.x, Base.PARAM)), sf = k => fol.reduce((s, f) => s + f[k], 0);
-      const av = c => '<div class="av ' + (c.ok ? '' : 'erro') + '" style="cursor:default' + (c.ok ? ';--c:var(--ok-ink);--c-soft:var(--ok-soft)' : '') + '"><span class="ic">' + ic(c.ok ? 'checkCirc' : 'alerta') + '</span><span><b>' + esc(c.item) + '</b><span>' + esc(c.detalhe || '') + '</span></span></div>';
+      // verde = conferiu; amarelo = o PDF não traz essa parte (não trava); vermelho = não bate (trava)
+      const av = c => '<div class="av ' + (!c.ok ? 'erro' : c.aviso ? 'aviso' : '') + '" style="cursor:default' + (c.ok && !c.aviso ? ';--c:var(--ok-ink);--c-soft:var(--ok-soft)' : '') + '"><span class="ic">' + ic(c.ok && !c.aviso ? 'checkCirc' : 'alerta') + '</span><span><b>' + esc(c.item) + (c.aviso ? ' · não conferido' : '') + '</b><span>' + esc(c.detalhe || '') + '</span></span></div>';
       const opcoes = r => { const d = dec[r.x.codigo] || {}; return '<select class="inp" data-dec="' + esc(r.x.codigo) + '"><option value="">— escolha —</option>' + Object.keys(SIT_NOVO).map(k => '<option value="' + k + '"' + (d.acao === k ? ' selected' : '') + '>' + SIT_NOVO[k] + '</option>').join('') + '</select>' + (d.acao === 'desligado' ? '<input class="inp" type="date" data-dec-data="' + esc(r.x.codigo) + '" value="' + esc(d.data || '') + '" aria-label="Data do desligamento">' : '') + (d.acao === 'ativo' ? '<small class="dim">Complete depois na ficha: nascimento, turno e contato (o extrato não traz).</small>' : ''); };
       $e('ex-rev').innerHTML =
         '<section class="passo"><h3><i>2</i>Conferência com o PDF</h3><p class="dim ex-sub">' + esc(a.cab.empresa) + ' · CNPJ ' + esc(a.cab.cnpj) + ' · ' + esc(a.cab.calculo || 'Folha') + ' de <b>' + esc(Fmt.mes(comp)) + '</b> · emitido em ' + dt(a.cab.emissao) + '</p>' +
@@ -4754,7 +4854,7 @@ Telas.folha = (function () {
         x.ferias.forEach(f => ferias.push(Object.assign({}, alvo, { inicio: f.inicio, dias: Dt.entre(f.inicio, f.fim) + 1, periodo_inicio: periodoDasFerias(adm, f.inicio, fer) })));
       });
       const atencao = a.conferencia.filter(c => !c.ok);
-      const dados = { extrato: { comp, arquivo, emitido_em: a.cab.emissao, situacao: atencao.length ? 'atencao' : 'conferido', nota: atencao.length ? atencao.map(c => c.item + ': ' + c.detalhe).join(' · ') : a.conferencia.length + ' conferências com o PDF: tudo certo' }, linhas, novos, vinculos, desligamentos, ferias, correcoes };
+      const dados = { extrato: { comp, arquivo, emitido_em: a.cab.emissao, situacao: atencao.length ? 'atencao' : 'conferido', nota: atencao.length ? atencao.map(c => c.item + ': ' + c.detalhe).join(' · ') : a.conferencia.filter(c => !c.aviso).length + ' conferências com o PDF: tudo certo' + (a.conferencia.some(c => c.aviso) ? ' · não conferido (o PDF não traz): ' + a.conferencia.filter(c => c.aviso).map(c => c.item).join(', ') : '') }, linhas, novos, vinculos, desligamentos, ferias, correcoes };
       btn.disabled = true; btn.textContent = 'Gravando…';
       let r;
       try { r = await API.folha.importar(dados); }
@@ -5230,6 +5330,30 @@ Telas.cadastros = (function () {
       recarregar();
     });
   }
+  // excluir setor: sem cargos, sai direto; com cargos, eles (e quem está neles) vão antes para outro setor
+  async function formExcluirSetor(nome) {
+    const [cad, P] = await Promise.all([D.cad(), D.pessoas()]);
+    const cargos = cad.cargos.filter(c => c.setor === nome), ids = new Set(cargos.map(c => c.id));
+    const pes = P.filter(p => ids.has(p.cargo_id)), noQuadro = pes.filter(p => p.situacao_ref !== 'Inativo').length, desl = pes.length - noQuadro;
+    const outros = cad.setores.filter(s => s !== nome), pl = (n, um, varios) => n + ' ' + (n === 1 ? um : varios);
+    let corpo, pode = true;
+    if (!cargos.length) corpo = '<p>O setor <b>' + esc(nome) + '</b> não tem cargos nem pessoas. Ele sai do cadastro, das listas e dos filtros; os meses de folha já importados não mudam.</p>';
+    else if (!outros.length) { pode = false; corpo = '<p>O setor <b>' + esc(nome) + '</b> é o único do cadastro e tem ' + pl(cargos.length, 'cargo', 'cargos') + '. Crie outro setor antes: os cargos precisam ir para algum setor.</p>'; }
+    else corpo = '<p>O setor <b>' + esc(nome) + '</b> tem ' + pl(cargos.length, 'cargo', 'cargos') + ' (' + esc(cargos.map(c => c.nome).join(', ')) + ') e ' + pl(noQuadro, 'pessoa', 'pessoas') + (desl ? ' (mais ' + pl(desl, 'desligada', 'desligadas') + ')' : '') + '. Antes de excluir, os cargos passam para outro setor, com as pessoas:</p>' +
+      '<div class="campo"><label for="sx-d">Mover os cargos para</label><select id="sx-d">' + outros.map(s => '<option>' + esc(s) + '</option>').join('') + '</select><span class="dica">O histórico da folha também passa a mostrar o setor escolhido.</span></div>';
+    const c = UI.abrirModal('<h2>Excluir setor</h2>' + corpo + '<div class="modal-pe"><span class="msg" id="sx-msg"></span><button class="btn btn-ghost" type="button" data-fechar>' + (pode ? 'Cancelar' : 'Fechar') + '</button>' + (pode ? '<button class="btn btn-perigo" type="button" id="sx-ok">' + ic('lixo') + (cargos.length ? 'Mover e excluir' : 'Excluir setor') + '</button>' : '') + '</div>');
+    c.addEventListener('click', async ev => {
+      if (ev.target.closest('[data-fechar]')) { UI.fecharModal(); return; }
+      const ok = ev.target.closest('#sx-ok'); if (!ok || ok.disabled) return;
+      const destino = cargos.length ? document.getElementById('sx-d').value : null, msg = document.getElementById('sx-msg');
+      ok.disabled = true;
+      try { await API.cadastros.excluirSetor({ nome, destino }); } catch (x) { msg.textContent = x.message; ok.disabled = false; return; }
+      D.mudou('cad', 'pessoas', 'linhas'); UI.fecharModal();
+      UI.toast('Setor excluído: ' + nome + (destino ? ' · os cargos foram para ' + destino : ''), 'ok');
+      document.dispatchEvent(new CustomEvent('setor', { detail: { de: nome, para: destino || '' } }));
+      recarregar();
+    });
+  }
   function formTurno(t) {
     const [ini, fim] = t ? String(t.horario).split(' às ') : ['', ''];
     const c = UI.abrirModal('<h2>' + (t ? 'Editar turno' : 'Novo turno') + '</h2><p>Os turnos aparecem no cadastro de funcionário e nos filtros das telas.</p>' +
@@ -5284,7 +5408,7 @@ Telas.cadastros = (function () {
   }
   function secSetores(cad, at) {
     return '<div class="painel-cab"><div><h2>Setores</h2><span class="sub">usados no cadastro de cargo e de funcionário e nos filtros</span></div><button class="btn btn-pri btn-sm" type="button" id="st-novo">' + ic('mais') + 'Novo setor</button></div><div class="painel-corpo">' +
-      cad.setores.map(s => { const n = at.filter(p => p.setor === s).length, nc = cad.cargos.filter(c => c.setor === s).length; return '<div class="conf-l" style="grid-template-columns:minmax(0,1fr) auto"><div><b>' + esc(s) + '</b><small>' + n + ' pessoa' + (n === 1 ? '' : 's') + ' · ' + nc + ' cargo' + (nc === 1 ? '' : 's') + '</small></div><button class="btn btn-ghost btn-sm" type="button" data-setor="' + esc(s) + '">' + ic('lapis') + 'Renomear</button></div>'; }).join('') + (cad.setores.length ? '' : UI.vazio('Nenhum setor cadastrado', 'Comece por aqui: setores, depois cargos e turnos.', 'fabrica')) + '</div>';
+      cad.setores.map(s => { const n = at.filter(p => p.setor === s).length, nc = cad.cargos.filter(c => c.setor === s).length; return '<div class="conf-l" style="grid-template-columns:minmax(0,1fr) auto"><div><b>' + esc(s) + '</b><small>' + n + ' pessoa' + (n === 1 ? '' : 's') + ' · ' + nc + ' cargo' + (nc === 1 ? '' : 's') + '</small></div><span class="st-acoes"><button class="btn btn-ghost btn-sm" type="button" data-setor="' + esc(s) + '">' + ic('lapis') + 'Renomear</button><button class="btn btn-ghost btn-sm" type="button" data-excluir-setor="' + esc(s) + '" aria-label="Excluir o setor ' + esc(s) + '">' + ic('lixo') + 'Excluir</button></span></div>'; }).join('') + (cad.setores.length ? '' : UI.vazio('Nenhum setor cadastrado', 'Comece por aqui: setores, depois cargos e turnos.', 'fabrica')) + '</div>';
   }
   function secTurnos(cad, at) {
     return '<div class="painel-cab"><div><h2>Turnos</h2><span class="sub">horários de trabalho · o adicional noturno entra no cálculo da folha</span></div><button class="btn btn-pri btn-sm" type="button" id="tu-novo">' + ic('mais') + 'Novo turno</button></div><div class="painel-corpo">' +
@@ -5360,6 +5484,7 @@ Telas.cadastros = (function () {
       if (e.target.closest('#fu-novo')) { Telas.colaboradores.novo(); return; }
       if (e.target.closest('#cg-novo')) { novoCargo(); return; }
       if (e.target.closest('#st-novo')) { formSetor(); return; }
+      const sx = e.target.closest('[data-excluir-setor]'); if (sx) { formExcluirSetor(sx.dataset.excluirSetor); return; }
       const st = e.target.closest('[data-setor]'); if (st) { formSetor(st.dataset.setor); return; }
       if (e.target.closest('#tu-novo')) { formTurno(); return; }
       const tu = e.target.closest('[data-turno]'); if (tu) { formTurno(cad.turnos.find(x => x.id === tu.dataset.turno)); return; }
@@ -6193,7 +6318,7 @@ const Extrato = (function () {
         // totais gerais, resumo por rubrica e resumo geral
         if (/Total Geral Proventos:/.test(t)) { totais.proventos = num(campo(t, 'Total Geral Proventos:')); totais.descontos = num(campo(t, 'Total Geral Descontos:')); secao = 'totais'; p = null; bloco = 'fora'; return; }
         if (/^Líquido Geral:/.test(t) || /Líquido Geral:/.test(t)) { const v = num(campo(t, 'Líquido Geral:')); if (totais.liquido === undefined) totais.liquido = v; else totais.liquido_resumo = v; if (secao === 'resumo') secao = 'fim_resumo'; return; }
-        if (/^Resumo por Rubrica/.test(t)) { secao = 'resumo'; pend = { esq: null, dir: null }; bloco = 'rubricas'; return; }
+        if (/^Resumo\s+(?:por|das)\s+Rubricas?\b/i.test(t)) { secao = 'resumo'; pend = { esq: null, dir: null }; bloco = 'rubricas'; return; }
         if (secao === 'resumo') { rubricas(l, resumo); return; }
         if (/^INSS\b/.test(t) && /FGTS/.test(t)) { secao = 'geral'; grupoGeral = 'inss|fgts'; return; }
         if (secao === 'geral' || (secao === 'fim_resumo' && /:/.test(t))) {
@@ -6284,9 +6409,12 @@ const Extrato = (function () {
     return f;
   }
 
-  /** confere o que foi lido com o que o relatório imprime; "bloqueia" = não deixa gravar */
+  /** confere o que foi lido com o que o relatório imprime; "bloqueia" = não deixa gravar.
+   *  Parte que o PDF não traz (resumo por rubrica, página final de INSS/FGTS) vira só aviso (amarelo);
+   *  parte que o PDF traz e não bate continua travando. */
   function conferir(a) {
     const C = [], ok = (item, certo, detalhe, bloqueia) => C.push({ item, ok: !!certo, detalhe, bloqueia: !!bloqueia });
+    const aviso = (item, detalhe) => C.push({ item, ok: true, aviso: true, detalhe, bloqueia: false });
     const igual = (x, y) => Math.abs((x || 0) - (y || 0)) < 0.005;
     const brl = v => (Number(v) || 0).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     ok('Competência e empresa no cabeçalho', a.cab.comp && a.cab.cnpj, a.cab.comp ? a.cab.comp.slice(5) + '/' + a.cab.comp.slice(0, 4) + ' · ' + (a.cab.empresa || '') + ' · CNPJ ' + a.cab.cnpj : 'não achei a competência no PDF', true);
@@ -6299,24 +6427,31 @@ const Extrato = (function () {
     });
     ok('Rubricas de cada pessoa somam o total impresso dela', !ruins.length, ruins.length ? ruins.length + ' pessoa(s) não fecham: ' + ruins.slice(0, 3).map(p => p.nome + ' (' + p.diferenca + ')').join('; ') : 'proventos, descontos e líquido de todas as ' + a.pessoas.length + ' pessoas conferem', true);
     const tp = r2(a.pessoas.reduce((s, p) => s + ((p.rodape || {}).proventos || 0), 0)), td = r2(a.pessoas.reduce((s, p) => s + ((p.rodape || {}).descontos || 0), 0)), tl = r2(a.pessoas.reduce((s, p) => s + ((p.rodape || {}).liquido || 0), 0));
-    ok('Totais gerais do extrato', igual(tp, a.totais.proventos) && igual(td, a.totais.descontos) && igual(tl, a.totais.liquido),
+    if (a.totais.proventos === undefined) ok('Totais gerais do extrato', false, 'o PDF não tem o "Total Geral" do fim do extrato (arquivo cortado?)', true);
+    else ok('Totais gerais do extrato', igual(tp, a.totais.proventos) && igual(td, a.totais.descontos) && igual(tl, a.totais.liquido),
       'proventos ' + brl(tp) + ' (PDF ' + brl(a.totais.proventos) + ') · descontos ' + brl(td) + ' (PDF ' + brl(a.totais.descontos) + ') · líquido ' + brl(tl) + ' (PDF ' + brl(a.totais.liquido) + ')', true);
     const soma = {};
     a.pessoas.forEach(p => p.rubricas.forEach(r => { const k = r.tipo + r.codigo; soma[k] = r2((soma[k] || 0) + r.valor); }));
     const difR = a.resumo.filter(r => !igual(soma[r.tipo + r.codigo], r.valor));
     const sobra = Object.keys(soma).filter(k => !a.resumo.some(r => r.tipo + r.codigo === k));
-    ok('Resumo por rubrica', a.resumo.length && !difR.length && !sobra.length, a.resumo.length ? (difR.length || sobra.length ? (difR.length + sobra.length) + ' rubrica(s) não batem: ' + difR.slice(0, 3).map(r => r.codigo + ' ' + r.descricao + ' (lido ' + brl(soma[r.tipo + r.codigo]) + ', PDF ' + brl(r.valor) + ')').concat(sobra.slice(0, 2).map(k => k.slice(1) + ' fora do resumo')).join('; ') : 'as ' + a.resumo.length + ' rubricas conferem com o resumo do PDF') : 'o PDF não tem o resumo por rubrica', true);
+    if (!a.resumo.length) aviso('Resumo por rubrica', 'o PDF não tem o resumo por rubrica: esta conferência não foi feita (as outras somas conferem a leitura)');
+    else ok('Resumo por rubrica', !difR.length && !sobra.length, difR.length || sobra.length ? (difR.length + sobra.length) + ' rubrica(s) não batem: ' + difR.slice(0, 3).map(r => r.codigo + ' ' + r.descricao + ' (lido ' + brl(soma[r.tipo + r.codigo]) + ', PDF ' + brl(r.valor) + ')').concat(sobra.slice(0, 2).map(k => k.slice(1) + ' fora do resumo')).join('; ') : 'as ' + a.resumo.length + ' rubricas conferem com o resumo do PDF', true);
     const sit = a.geral.situacoes || {}, emp = a.pessoas.filter(p => p.tipo === 'empregado').length, con = a.pessoas.length - emp;
     if (sit['No. Empregados'] !== undefined) ok('Número de empregados', sit['No. Empregados'] === emp && (sit['No. Contribuintes'] === undefined || sit['No. Contribuintes'] === con), emp + ' empregado(s) e ' + con + ' contribuinte(s) lidos; o PDF diz ' + sit['No. Empregados'] + ' e ' + (sit['No. Contribuintes'] ?? '—'), true);
-    const inss = a.geral.inss || {};
-    if (inss['Segurados'] !== undefined) {
+    const inss = a.geral.inss || {}, fg = a.geral.fgts || {};
+    const temInss = inss['Segurados'] !== undefined, temFg = fg['Valor do FGTS'] !== undefined;
+    if (temInss) {
       const li = r2(a.pessoas.reduce((s, p) => s + p.rubricas.filter(r => r.tipo === 'D' && classificar(r) === 'inss').reduce((t, r) => t + r.valor, 0), 0));
-      ok('INSS descontado (segurados)', igual(li, inss['Segurados']), 'lido ' + brl(li) + ' · PDF ' + brl(inss['Segurados']), false);
+      ok('INSS descontado (segurados)', igual(li, inss['Segurados']), 'lido ' + brl(li) + ' · PDF ' + brl(inss['Segurados']), true);
     }
-    const fg = a.geral.fgts || {};
-    if (fg['Valor do FGTS'] !== undefined) {
+    if (temFg) {
       const lf = r2(a.pessoas.reduce((s, p) => s + ((p.rodape || {}).fgts || 0), 0)), pf = r2((fg['Valor do FGTS'] || 0) + (fg['Valor FGTS Rescisório'] || 0));
-      ok('FGTS do mês', igual(lf, pf), 'lido ' + brl(lf) + ' · PDF ' + brl(pf) + ' (mensal ' + brl(fg['Valor do FGTS']) + ' + rescisório ' + brl(fg['Valor FGTS Rescisório'] || 0) + ')', false);
+      ok('FGTS do mês', igual(lf, pf), 'lido ' + brl(lf) + ' · PDF ' + brl(pf) + ' (mensal ' + brl(fg['Valor do FGTS']) + ' + rescisório ' + brl(fg['Valor FGTS Rescisório'] || 0) + ')', true);
+    }
+    if (!temInss && !temFg && sit['No. Empregados'] === undefined) aviso('INSS, FGTS e número de empregados', 'o PDF não tem a página final do Domínio com esses totais: estas conferências não foram feitas');
+    else {
+      if (!temInss) aviso('INSS descontado (segurados)', 'o PDF não traz o total de INSS dos segurados: conferência não feita');
+      if (!temFg) aviso('FGTS do mês', 'o PDF não traz o total do FGTS: conferência não feita');
     }
     if (a.avisos.length) ok('Linhas que o leitor não entendeu', false, a.avisos.length + ': ' + a.avisos.slice(0, 2).join(' · '), true);
     return C;
@@ -6392,6 +6527,666 @@ const Extrato = (function () {
   }
 
   return { ler, lerPdf, analisar, conferir, classificar, paraFolha, casar, cargoParecido, notaNome, linhasDaPagina, _num: num, _ref: ref };
+})();
+
+/* =====================================================================
+   CÁLCULOS TRABALHISTAS — rescisão, férias e 13º salário (ESTIMATIVAS)
+   Nada aqui grava no banco: são contas para o RH conferir antes da
+   contabilidade. O valor oficial é o do Domínio/contabilidade.
+
+   Tabelas de 2026 (conferidas em 05/11/2026):
+   - salário mínimo R$ 1.621,00 e INSS do empregado: Portaria Interministerial
+     MPS/MF nº 13, de 09/01/2026 (7,5% / 9% / 12% / 14%, teto R$ 8.475,55);
+   - IRRF: tabela mensal (isento até R$ 2.428,80), dependente R$ 189,59,
+     desconto simplificado R$ 607,20 e a redução da Lei 15.270/2025
+     (art. 3º-A da Lei 9.250): até R$ 5.000 de rendimento o imposto zera;
+     de R$ 5.000,01 a R$ 7.350 a redução é 978,62 − 0,133145 × rendimento.
+     A redução vale também para o 13º (tributação exclusiva).
+
+   Incidências usadas (rescisão):
+   - saldo de salário: INSS, IRRF (mensal) e FGTS;
+   - aviso prévio indenizado: só FGTS (Súmula 305 TST; sem INSS e sem IR);
+   - 13º (inclusive os avos da projeção do aviso): INSS, IRRF exclusivo, FGTS;
+   - férias vencidas/proporcionais + 1/3 indenizadas: nada (Lei 8.212 art. 28
+     §9º "d"; IN 144/2018; sem IR — SC Cosit 144/2021);
+   - indenização do art. 479: nada; multa do FGTS: depositada na conta.
+   ===================================================================== */
+const Calc = (function () {
+  const TAB = {
+    2026: {
+      sm: 1621.00,
+      inss: [[1621.00, 0.075], [2902.84, 0.09], [4354.27, 0.12], [8475.55, 0.14]],
+      irrf: [[2428.80, 0, 0], [2826.65, 0.075, 182.16], [3751.05, 0.15, 394.16], [4664.68, 0.225, 675.49], [Infinity, 0.275, 908.73]],
+      dependente: 189.59, simplificado: 607.20,
+      reducao: { ate: 5000, max: 312.89, fim: 7350, a: 978.62, b: 0.133145 }
+    }
+  };
+  const ANOS = Object.keys(TAB).map(Number).sort((a, b) => a - b);
+  /** tabela do ano (a mais recente que não passa dele); "exata" = é a do próprio ano */
+  function tabela(ano) { ano = Number(ano) || ANOS[ANOS.length - 1]; const a = ANOS.filter(x => x <= ano).pop() || ANOS[0]; return Object.assign({ ano: a, exata: a === ano }, TAB[a]); }
+  /** arredonda em centavos sem o erro do ponto flutuante (176,785 → 176,79) */
+  const cent = x => { const v = Number(x) || 0; return Math.round(v * 100 + (v >= 0 ? 1e-6 : -1e-6)) / 100; };
+  const pad = n => String(n).padStart(2, '0');
+
+  // ------------------------------------------------------------ datas
+  /** soma meses a uma data, segurando o fim do mês (31/01 + 1 mês = 28/02) */
+  function addMeses(iso, n) {
+    const d = Dt.de(iso), dia = d.getDate(), r = new Date(d.getFullYear(), d.getMonth() + n, 1);
+    r.setDate(Math.min(dia, new Date(r.getFullYear(), r.getMonth() + 1, 0).getDate()));
+    return Dt.iso(r);
+  }
+  /** meses completos de "ini" até "fim" (inclusive) */
+  function mesesCompletos(ini, fim) { if (!ini || !fim || fim < ini) return 0; const ate = Dt.soma(fim, 1); let n = 0; while (addMeses(ini, n + 1) <= ate && n < 1200) n++; return n; }
+  /** anos completos de casa na data (aviso prévio proporcional: Lei 12.506/2011) */
+  const anosCompletos = (adm, data) => Math.floor(mesesCompletos(adm, data) / 12);
+  /** dias de aviso prévio: 30 + 3 por ano completo, até 90 */
+  const diasAviso = (adm, data) => Math.min(90, 30 + 3 * anosCompletos(adm, data));
+  /** avos de férias de um período aquisitivo: mês completo, ou fração de 15 dias ou mais (CLT art. 146/147) */
+  function avosFerias(ini, fim) {
+    if (!ini || !fim || fim < ini) return 0;
+    const n = mesesCompletos(ini, fim);
+    if (n >= 12) return 12;
+    const resto = Dt.entre(addMeses(ini, n), fim) + 1;
+    return Math.min(12, n + (resto >= 15 ? 1 : 0));
+  }
+  /** avos do 13º no ano de "fim": meses com 15 dias ou mais de trabalho (Lei 4.090/62) */
+  function avos13(adm, fim, ano) {
+    ano = ano || Number(fim.slice(0, 4));
+    let n = 0;
+    for (let m = 1; m <= 12; m++) {
+      const ini = ano + '-' + pad(m) + '-01', ult = Dt.fimDoMes(ano + '-' + pad(m));
+      const a = adm > ini ? adm : ini, b = fim < ult ? fim : ult;
+      if (b >= a && Dt.entre(a, b) + 1 >= 15) n++;
+    }
+    return n;
+  }
+  /** início do período aquisitivo que está correndo em "data" (o que ainda não fechou 12 meses) */
+  const periodoAtual = (adm, data) => addMeses(adm, 12 * anosCompletos(adm, data));
+
+  /** último dia útil até "iso" (antecipa sábado, domingo e feriado): prazos de pagamento */
+  function diaUtilAte(iso, feriados) { let d = iso; for (let i = 0; i < 10; i++) { const w = Dt.de(d).getDay(); if (w !== 0 && w !== 6 && !(feriados || []).includes(d)) return d; d = Dt.soma(d, -1); } return d; }
+
+  // ------------------------------------------------------------ impostos
+  /** INSS do empregado: tabela progressiva por faixas, até o teto */
+  function inss(base, ano) {
+    const T = tabela(ano).inss, b = Math.max(0, Math.min(Number(base) || 0, T[T.length - 1][0]));
+    let v = 0, ant = 0;
+    for (const [lim, al] of T) { if (b > ant) v += (Math.min(b, lim) - ant) * al; ant = lim; }
+    return cent(v);
+  }
+  /** IRRF: rend = rendimento tributável bruto. Desconto simplificado no lugar das deduções quando for maior
+   *  (vale também para o 13º, que é tributado em separado); a redução da Lei 15.270 usa o rendimento bruto */
+  function irrf({ rend, inss: vInss, dependentes, ano }) {
+    const T = tabela(ano), r = Math.max(0, Number(rend) || 0);
+    const legal = (Number(vInss) || 0) + (Number(dependentes) || 0) * T.dependente;
+    const simpl = T.simplificado > legal;
+    const base = Math.max(0, r - (simpl ? T.simplificado : legal));
+    const f = T.irrf.find(x => base <= x[0]);
+    const imp = Math.max(0, cent(base * f[1] - f[2]));
+    const R = T.reducao;
+    let red = 0;
+    if (R && r > 0) red = r <= R.ate ? Math.min(imp, R.max) : r < R.fim ? Math.min(imp, Math.max(0, cent(R.a - R.b * r))) : 0;
+    return { rend: cent(r), base: cent(base), aliquota: f[1], tabela: imp, reducao: cent(red), valor: cent(imp - red), deducao: simpl ? 'simplificado' : 'legal' };
+  }
+  const somaV = L => cent(L.reduce((s, x) => s + (Number(x.valor) || 0), 0));
+
+  // ------------------------------------------------------------ rescisão
+  const TIPOS = {
+    sem_justa: { rot: 'Dispensa sem justa causa', avisos: ['indenizado', 'trabalhado'], prop: true, multa: 0.40, saque: '100% do saldo', seguro: 'pode ter direito (depende do tempo de carteira assinada)' },
+    pedido: { rot: 'Pedido de demissão', avisos: ['trabalhado', 'descontado', 'dispensado'], prop: true, multa: 0, saque: 'não saca', seguro: 'não tem direito' },
+    acordo: { rot: 'Acordo entre as partes (art. 484-A)', avisos: ['indenizado', 'trabalhado'], prop: true, multa: 0.20, saque: 'até 80% do saldo', seguro: 'não tem direito' },
+    justa: { rot: 'Dispensa por justa causa', avisos: [], prop: false, multa: 0, saque: 'não saca', seguro: 'não tem direito' },
+    exp_fim: { rot: 'Fim do contrato de experiência', avisos: [], prop: true, multa: 0, saque: '100% do saldo', seguro: 'em geral, não tem direito' },
+    exp_empresa: { rot: 'Experiência encerrada antes do prazo pela empresa (art. 479)', avisos: [], prop: true, multa: 0.40, saque: '100% do saldo', seguro: 'pode ter direito (depende do tempo de carteira assinada)' },
+    exp_empregado: { rot: 'Experiência encerrada antes do prazo pela pessoa (art. 480)', avisos: [], prop: true, multa: 0, saque: 'não saca', seguro: 'não tem direito' }
+  };
+  const AVISOS = { indenizado: 'Indenizado (a pessoa sai no dia)', trabalhado: 'Trabalhado (a data é o último dia do aviso)', descontado: 'Não cumprido pela pessoa (desconta 30 dias)', dispensado: 'Dispensado pela empresa (sem desconto)' };
+
+  /** dias de saldo de salário no mês do último dia trabalhado (mês comercial de 30 dias) */
+  function diasSaldo(adm, data) {
+    const dia = Number(data.slice(8, 10)), ultimo = data === Dt.fimDoMes(Dt.comp(data));
+    let d = ultimo ? 30 : Math.min(30, dia);
+    if (Dt.comp(adm) === Dt.comp(data) && !(adm.slice(8, 10) === '01' && ultimo)) d = Math.min(d, Dt.entre(adm, data) + 1);
+    return d;
+  }
+
+  /**
+   * e = { tipo, aviso, admissao, data (último dia trabalhado ou dia da comunicação, se indenizado),
+   *       salario, adicionais, medias, dias (saldo, opcional), faltas,
+   *       vencidas: [{ dias, dobro, periodo }], fgtsSaldo, decimoPago (13º do ano já pago: 1ª ou as duas parcelas), adiantamento, vales,
+   *       consignadoPct (garantia do contrato, até 0,35), feriados (para antecipar o prazo de pagamento),
+   *       art480 (descontar), expFim, dependentes, consignado (saldo do Crédito do Trabalhador), extras: [{ descricao, valor }],
+   *       encargos (fração: INSS empresa + RAT + terceiros) }
+   */
+  function rescisao(e) {
+    const T = TIPOS[e.tipo] || TIPOS.sem_justa, ano = Number(e.data.slice(0, 4)), tab = tabela(ano), out = { avisos: [] };
+    const sal = Math.max(0, Number(e.salario) || 0), fix = sal + Math.max(0, Number(e.adicionais) || 0), rem = fix + Math.max(0, Number(e.medias) || 0);
+    const aviso = T.avisos.includes(e.aviso) ? e.aviso : (T.avisos[0] || '');
+    // aviso prévio: dias proporcionais e projeção (OJ 82 SDI-1: a saída na carteira é o fim do aviso, mesmo indenizado)
+    const dAv = diasAviso(e.admissao, e.data);
+    let indDias = 0, indValorDias = 0;
+    if (e.tipo === 'sem_justa' && aviso === 'indenizado') { indDias = dAv; indValorDias = dAv; }
+    if (e.tipo === 'sem_justa' && aviso === 'trabalhado' && dAv > 30) { indDias = dAv - 30; indValorDias = dAv - 30; out.avisos.push('O aviso dela é de ' + dAv + ' dias: 30 trabalhados e os ' + (dAv - 30) + ' dias a mais (proporcionais) entram como indenizados.'); }
+    if (e.tipo === 'acordo' && aviso === 'indenizado') { indValorDias = dAv / 2; indDias = Math.floor(dAv / 2); out.avisos.push('Acordo: metade do aviso (' + Fmt.dec(dAv / 2, dAv % 2 ? 1 : 0) + ' de ' + dAv + ' dias) e projeção também pela metade, que é a prática mais comum; há quem projete o aviso inteiro.'); }
+    const saida = indDias ? Dt.soma(e.data, indDias) : e.data;
+    // saldo de salário
+    const dias = e.dias != null && e.dias !== '' ? Math.max(0, Math.min(30, Number(e.dias))) : diasSaldo(e.admissao, e.data);
+    const faltas = Math.max(0, Math.min(dias, Number(e.faltas) || 0));
+    const saldo = cent(fix / 30 * (dias - faltas));
+    const avisoValor = indValorDias ? cent(rem / 30 * indValorDias) : 0;
+    // 13º e férias (projeção do aviso conta como tempo de serviço)
+    const anoD = Number(e.data.slice(0, 4)), anoS = Number(saida.slice(0, 4)), fimAno = anoD + '-12-31';
+    const av13 = T.prop ? avos13(e.admissao, saida < fimAno ? saida : fimAno, anoD) : 0;
+    const av13b = T.prop && anoS > anoD ? avos13(e.admissao, saida, anoS) : 0;
+    const d13a = cent(rem / 12 * av13), d13b = cent(rem / 12 * av13b), d13 = cent(d13a + d13b);
+    const venc = (e.vencidas || []).filter(v => Number(v.dias) > 0).map(v => ({ dias: Number(v.dias), dobro: !!v.dobro, periodo: v.periodo || '', valor: cent(rem / 30 * Number(v.dias) * (v.dobro ? 2 : 1)) }));
+    const ini = periodoAtual(e.admissao, saida), avF = T.prop ? avosFerias(ini, saida) : 0, fProp = cent(rem / 12 * avF);
+    const tercoV = cent(somaV(venc) / 3), tercoP = cent(fProp / 3);
+    // indenização dos arts. 479/480: metade do que faltava até o fim do contrato de experiência
+    const fimExp = e.expFim || Dt.soma(e.admissao, 89);
+    const restam = Math.max(0, Dt.entre(e.data, fimExp));
+    const ind479 = (e.tipo === 'exp_empresa' || e.tipo === 'exp_empregado') ? cent(rem / 30 * restam / 2) : 0;
+    if ((e.tipo === 'exp_empresa' || e.tipo === 'exp_empregado') && !restam) out.avisos.push('A data é o fim da experiência (ou depois): use "Fim do contrato de experiência".');
+
+    const P = [];
+    const prov = (rot, sub, valor, inc) => { if (valor > 0.004) P.push(Object.assign({ rot, sub, valor: cent(valor) }, inc)); };
+    prov('Saldo de salário', (dias - faltas) + ' dia(s)' + (faltas ? ' (' + dias + ' − ' + faltas + ' de falta)' : ''), saldo, { inss: true, ir: 'mensal', fgts: true });
+    prov('Aviso prévio indenizado', Fmt.dec(indValorDias, indValorDias % 1 ? 1 : 0) + ' dia(s)' + (e.tipo === 'acordo' ? ' · metade de ' + dAv : dAv > 30 ? ' · ' + dAv + ' com o proporcional' : ''), avisoValor, { fgts: true });
+    prov('13º salário proporcional', av13 + '/12 de ' + anoD + (indDias && av13 && !av13b ? ' · conta a projeção do aviso' : ''), d13a, { inss: '13', ir: '13', fgts: true });
+    prov('13º salário de ' + anoS + ' (projeção do aviso)', av13b + '/12 · o aviso indenizado passa para ' + anoS, d13b, { inss: '13', ir: '13', fgts: true });
+    venc.forEach(v => prov('Férias vencidas' + (v.dobro ? ' em dobro' : ''), v.dias + ' dia(s)' + (v.periodo ? ' · período ' + v.periodo : '') + (v.dobro ? ' · passou do prazo para tirar (art. 137)' : ''), v.valor, {}));
+    prov('Férias proporcionais', avF + '/12 · período desde ' + Fmt.data(ini), fProp, {});
+    prov('1/3 de férias', 'sobre as férias vencidas e proporcionais', tercoV + tercoP, {});
+    if (e.tipo === 'exp_empresa') prov('Indenização do art. 479', 'metade de ' + restam + ' dia(s) que faltavam (até ' + Fmt.data(fimExp) + ')', ind479, {});
+    (e.extras || []).forEach(x => { const v = Number(x.valor) || 0; if (v > 0) prov(x.descricao || 'Valor extra', 'informado à mão · sem impostos', v, {}); });
+
+    // descontos
+    const D = [];
+    const desc = (rot, sub, valor) => { if (valor > 0.004) D.push({ rot, sub, valor: cent(valor) }); };
+    const baseMes = cent(P.filter(x => x.inss === true).reduce((s, x) => s + x.valor, 0));
+    const inssMes = inss(baseMes, ano), inss13 = inss(d13, ano);
+    const irMes = irrf({ rend: cent(P.filter(x => x.ir === 'mensal').reduce((s, x) => s + x.valor, 0)), inss: inssMes, dependentes: e.dependentes, ano });
+    const ir13 = irrf({ rend: d13, inss: inss13, dependentes: e.dependentes, ano });
+    desc('INSS sobre o salário', 'tabela de ' + tab.ano + ' sobre ' + Fmt.brl(baseMes), inssMes);
+    desc('INSS sobre o 13º', 'calculado em separado sobre ' + Fmt.brl(d13), inss13);
+    desc('Imposto de renda (salário)', irMes.tabela > 0 ? 'base ' + Fmt.brl(irMes.base) + (irMes.reducao ? ' · redução de ' + Fmt.brl(irMes.reducao) + ' (Lei 15.270/2025)' : '') : 'isento', irMes.valor);
+    desc('Imposto de renda (13º)', ir13.tabela > 0 ? 'base ' + Fmt.brl(ir13.base) + (ir13.reducao ? ' · redução de ' + Fmt.brl(ir13.reducao) : '') : 'isento', ir13.valor);
+    const decPago = Math.max(0, Number(e.decimoPago) || 0), adi = Math.max(0, Number(e.adiantamento) || 0), vales = Math.max(0, Number(e.vales) || 0);
+    desc('13º de ' + anoD + ' já pago', 'parcela(s) pagas antes da rescisão', decPago);
+    desc('Adiantamento do mês já pago', 'vale do dia do adiantamento', adi);
+    desc('Vales em aberto (Adiantamentos)', 'saldo que ainda não foi descontado', vales);
+    if (e.tipo === 'pedido' && aviso === 'descontado') desc('Aviso prévio não cumprido', '30 dias de salário (art. 487 §2º)', cent(fix));
+    // Crédito do Trabalhador (consignado): o banco informa o saldo; a empresa desconta até 35% das verbas (remuneração disponível)
+    const cons = Math.max(0, Number(e.consignado) || 0);
+    if (cons > 0) {
+      const pct = e.consignadoPct != null && e.consignadoPct !== '' ? Math.max(0, Math.min(0.35, Number(e.consignadoPct))) : 0.35;
+      const disp = cent(somaV(P) - inssMes - inss13 - irMes.valor - ir13.valor), lim = cent(Math.max(0, disp) * pct), vc = Math.min(cons, lim);
+      desc('Crédito do Trabalhador (consignado)', 'saldo informado pelo banco · limite de ' + Fmt.dec(pct * 100, 0) + '%: ' + Fmt.brl(lim), vc);
+      if (cons > lim + 0.004) out.avisos.push('O consignado foi limitado a ' + Fmt.dec(pct * 100, 0) + '% das verbas (' + Fmt.brl(lim) + ' de ' + Fmt.brl(cons) + '): o resto do saldo fica com o banco, que pode usar a garantia do FGTS.');
+    }
+    if (e.tipo === 'exp_empregado' && e.art480 !== false) desc('Indenização do art. 480', 'metade de ' + restam + ' dia(s) que faltavam (limite do art. 479)', ind479);
+    (e.extras || []).forEach(x => { const v = Number(x.valor) || 0; if (v < 0) desc(x.descricao || 'Desconto extra', 'informado à mão', -v); });
+
+    const bruto = somaV(P), totDesc = somaV(D), liquido = cent(bruto - totDesc);
+    // compensação de dívidas na rescisão: no máximo 1 mês de remuneração (CLT art. 477 §5º)
+    const extrasNeg = (e.extras || []).reduce((s, x) => s + Math.max(0, -(Number(x.valor) || 0)), 0);
+    const comp = cent(vales + extrasNeg + (e.tipo === 'exp_empregado' && e.art480 !== false ? ind479 : 0));
+    if (comp > fix + 0.004) out.avisos.push('Pela CLT (art. 477 §5º), o que se compensa de dívida na rescisão não pode passar de 1 mês de remuneração (' + Fmt.brl(fix) + '). Aqui são ' + Fmt.brl(comp) + ': o que passar disso se cobra de outro jeito.');
+    if (liquido < 0) out.avisos.push('Os descontos passam do que a pessoa tem a receber: o termo de rescisão não fica negativo, a diferença se resolve à parte.');
+    // FGTS: depósito do mês da rescisão (8%) e multa sobre o saldo + esse depósito
+    const baseFgts = cent(Math.max(0, P.filter(x => x.fgts).reduce((s, x) => s + x.valor, 0) - Math.min(decPago, d13))), deposito = cent(baseFgts * 0.08);
+    const saldoFgts = Math.max(0, Number(e.fgtsSaldo) || 0), multa = cent((saldoFgts + deposito) * T.multa);
+    if (T.multa && !saldoFgts) out.avisos.push('Sem o saldo do FGTS a multa sai só sobre o depósito deste mês: informe o saldo (ou use "Estimar").');
+    if (!T.prop) out.avisos.push('Na justa causa não há 13º proporcional nem férias proporcionais (Súmula 171 do TST); férias vencidas continuam devidas.');
+    if (irMes.tabela > 0) out.avisos.push('O IR do salário soma tudo o que a empresa paga à pessoa no mês (por exemplo, o salário do mês anterior pago no 5º dia útil): aqui entra só a rescisão.');
+    if (e.tipo === 'pedido' && aviso === 'trabalhado') out.avisos.push('Aviso trabalhado: a data é o último dia do aviso e os dias trabalhados nele entram no saldo de salário.');
+    if (!tab.exata) out.avisos.push('Tabelas de ' + tab.ano + ' usadas para ' + ano + ': confira as do ano.');
+    const pagar = Dt.soma(e.data, 10), pagarUtil = diaUtilAte(pagar, e.feriados);
+    if (pagarUtil !== pagar) out.avisos.push('O 10º dia (' + Fmt.data(pagar) + ') cai em fim de semana ou feriado: pague até ' + Fmt.data(pagarUtil) + ' para não correr risco de multa (art. 477 §8º).');
+    // custo para a empresa: verbas + FGTS + multa + INSS da empresa, RAT e terceiros sobre o que tem INSS
+    const encargos = cent((baseMes + d13) * (Number(e.encargos) || 0));
+    return Object.assign(out, {
+      tipo: e.tipo, rotTipo: T.rot, aviso, rotAviso: AVISOS[aviso] || '', ano, tabela: tab.ano,
+      datas: { ultimo: e.data, saida, pagar: pagarUtil, pagarPrazo: pagar, diasAviso: dAv, projecao: indDias },
+      proventos: P, descontos: D, bruto, totDesc, liquido,
+      fgts: { base: baseFgts, deposito, saldo: saldoFgts, pctMulta: T.multa, multa, saque: T.saque },
+      seguro: T.seguro,
+      custo: { encargos, total: cent(bruto + deposito + multa + encargos) },
+      impostos: { inssMes, inss13, irMes, ir13 }
+    });
+  }
+
+  // ------------------------------------------------------------ férias
+  /** dias de férias pelas faltas sem justificativa no período aquisitivo (CLT art. 130) */
+  const diasDireito = faltas => { const f = Number(faltas) || 0; return f <= 5 ? 30 : f <= 14 ? 24 : f <= 23 ? 18 : f <= 32 ? 12 : 0; };
+  /**
+   * e = { inicio, dias, abono (dias vendidos), adiantar13, salario, adicionais, medias, dependentes,
+   *       diasDobro (dias depois do prazo concessivo), encargos }
+   */
+  function ferias(e) {
+    const ano = Number(String(e.inicio || Dt.hoje()).slice(0, 4)), out = { avisos: [] };
+    const fix = Math.max(0, Number(e.salario) || 0) + Math.max(0, Number(e.adicionais) || 0), rem = fix + Math.max(0, Number(e.medias) || 0);
+    const dias = Math.max(0, Number(e.dias) || 0), dobro = Math.max(0, Math.min(dias, Number(e.diasDobro) || 0)), ab = Math.max(0, Number(e.abono) || 0);
+    const valor = cent(rem / 30 * dias), vDobro = cent(rem / 30 * dobro), terco = cent(valor / 3), tercoD = cent(vDobro / 3);
+    const abono = cent(rem / 30 * ab), tercoAb = cent(abono / 3);
+    const ad13 = e.adiantar13 ? cent(fix / 2) : 0;
+    const P = [];
+    const prov = (rot, sub, valor, inc) => { if (valor > 0.004) P.push(Object.assign({ rot, sub, valor: cent(valor) }, inc)); };
+    prov('Férias', dias + ' dia(s)', valor, { inss: true, ir: true, fgts: true });
+    prov('1/3 de férias', 'sobre as férias', terco, { inss: true, ir: true, fgts: true });
+    prov('Dobra das férias', dobro + ' dia(s) depois do prazo para tirar (art. 137) · sem INSS e sem FGTS', vDobro, { ir: true });
+    prov('1/3 sobre a dobra', 'sem INSS e sem FGTS', tercoD, { ir: true });
+    prov('Abono pecuniário', ab + ' dia(s) vendidos · sem INSS e sem IR', abono, {});
+    prov('1/3 sobre o abono', 'sem INSS; tem IR (Receita, SC Cosit 209/2021)', tercoAb, { ir: true });
+    prov('1ª parcela do 13º', 'metade do salário · INSS e IR só no fim do ano', ad13, { fgts: true });
+    const baseI = cent(valor + terco), vInss = inss(baseI, ano);
+    const baseIR = cent(P.filter(x => x.ir).reduce((s, x) => s + x.valor, 0)), ir = irrf({ rend: baseIR, inss: vInss, dependentes: e.dependentes, ano });
+    const D = [];
+    if (vInss > 0) D.push({ rot: 'INSS', sub: 'sobre férias + 1/3 (' + Fmt.brl(baseI) + ')', valor: vInss });
+    if (ir.valor > 0) D.push({ rot: 'Imposto de renda', sub: 'base ' + Fmt.brl(ir.base) + (ir.reducao ? ' · redução de ' + Fmt.brl(ir.reducao) : ''), valor: ir.valor });
+    const bruto = somaV(P), totDesc = somaV(D), liquido = cent(bruto - totDesc);
+    const baseFgts = cent(P.filter(x => x.fgts).reduce((s, x) => s + x.valor, 0)), fgts = cent(baseFgts * 0.08);
+    const encargos = cent(baseI * (Number(e.encargos) || 0));
+    out.avisos.push('O INSS das férias é acertado na folha do mês, somado ao salário: aqui ele sai calculado só sobre as férias.');
+    if (!tabela(ano).exata) out.avisos.push('Tabelas de ' + tabela(ano).ano + ' usadas para ' + ano + ': confira as do ano.');
+    const ini = e.inicio || null;
+    return Object.assign(out, {
+      ano, proventos: P, descontos: D, bruto, totDesc, liquido, impostos: { inss: vInss, ir },
+      datas: ini ? { aviso: Dt.soma(ini, -30), pagar: diaUtilAte(Dt.soma(ini, -2), e.feriados), fim: Dt.soma(ini, dias - 1), volta: Dt.soma(ini, dias) } : null,
+      fgts: { base: baseFgts, deposito: fgts }, custo: { encargos, total: cent(bruto + fgts + encargos) }
+    });
+  }
+
+  // ------------------------------------------------------------ 13º salário
+  /** e = { ano, admissao, desligamento, salario, adicionais, medias, avos, primeira, dependentes, encargos } */
+  function decimo(e) {
+    const ano = Number(e.ano) || Number(Dt.hoje().slice(0, 4)), out = { avisos: [] };
+    const fim = e.desligamento && e.desligamento < ano + '-12-31' ? e.desligamento : ano + '-12-31';
+    const avosAuto = e.admissao ? avos13(e.admissao, fim, ano) : 12;
+    const avos = e.avos != null && e.avos !== '' ? Math.max(0, Math.min(12, Number(e.avos))) : avosAuto;
+    const fix = Math.max(0, Number(e.salario) || 0) + Math.max(0, Number(e.adicionais) || 0), rem = fix + Math.max(0, Number(e.medias) || 0);
+    const integral = cent(rem / 12 * avos);
+    // 1ª parcela (até 30/11): metade do 13º esperado no ano, sobre o salário (Lei 4.749/65): quem trabalha o ano todo recebe metade do salário
+    const primAuto = cent(fix / 12 * avos / 2);
+    const primeira = e.primeira != null && e.primeira !== '' ? Math.max(0, Number(e.primeira)) : primAuto;
+    const vInss = inss(integral, ano), ir = irrf({ rend: integral, inss: vInss, dependentes: e.dependentes, ano });
+    const segunda = cent(integral - primeira - vInss - ir.valor);
+    const fg1 = cent(primeira * 0.08), fg2 = cent((integral - primeira) * 0.08);
+    const encargos = cent(integral * (Number(e.encargos) || 0));
+    if (primeira > integral) out.avisos.push('A 1ª parcela passa do 13º do ano: a diferença é descontada na 2ª parcela (que fica negativa).');
+    out.avisos.push('Horas extras e adicionais de dezembro entram num complemento do 13º, pago até o 5º dia útil de janeiro.');
+    if (!tabela(ano).exata) out.avisos.push('Tabelas de ' + tabela(ano).ano + ' usadas para ' + ano + ': confira as do ano.');
+    return Object.assign(out, {
+      ano, avos, avosAuto, integral, primeira, segunda, impostos: { inss: vInss, ir },
+      datas: { primeira: diaUtilAte(ano + '-11-30', e.feriados), segunda: diaUtilAte(ano + '-12-20', e.feriados) },
+      fgts: { primeira: fg1, segunda: fg2, total: cent(fg1 + fg2) },
+      custo: { encargos, total: cent(integral + fg1 + fg2 + encargos) }
+    });
+  }
+
+  return { tabela, inss, irrf, rescisao, ferias, decimo, TIPOS, AVISOS, diasAviso, avosFerias, avos13, periodoAtual, anosCompletos, mesesCompletos, addMeses, diasSaldo, diasDireito, diaUtilAte, cent };
+})();
+
+/* =====================================================================
+   TELA · CALCULADORAS — rescisão, férias e 13º salário (estimativas)
+   Escolhendo a pessoa, o salário, a admissão, as férias registradas, os
+   vales em aberto e as médias da folha importada já entram nos campos;
+   tudo pode ser corrigido à mão. Nada é gravado: dá para imprimir/PDF.
+   Só Gestor e RH (mostra salário). As contas estão em Calc (16-calculos.js).
+   ===================================================================== */
+Telas.calculadoras = (function () {
+  const ABAS = [{ v: 'rescisao', rot: 'Rescisão' }, { v: 'ferias', rot: 'Férias' }, { v: 'decimo', rot: '13º salário' }];
+  const st = { aba: 'rescisao', pessoa: '', desligados: false, f: { rescisao: novoR(), ferias: novoF(), decimo: novoD() }, dica: {} };
+  let P = [], cad = null, L = [], FE = [], V = [], ult = null;
+  const PR = () => Base.PARAM;
+  const FER = () => (typeof FERIADOS !== 'undefined' ? FERIADOS : []);
+  const DICA_FGTS = 'estimado: 8% ao mês sobre salário e adicionais, com 13º e 1/3 de férias, sem horas extras e sem juros. Confira no app FGTS';
+  const encargos = () => (Number(PR().inss_empresa) || 0) + (Number(PR().rat) || 0) + (Number(PR().terceiros) || 0);
+  const $ = id => document.getElementById(id);
+  function novoR() { return { tipo: 'sem_justa', aviso: 'indenizado', data: Dt.hoje(), admissao: '', salario: 0, adicionais: 0, medias: 0, dias: '', faltas: 0, vencManual: '', dobroManual: false, fgtsSaldo: 0, decimoPago: '', adiantamento: '', vales: 0, consignado: 0, consignadoPct: 35, art480: true, expFim: '', dependentes: 0, extras: [] }; }
+  function novoF() { return { inicio: proxSegunda(Dt.soma(Dt.hoje(), 30)), dias: 30, abono: false, adiantar13: false, salario: 0, adicionais: 0, medias: 0, dependentes: 0, faltas: 0 }; }
+  function novoD() { return { ano: Number(Dt.hoje().slice(0, 4)), avos: '', primeira: '', salario: 0, adicionais: 0, medias: 0, dependentes: 0, admissao: '' }; }
+  function proxSegunda(iso) { let d = iso; for (let i = 0; i < 7 && Dt.de(d).getDay() !== 1; i++) d = Dt.soma(d, 1); return d; }
+
+  // ------------------------------------------------------------ números em reais ("2.234,50", "2234,5", "2234.5")
+  const num = s => { if (typeof s === 'number') return s; let t = String(s == null ? '' : s).replace(/[R$\s]/g, ''); if (!t) return 0; if (t.includes(',')) t = t.replace(/\./g, '').replace(',', '.'); const v = Number(t); return isFinite(v) ? v : 0; };
+  const fmtN = v => (Number(v) || 0).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  const pessoa = () => P.find(p => p.id === st.pessoa) || null;
+  const periodoTxt = (a, b) => Fmt.data(a) + ' a ' + Fmt.data(b);
+
+  // ------------------------------------------------------------ dados da pessoa (cadastro, folha, férias, vales)
+  function daFolha(p, salario) {
+    const minhas = L.filter(x => x.colaborador_id === p.id).sort((a, b) => b.comp.localeCompare(a.comp));
+    const u12 = minhas.slice(0, 12);
+    const medias = u12.length ? u12.reduce((s, x) => s + (Number(x.he_valor) || 0) + (Number(x.noturno_valor) || 0), 0) / u12.length : 0;
+    const cheio = minhas.find(x => !(Number(x.rescisao_valor) > 0) && Number(x.salario_mes) >= salario * 0.9) || null;
+    const outros = cheio ? Math.max(0, (Number(cheio.bruto) || 0) - (Number(cheio.ajustes) || 0) - ['salario_mes', 'he_valor', 'noturno_valor', 'ferias_valor', 'rescisao_valor', 'afastamento_valor'].reduce((s, k) => s + (Number(cheio[k]) || 0), 0)) : 0;
+    const ultC = minhas.find(x => Number(x.consignado) > 0);
+    return { medias: Calc.cent(medias), n: u12.length, adicionais: Calc.cent(outros), compAd: cheio ? cheio.comp : null, consignado: ultC ? { valor: Number(ultC.consignado), comp: ultC.comp } : null };
+  }
+  function valesAbertos(p) {
+    const abertos = V.filter(v => v.colaborador_id === p.id && !v.cancelado && (Number(v.saldo) || 0) > 0.004);
+    return { total: Calc.cent(abertos.reduce((s, v) => s + Number(v.saldo), 0)), n: abertos.length };
+  }
+  /** estimativa do saldo do FGTS: 8% ao mês sobre a remuneração + 13º e 1/3 de férias (sem os juros e a correção) */
+  function estimarFgts(f) {
+    if (!f.admissao) return 0;
+    const meses = Calc.mesesCompletos(f.admissao, Dt.soma(Dt.fimDoMes(Dt.somaMeses(Dt.comp(f.data), -1)), 0));
+    return Calc.cent(0.08 * (num(f.salario) + num(f.adicionais)) * meses * (1 + 1 / 12 + 1 / 36));
+  }
+  const dicaDecimo = f => { const md = (f.data || '').slice(5); return 'em branco = automático: ' + (md >= '12-20' ? 'depois de 20/12 as duas parcelas já foram pagas' : md >= '12-01' ? 'a 1ª parcela vence em 30/11' : 'nada pago ainda (digite se a 1ª parcela foi junto com as férias)'); };
+  /** adiantamento do mês já pago: se a data passou do dia do vale (parâmetros), a % do salário */
+  const adiantAuto = f => f.data && Number(f.data.slice(8, 10)) >= (PR().vale_dia || 20) && PR().vale_pct ? Calc.cent(num(f.salario) * PR().vale_pct) : 0;
+  const dicaAdiant = f => 'em branco = automático: ' + (adiantAuto(f) ? 'o vale do dia ' + (PR().vale_dia || 20) + ' (' + Fmt.pct((PR().vale_pct || 0) * 100) + ' do salário) já foi pago neste mês' : 'a data é antes do dia ' + (PR().vale_dia || 20) + ', do vale do mês');
+  /** 13º do ano que já foi pago na data: a 1ª parcela (até 30/11) ou as duas (depois de 20/12) */
+  function decimoJaPago(f) {
+    if (!f.admissao || !f.data) return 0;
+    const ano = f.data.slice(0, 4), md = f.data.slice(5), base = (num(f.salario) + num(f.adicionais)) / 12 * Calc.avos13(f.admissao, ano + '-12-31', Number(ano));
+    return md >= '12-20' ? Calc.cent(base) : md >= '12-01' ? Calc.cent(base / 2) : 0;
+  }
+  function preencher(p) {
+    const cg = (cad.cargos || []).find(c => c.id === p.cargo_id) || {};
+    const salario = Number(p.salario) || Number(cg.salario) || 0, fo = daFolha(p, salario), va = valesAbertos(p);
+    const dicaSal = p.salario ? 'do cadastro da pessoa' : cg.salario ? 'salário da categoria (' + cg.nome + '): a pessoa não tem salário próprio no cadastro' : 'sem salário no cadastro: digite';
+    const dicaMed = fo.n ? 'média de ' + fo.n + ' mês(es) da folha importada (horas extras + adicional noturno)' : 'nenhum mês da folha importado para esta pessoa';
+    const dicaAd = fo.compAd && fo.adicionais ? 'da folha de ' + Fmt.mesCurto(fo.compAd) + ' (outros proventos, como insalubridade): confira' : 'insalubridade, periculosidade e outros fixos do mês';
+    st.dica = { salario: dicaSal, medias: dicaMed, adicionais: dicaAd, vales: va.n ? va.n + ' vale(s) com saldo em Adiantamentos' : 'nenhum vale em aberto em Adiantamentos',
+      consignado: fo.consignado ? 'na folha de ' + Fmt.mesCurto(fo.consignado.comp) + ' havia ' + Fmt.brl(fo.consignado.valor) + ' de parcela: o saldo devedor vem do portal do Crédito do Trabalhador' : 'saldo devedor informado pelo banco (portal do Crédito do Trabalhador)' };
+    st.temConsignado = !!fo.consignado;
+    const r = st.f.rescisao, fe = st.f.ferias, d = st.f.decimo;
+    Object.assign(r, { admissao: p.admissao, data: p.desligamento || Dt.hoje(), salario, adicionais: fo.adicionais, medias: fo.medias, dias: '', faltas: 0, vencManual: '', dobroManual: false, vales: va.total, consignado: 0, expFim: p.experiencia_fim || Dt.soma(p.admissao, 89), extras: [] });
+    const exp = Regras.experiencia(p, r.data);
+    r.tipo = exp && exp.estado === 'em' ? (r.data >= exp.fim90 ? 'exp_fim' : 'exp_empresa') : 'sem_justa';
+    r.aviso = 'indenizado';
+    r.adiantamento = ''; r.decimoPago = '';
+    r.fgtsSaldo = estimarFgts(r);
+    st.dica.fgtsSaldo = DICA_FGTS;
+
+    Object.assign(fe, { salario, adicionais: fo.adicionais, medias: fo.medias, faltas: 0, abono: false, adiantar13: false });
+    const info = Regras.ferias(p, Dt.hoje(), FE);
+    fe.dias = info.alvo ? Math.min(30, info.alvo.saldo) : 30;
+    Object.assign(d, { salario, adicionais: fo.adicionais, medias: fo.medias, admissao: p.admissao, avos: '', primeira: '' });
+  }
+
+  // ------------------------------------------------------------ peças do formulário
+  // a dica sempre existe (vazia some pelo CSS) para poder ser atualizada no lugar, sem redesenhar
+  const campo = (k, rot, html, dica, cls) => '<div class="campo' + (cls ? ' ' + cls : '') + '"><label for="cl-' + k + '">' + esc(rot) + '</label>' + html + '<span class="dica" id="dica-' + k + '">' + esc(dica || '') + '</span></div>';
+  const AUTO = ['decimoPago', 'adiantamento', 'primeira'];
+  const dinheiro = (aba, k, rot, dica, cls, auto) => campo(k, rot, '<input class="inp cl-num" id="cl-' + k + '" data-k="' + k + '" data-n="1" inputmode="decimal" autocomplete="off" value="' + esc(st.f[aba][k] === '' ? '' : fmtN(st.f[aba][k])) + '"' + (auto != null ? ' placeholder="' + esc(fmtN(auto)) + ' (automático)"' : '') + '>', dica != null ? dica : st.dica[k], cls);
+  const inteiro = (aba, k, rot, dica, cls, ph) => campo(k, rot, '<input class="inp" id="cl-' + k + '" data-k="' + k + '" data-i="1" type="number" min="0" step="1" inputmode="numeric" value="' + esc(st.f[aba][k] === '' ? '' : String(st.f[aba][k])) + '"' + (ph ? ' placeholder="' + esc(ph) + '"' : '') + '>', dica, cls);
+  // max com ano de 4 dígitos: o Chrome deixa de aceitar um 5º número no ano
+  const data = (aba, k, rot, dica, cls) => campo(k, rot, '<input class="inp" id="cl-' + k + '" data-k="' + k + '" type="date" min="1900-01-01" max="2999-12-31" value="' + esc(st.f[aba][k] || '') + '">', dica, cls);
+  const opcao = (aba, k, rot, dica) => '<label class="chk cl-chk"><input type="checkbox" data-k="' + k + '"' + (st.f[aba][k] ? ' checked' : '') + '><span>' + esc(rot) + (dica ? '<small class="dim" id="dica-' + k + '">' + esc(dica) + '</small>' : '') + '</span></label>';
+  function seletorPessoa() {
+    const lista = P.filter(p => st.desligados || p.situacao_ref !== 'Inativo' || p.id === st.pessoa).sort((a, b) => a.nome.localeCompare(b.nome, 'pt-BR'));
+    return '<div class="cl-pessoa"><div class="campo"><label for="cl-pessoa">Funcionário</label><select class="inp" id="cl-pessoa"><option value="">— digitar os dados à mão —</option>' +
+      lista.map(p => '<option value="' + esc(p.id) + '"' + (p.id === st.pessoa ? ' selected' : '') + '>' + esc(p.nome) + (p.matricula ? ' · ' + esc(p.matricula) : '') + (p.situacao_ref === 'Inativo' ? ' (desligado)' : '') + '</option>').join('') + '</select></div>' +
+      '<label class="chk"><input type="checkbox" id="cl-desl"' + (st.desligados ? ' checked' : '') + '>Mostrar desligados</label></div>';
+  }
+  const passo = (n, t, corpo) => '<section class="passo"><h3><i>' + n + '</i>' + esc(t) + '</h3>' + corpo + '</section>';
+
+  // férias vencidas: dos períodos completos sem férias registradas (ou o que for digitado)
+  function vencidasDe(f, saida) {
+    const p = pessoa();
+    if (f.vencManual !== '' && f.vencManual != null) return { lista: [{ dias: Number(f.vencManual) || 0, dobro: !!f.dobroManual, periodo: '' }], manual: true, info: null };
+    if (!p || !f.admissao) return { lista: [], manual: false, info: null, semPessoa: !p };
+    const info = Regras.ferias(Object.assign({}, p, { admissao: f.admissao }), Dt.soma(saida, 1), FE);
+    const lista = (info.completos || []).filter(x => x.saldo > 0).map(x => ({ dias: x.saldo, dobro: saida > x.limite, periodo: periodoTxt(x.ini, x.fim), limite: x.limite }));
+    return { lista, manual: false, info };
+  }
+
+  // textos que dependem de outros campos (refeitos no lugar a cada conta, ver atualizarDinamicos)
+  const dicaAviso = f => f.admissao && f.data && f.data >= f.admissao ? Calc.diasAviso(f.admissao, f.data) + ' dias de aviso (' + Calc.anosCompletos(f.admissao, f.data) + ' ano(s) completo(s) de casa)' : '';
+  const phDias = f => f.data ? String(Calc.diasSaldo(f.admissao || f.data, f.data)) : '';
+  const phAuto = v => fmtN(v) + ' (automático)';
+  function vencInfo(f) {
+    const pr = ult && ult.r;
+    const vc = pr ? vencidasDe(f, pr.datas.saida) : { lista: [] };
+    const semHist = !vc.manual && vc.info && !(vc.info.historico || []).length && vc.lista.length;
+    return (semHist ? '<div class="insight aviso-ins">' + ic('alerta') + '<span><b>Nenhuma férias desta pessoa está registrada no sistema</b>, então todo período completo aparece como não tirado. Se ela já tirou, digite os dias certos abaixo (0 se não deve nenhum).</span></div>' : '') +
+      (vc.semPessoa ? '<div class="insight aviso-ins">' + ic('alerta') + '<span><b>Sem pessoa do cadastro</b>, o sistema não sabe as férias já tiradas: se houver férias vencidas, digite os dias abaixo.</span></div>' : '') +
+      (vc.manual ? '<p class="dim cl-sub">Usando os dias digitados abaixo.</p>' : vc.semPessoa ? '' : vc.lista.length ? '<ul class="cl-venc">' + vc.lista.map(v => '<li><b>' + v.dias + ' dias</b> do período ' + esc(v.periodo) + (v.dobro ? ' · <span class="tag bad">em dobro</span> o prazo para tirar acabou em ' + Fmt.data(v.limite) : ' · prazo para tirar até ' + Fmt.data(v.limite)) + '</li>').join('') + '</ul>' : '<p class="dim cl-sub">Nenhum período completo sem férias registradas.</p>');
+  }
+  function dicasFerias(f) {
+    const dir = Calc.diasDireito(f.faltas), abonoDias = f.abono ? Math.floor(dir / 3) : 0;
+    return { dir, abonoDias, dias: 'de 5 a ' + (dir - abonoDias) + ' (um período de 14 ou mais, se dividir)', faltas: dir + ' dias de direito (art. 130)', abono: abonoDias ? abonoDias + ' dias, sem INSS e sem IR' : 'até 1/3 dos dias de direito' };
+  }
+  const avosAuto = f => f.admissao ? Calc.avos13(f.admissao, f.ano + '-12-31', f.ano) : 12;
+
+  function formRescisao() {
+    const f = st.f.rescisao, T = Calc.TIPOS[f.tipo] || Calc.TIPOS.sem_justa;
+    const exp = f.tipo === 'exp_empresa' || f.tipo === 'exp_empregado';
+    const tipos = '<select class="inp" id="cl-tipo" data-k="tipo">' + Object.keys(Calc.TIPOS).map(k => '<option value="' + k + '"' + (k === f.tipo ? ' selected' : '') + '>' + esc(Calc.TIPOS[k].rot) + '</option>').join('') + '</select>';
+    const avisos = T.avisos.length ? campo('aviso', 'Aviso prévio', '<select class="inp" id="cl-aviso" data-k="aviso">' + T.avisos.map(a => '<option value="' + a + '"' + (a === f.aviso ? ' selected' : '') + '>' + esc(Calc.AVISOS[a]) + '</option>').join('') + '</select>', dicaAviso(f), 'largo') : '';
+    const venc = '<div id="cl-venc-info">' + vencInfo(f) + '</div>' +
+      '<p class="dim cl-sub">Vem das férias registradas no sistema. Se a pessoa já tirou e não está registrado, corrija:</p>' +
+      '<div class="campos">' + inteiro('rescisao', 'vencManual', 'Dias de férias vencidas (corrigir)', 'em branco = usar a lista acima', '', 'automático') + '<div class="campo cl-chk-campo">' + opcao('rescisao', 'dobroManual', 'Pagar em dobro', 'só vale com os dias corrigidos') + '</div></div>';
+    const extras = '<div class="cl-extras">' + f.extras.map((x, i) => '<div class="cl-extra"><input class="inp" data-x="' + i + '" data-xk="descricao" placeholder="Descrição" value="' + esc(x.descricao || '') + '"><input class="inp cl-num" data-x="' + i + '" data-xk="valor" inputmode="decimal" placeholder="0,00" value="' + esc(x.valor ? fmtN(x.valor) : '') + '"><button class="btn btn-ghost btn-sm" type="button" data-x-tirar="' + i + '" aria-label="Tirar este valor">' + ic('x') + '</button></div>').join('') +
+      '<button class="btn btn-sec btn-sm" type="button" id="cl-x-add">' + ic('mais') + 'Adicionar valor</button><span class="dica">Positivo soma; negativo desconta. Entra sem INSS e sem IR.</span></div>';
+    return seletorPessoa() +
+      passo(1, 'Desligamento', '<div class="campos">' + campo('tipo', 'Tipo', tipos, '', 'largo') + data('rescisao', 'admissao', 'Admissão') + data('rescisao', 'data', f.aviso === 'trabalhado' && T.avisos.length ? 'Último dia trabalhado (fim do aviso)' : 'Data do desligamento', 'último dia de trabalho') + avisos +
+        (exp ? data('rescisao', 'expFim', 'Fim do contrato de experiência', 'a indenização é a metade dos dias que faltavam') : '') +
+        (f.tipo === 'exp_empregado' ? '<div class="campo largo">' + opcao('rescisao', 'art480', 'Descontar a indenização do art. 480', 'a empresa pode abrir mão') + '</div>' : '') + '</div>') +
+      passo(2, 'Remuneração', '<div class="campos">' + dinheiro('rescisao', 'salario', 'Salário (R$ por mês)') + dinheiro('rescisao', 'adicionais', 'Adicionais fixos (R$ por mês)') + dinheiro('rescisao', 'medias', 'Média de horas extras e adicionais (R$ por mês)', null, 'largo') +
+        inteiro('rescisao', 'dias', 'Dias trabalhados no mês', 'em branco = pela data (mês de 30 dias)', '', phDias(f)) + inteiro('rescisao', 'faltas', 'Faltas no mês (dias)', 'descontadas do saldo de salário') + '</div>') +
+      passo(3, 'Férias vencidas', venc) +
+      passo(4, 'FGTS e descontos', '<div class="campos">' + campo('fgtsSaldo', 'Saldo do FGTS (para a multa)', '<div class="cl-com-botao"><input class="inp cl-num" id="cl-fgtsSaldo" data-k="fgtsSaldo" data-n="1" inputmode="decimal" value="' + esc(fmtN(f.fgtsSaldo)) + '"><button class="btn btn-sec btn-sm" type="button" id="cl-fgts-est">Estimar</button></div>', st.dica.fgtsSaldo || 'confira no extrato do FGTS (app FGTS)', 'largo') +
+        dinheiro('rescisao', 'adiantamento', 'Adiantamento do mês já pago', dicaAdiant(f), '', adiantAuto(f)) + dinheiro('rescisao', 'vales', 'Vales em aberto') + dinheiro('rescisao', 'decimoPago', '13º do ano já pago', dicaDecimo(f), '', decimoJaPago(f)) + inteiro('rescisao', 'dependentes', 'Dependentes para o IR') +
+        dinheiro('rescisao', 'consignado', 'Crédito do Trabalhador (consignado) a descontar') + inteiro('rescisao', 'consignadoPct', 'Garantia do contrato (%)', 'o portal informa; até 35%') + '</div>' +
+        (st.temConsignado ? '<div class="insight aviso-ins">' + ic('alerta') + '<span>Esta pessoa tem <b>Crédito do Trabalhador</b> descontado na folha. Na rescisão, o banco informa o saldo devedor no portal e a empresa desconta até 35% das verbas; o resto o banco cobra pela garantia do FGTS.</span></div>' : '')) +
+      passo(5, 'Valores extras', extras);
+  }
+  function infoFerias() {
+    const p = pessoa(); if (!p) return null;
+    return Regras.ferias(p, Dt.hoje(), FE);
+  }
+  function formFerias() {
+    const f = st.f.ferias, info = infoFerias(), dc = dicasFerias(f);
+    const per = info && info.alvo ? '<p class="dim cl-sub">Período ' + periodoTxt(info.alvo.ini, info.alvo.fim) + ' · saldo de <b>' + info.alvo.saldo + ' dias</b> · tirar até ' + Fmt.data(info.alvo.limite) + '</p>' : pessoa() ? '<p class="dim cl-sub">' + (info && info.estado === 'sem_direito' ? 'Ainda não completou 12 meses: só férias coletivas ou proporcionais na rescisão.' : 'Sem período com saldo nas férias registradas.') + '</p>' : '';
+    return seletorPessoa() +
+      passo(1, 'Período', per + '<div class="campos">' + data('ferias', 'inicio', 'Início das férias') + inteiro('ferias', 'dias', 'Dias de férias', dc.dias) +
+        inteiro('ferias', 'faltas', 'Faltas sem justificativa no período', dc.faltas) + inteiro('ferias', 'dependentes', 'Dependentes para o IR') +
+        '<div class="campo largo cl-opcoes">' + opcao('ferias', 'abono', 'Vender 1/3 das férias (abono pecuniário)', dc.abono) + opcao('ferias', 'adiantar13', 'Adiantar a 1ª parcela do 13º', 'precisa ter sido pedido em janeiro') + '</div></div>') +
+      passo(2, 'Remuneração', '<div class="campos">' + dinheiro('ferias', 'salario', 'Salário (R$ por mês)') + dinheiro('ferias', 'adicionais', 'Adicionais fixos (R$ por mês)') + dinheiro('ferias', 'medias', 'Média de horas extras e adicionais (R$ por mês)', null, 'largo') + '</div>');
+  }
+  function formDecimo() {
+    const f = st.f.decimo, auto = avosAuto(f);
+    return seletorPessoa() +
+      passo(1, 'Ano', '<div class="campos">' + inteiro('decimo', 'ano', 'Ano') + inteiro('decimo', 'avos', 'Meses com direito (avos)', 'em branco = ' + auto + '/12 pela admissão', '', String(auto)) +
+        campo('primeira', '1ª parcela (até 30/11)', '<input class="inp cl-num" id="cl-primeira" data-k="primeira" data-n="1" inputmode="decimal" placeholder="automático" value="' + esc(f.primeira === '' ? '' : fmtN(f.primeira)) + '">', 'em branco = metade do 13º do ano sobre o salário') + inteiro('decimo', 'dependentes', 'Dependentes para o IR') + '</div>') +
+      passo(2, 'Remuneração', '<div class="campos">' + dinheiro('decimo', 'salario', 'Salário (R$ por mês)') + dinheiro('decimo', 'adicionais', 'Adicionais fixos (R$ por mês)') + dinheiro('decimo', 'medias', 'Média de horas extras e adicionais (R$ por mês)', null, 'largo') + '</div>');
+  }
+
+  // ------------------------------------------------------------ contas
+  function calcular() {
+    const aba = st.aba, f = st.f[aba];
+    if (aba === 'rescisao') {
+      if (!f.admissao || !f.data || f.data < f.admissao) return { erro: !f.admissao ? 'Informe a admissão.' : 'A data do desligamento é antes da admissão.' };
+      const base = { tipo: f.tipo, aviso: f.aviso, admissao: f.admissao, data: f.data, salario: num(f.salario), adicionais: num(f.adicionais), medias: num(f.medias), dias: f.dias, faltas: f.faltas, fgtsSaldo: num(f.fgtsSaldo), decimoPago: f.decimoPago === '' ? decimoJaPago(f) : num(f.decimoPago), adiantamento: f.adiantamento === '' ? adiantAuto(f) : num(f.adiantamento), vales: num(f.vales), consignado: num(f.consignado), consignadoPct: (Number(f.consignadoPct) || 0) / 100, art480: f.art480, feriados: FER(), expFim: f.expFim, dependentes: f.dependentes, extras: f.extras.map(x => ({ descricao: x.descricao, valor: num(x.valor) })), encargos: encargos() };
+      const pre = Calc.rescisao(Object.assign({}, base, { vencidas: [] }));
+      const vc = vencidasDe(f, pre.datas.saida);
+      const r = Calc.rescisao(Object.assign(base, { vencidas: vc.lista }));
+      if (!vc.manual && pessoa() && vc.lista.length) r.avisos.unshift('Férias vencidas pelas férias registradas no sistema: se o histórico de férias antigas não foi lançado, corrija os dias no passo 3.');
+      if (vc.semPessoa && Calc.anosCompletos(f.admissao, f.data) >= 1) r.avisos.unshift('Férias vencidas não informadas: sem pessoa do cadastro, digite os dias no passo 3 (0 se não há).');
+      return { r };
+    }
+    if (aba === 'ferias') {
+      if (!f.inicio) return { erro: 'Escolha o início das férias.' };
+      const info = infoFerias(), dir = Calc.diasDireito(f.faltas), ab = f.abono ? Math.floor(dir / 3) : 0;
+      const dias = Math.max(0, Number(f.dias) || 0), fim = Dt.soma(f.inicio, dias - 1);
+      const limite = info && info.alvo ? info.alvo.limite : null;
+      const diasDobro = limite && fim > limite ? Math.min(dias, Dt.entre(f.inicio > limite ? Dt.soma(f.inicio, -1) : limite, fim)) : 0;
+      const r = Calc.ferias({ inicio: f.inicio, dias, abono: ab, adiantar13: f.adiantar13, salario: num(f.salario), adicionais: num(f.adicionais), medias: num(f.medias), dependentes: f.dependentes, diasDobro, encargos: encargos(), feriados: FER() });
+      if (dias + ab > dir) r.avisos.unshift('Passa dos ' + dir + ' dias de direito (' + dias + ' + ' + ab + ' de abono).');
+      if (diasDobro) r.avisos.unshift(diasDobro + ' dia(s) caem depois de ' + Fmt.data(limite) + ', fim do prazo para tirar: esses dias são pagos em dobro (art. 137).');
+      if (info) { const v = Regras.validarFerias({ inicio: f.inicio, dias, abono: !!f.abono }, info, Dt.hoje(), typeof FERIADOS !== 'undefined' ? FERIADOS : []); v.erros.concat(v.avisos).forEach(t => { if (!r.avisos.includes(t)) r.avisos.push(t); }); }
+      return { r };
+    }
+    const r = Calc.decimo({ ano: f.ano, admissao: f.admissao, desligamento: (pessoa() || {}).desligamento, salario: num(f.salario), adicionais: num(f.adicionais), medias: num(f.medias), avos: f.avos, primeira: f.primeira === '' ? '' : num(f.primeira), dependentes: f.dependentes, encargos: encargos(), feriados: FER() });
+    return { r };
+  }
+
+  // ------------------------------------------------------------ resultado
+  const linha = (x, menos) => '<div class="cl-l"><span><b>' + esc(x.rot) + '</b>' + (x.sub ? '<small>' + esc(x.sub) + '</small>' : '') + '</span><span class="v">' + (menos ? '− ' : '') + Fmt.brl(x.valor) + '</span></div>';
+  function blocoValores(r, titulo) {
+    return '<div class="cl-grupo"><h4>Proventos</h4>' + (r.proventos.length ? r.proventos.map(x => linha(x)).join('') : '<p class="dim">Nada a receber.</p>') + '<div class="cl-l tot"><span>Total de proventos</span><span class="v">' + Fmt.brl(r.bruto) + '</span></div></div>' +
+      '<div class="cl-grupo"><h4>Descontos</h4>' + (r.descontos.length ? r.descontos.map(x => linha(x, true)).join('') : '<p class="dim cl-sub">Nenhum desconto.</p>') + '<div class="cl-l tot"><span>Total de descontos</span><span class="v">− ' + Fmt.brl(r.totDesc) + '</span></div></div>' +
+      '<div class="cl-liq"><span>' + esc(titulo) + '</span><b>' + Fmt.brl(Math.max(0, r.liquido)) + '</b></div>';
+  }
+  const info = (rot, valor, sub) => '<div><small>' + esc(rot) + '</small><b>' + valor + '</b>' + (sub ? '<small>' + esc(sub) + '</small>' : '') + '</div>';
+  const notas = A => A.length ? '<ul class="cl-notas">' + A.map(a => '<li>' + esc(a) + '</li>').join('') + '</ul>' : '';
+  function htmlResultado(c, imprimir) {
+    if (c.erro) return '<div class="painel-corpo">' + UI.vazio('Falta um dado', c.erro, 'calc') + '</div>';
+    const r = c.r, p = pessoa(), nome = p ? p.nome : 'Simulação', tab = 'Tabelas de ' + Calc.tabela(r.ano).ano + ' (INSS e IR com a redução da Lei 15.270/2025)';
+    let h = '';
+    if (st.aba === 'rescisao') {
+      h = '<div class="cl-cab"><b>' + esc(nome) + '</b><span>' + esc(r.rotTipo) + (r.rotAviso ? ' · aviso ' + esc(r.rotAviso.split(' (')[0].toLowerCase()) : '') + '</span></div>' +
+        '<div class="cl-info">' + info('Último dia de trabalho', Fmt.data(r.datas.ultimo)) + info('Saída na carteira', Fmt.data(r.datas.saida), r.datas.projecao ? 'com ' + r.datas.projecao + ' dias de projeção do aviso' : '') + info('Pagar até', Fmt.data(r.datas.pagar), r.datas.pagar !== r.datas.pagarPrazo ? 'o 10º dia (' + Fmt.dataCurta(r.datas.pagarPrazo) + ') não é dia útil: antecipe' : '10 dias corridos (art. 477 §6º)') + info('Tempo de casa', Calc.anosCompletos(st.f.rescisao.admissao, r.datas.ultimo) + ' ano(s) completo(s)', r.datas.diasAviso + ' dias de aviso') + '</div>' +
+        blocoValores(r, 'Líquido do termo de rescisão') +
+        '<div class="cl-info cl-fgts">' + info('FGTS deste mês (8%)', Fmt.brl(r.fgts.deposito), 'sobre ' + Fmt.brl(r.fgts.base)) + info(r.fgts.pctMulta ? 'Multa de ' + Math.round(r.fgts.pctMulta * 100) + '% do FGTS' : 'Multa do FGTS', r.fgts.pctMulta ? Fmt.brl(r.fgts.multa) : 'não tem', r.fgts.pctMulta ? 'sobre ' + Fmt.brl(r.fgts.saldo + r.fgts.deposito) + ' · vai para a conta do FGTS' : '') +
+        info('Saque do FGTS', esc(r.fgts.saque)) + info('Seguro-desemprego', esc(r.seguro)) + '</div>' +
+        '<div class="cl-custo"><span>Custo para a empresa</span><b>' + Fmt.brl(r.custo.total) + '</b><small>verbas + FGTS + multa + INSS da empresa, RAT e terceiros (' + Fmt.brl(r.custo.encargos) + ')</small></div>';
+    } else if (st.aba === 'ferias') {
+      h = '<div class="cl-cab"><b>' + esc(nome) + '</b><span>Férias de ' + st.f.ferias.dias + ' dia(s)' + (r.datas ? ' · ' + periodoTxt(st.f.ferias.inicio, r.datas.fim) : '') + '</span></div>' +
+        (r.datas ? '<div class="cl-info">' + info('Avisar a pessoa até', Fmt.data(r.datas.aviso), '30 dias antes (art. 135)') + info('Pagar até', Fmt.data(r.datas.pagar), '2 dias antes do início (art. 145)') + info('Volta ao trabalho', Fmt.data(r.datas.volta)) + info('FGTS (8%)', Fmt.brl(r.fgts.deposito)) + '</div>' : '') +
+        blocoValores(r, 'Líquido das férias') +
+        '<div class="cl-custo"><span>Custo para a empresa</span><b>' + Fmt.brl(r.custo.total) + '</b><small>férias + FGTS + INSS da empresa, RAT e terceiros (' + Fmt.brl(r.custo.encargos) + ')</small></div>';
+    } else {
+      const ir = r.impostos.ir;
+      h = '<div class="cl-cab"><b>' + esc(nome) + '</b><span>13º salário de ' + r.ano + ' · ' + r.avos + '/12</span></div>' +
+        '<div class="cl-grupo"><h4>13º do ano</h4>' + linha({ rot: '13º salário integral', sub: r.avos + '/12 da remuneração', valor: r.integral }) + '</div>' +
+        '<div class="cl-grupo"><h4>1ª parcela · até ' + Fmt.data(r.datas.primeira) + '</h4>' + linha({ rot: 'Adiantamento', sub: 'sem INSS e sem IR (só no fim do ano)', valor: r.primeira }) + '</div>' +
+        '<div class="cl-grupo"><h4>2ª parcela · até ' + Fmt.data(r.datas.segunda) + '</h4>' + linha({ rot: '13º integral', sub: '', valor: r.integral }) + linha({ rot: '1ª parcela já paga', sub: '', valor: r.primeira }, true) +
+        linha({ rot: 'INSS', sub: 'sobre o 13º inteiro, em separado do salário', valor: r.impostos.inss }, true) + linha({ rot: 'Imposto de renda', sub: ir.tabela > 0 ? 'base ' + Fmt.brl(ir.base) + (ir.reducao ? ' · redução de ' + Fmt.brl(ir.reducao) : '') : 'isento', valor: ir.valor }, true) + '</div>' +
+        '<div class="cl-liq"><span>Líquido da 2ª parcela</span><b>' + Fmt.brl(r.segunda) + '</b></div>' +
+        '<div class="cl-info">' + info('FGTS da 1ª parcela', Fmt.brl(r.fgts.primeira), 'em novembro') + info('FGTS da 2ª parcela', Fmt.brl(r.fgts.segunda), 'em dezembro') + '</div>' +
+        '<div class="cl-custo"><span>Custo para a empresa</span><b>' + Fmt.brl(r.custo.total) + '</b><small>13º + FGTS + INSS da empresa, RAT e terceiros (' + Fmt.brl(r.custo.encargos) + ')</small></div>';
+    }
+    return '<div class="painel-corpo">' + h + notas(r.avisos.concat([tab, 'Estimativa para conferência: o valor oficial é o calculado pela contabilidade.'])) +
+      (imprimir ? '' : '<div class="cl-acoes" data-sem-impressao><button class="btn btn-sec" type="button" id="cl-imp">' + ic('doc') + 'Imprimir ou salvar PDF</button></div>') + '</div>';
+  }
+
+  function recalcular() {
+    const box = $('cl-res'); if (!box) return;
+    ult = calcular();
+    box.innerHTML = '<div class="painel-cab"><div><h2>Resultado</h2><span class="sub">muda na hora, conforme os campos</span></div></div>' + htmlResultado(ult);
+    atualizarDinamicos();
+  }
+  /* Dicas, "automáticos" e a lista de férias vencidas dependem de outros campos.
+     Atualiza só esses pedaços: redesenhar o formulário inteiro tiraria o foco de
+     quem está digitando (no meio de uma data, ou ao passar para o próximo campo). */
+  function atualizarDinamicos() {
+    const f = st.f[st.aba];
+    const txt = (id, s) => { const el = $(id); if (el && el.textContent !== s) el.textContent = s; };
+    const ph = (id, s) => { const el = $(id); if (el && el.placeholder !== s) el.placeholder = s; };
+    if (st.aba === 'rescisao') {
+      txt('dica-aviso', dicaAviso(f));
+      ph('cl-dias', phDias(f));
+      ph('cl-adiantamento', phAuto(adiantAuto(f))); txt('dica-adiantamento', dicaAdiant(f));
+      ph('cl-decimoPago', phAuto(decimoJaPago(f))); txt('dica-decimoPago', dicaDecimo(f));
+      const v = $('cl-venc-info'), h = v ? vencInfo(f) : '';
+      if (v && v._h !== h) { v.innerHTML = h; v._h = h; }
+    } else if (st.aba === 'ferias') {
+      const dc = dicasFerias(f);
+      txt('dica-dias', dc.dias); txt('dica-faltas', dc.faltas); txt('dica-abono', dc.abono);
+    } else {
+      const a = avosAuto(f);
+      ph('cl-avos', String(a)); txt('dica-avos', 'em branco = ' + a + '/12 pela admissão');
+    }
+  }
+  function desenharForm() {
+    const box = $('cl-form'); if (!box) return;
+    // guarda o campo com foco (select, caixa de marcar) para devolver o foco depois de redesenhar
+    const at = document.activeElement, chave = at && box.contains(at) ? (at.id ? '#' + at.id : at.dataset && at.dataset.k ? '[data-k="' + at.dataset.k + '"]' : '') : '';
+    ult = calcular();   // a lista de férias vencidas usa a data de saída calculada
+    box.innerHTML = st.aba === 'rescisao' ? formRescisao() : st.aba === 'ferias' ? formFerias() : formDecimo();
+    recalcular();
+    const novo = chave && box.querySelector(chave);
+    if (novo) { try { novo.focus({ preventScroll: true }); } catch (_) { } }
+  }
+
+  // ------------------------------------------------------------ impressão (folha A4 em pé)
+  function imprimir() {
+    if (!ult || ult.erro) { UI.toast('Complete os dados antes de imprimir', 'erro'); return; }
+    const E = PR().empresa || {}, p = pessoa();
+    let box = $('impressao');
+    if (!box) { box = document.createElement('div'); box.id = 'impressao'; document.body.appendChild(box); }
+    const tit = { rescisao: 'Simulação de rescisão', ferias: 'Simulação de férias', decimo: 'Simulação de 13º salário' }[st.aba];
+    box.innerHTML = '<article class="cl-doc"><header><div><b>' + esc(E.razao || 'Vitalbor') + '</b>' + (E.cnpj ? '<small>CNPJ ' + esc(E.cnpj) + '</small>' : '') + '</div><div class="cl-doc-t"><h1>' + esc(tit) + '</h1><small>feita em ' + Fmt.data(Dt.hoje()) + ' · estimativa, não é o termo oficial</small></div></header>' +
+      (p ? '<p class="cl-doc-p"><b>' + esc(p.nome) + '</b>' + (p.matricula ? ' · matrícula ' + esc(p.matricula) : '') + ' · ' + esc(p.funcao || '') + ' · admissão ' + Fmt.data(p.admissao) + '</p>' : '') +
+      htmlResultado(ult, true) + '</article>';
+    const tituloAntes = document.title;
+    document.title = tit + (p ? ' - ' + p.nome : '') + ' - ' + Fmt.data(Dt.hoje()).replace(/\//g, '-');
+    document.body.classList.add('imprimindo-doc');
+    const pg = document.createElement('style'); pg.textContent = '@page{size:A4 portrait;margin:12mm}'; document.head.appendChild(pg);
+    const fim = () => { window.removeEventListener('afterprint', fim); document.body.classList.remove('imprimindo-doc'); document.title = tituloAntes; pg.remove(); };
+    window.addEventListener('afterprint', fim);
+    let embutido = true; try { embutido = window.self !== window.top; } catch (_) { }
+    if (embutido) UI.toast('Se a janela de impressão não abrir, abra o sistema direto no Chrome ou no Edge.', 'aviso');
+    setTimeout(() => {
+      try { window.print(); } catch (_) { fim(); return; }
+      if (embutido) setTimeout(() => { if (document.body.classList.contains('imprimindo-doc')) fim(); }, 1500);
+    }, 60);
+  }
+
+  // ------------------------------------------------------------ eventos
+  function ligar() {
+    const form = $('cl-form');
+    // datas: não redesenha o formulário (o Chrome avisa a cada número digitado na data)
+    const mudouData = t => {
+      const f = st.f[st.aba], k = t.dataset.k;
+      if (f[k] === t.value) return;
+      f[k] = t.value;
+      if (k === 'data' && st.aba === 'rescisao' && f.dias !== '') { f.dias = ''; const d = $('cl-dias'); if (d) d.value = ''; }
+      recalcular();
+    };
+    form.addEventListener('input', e => {
+      const t = e.target, f = st.f[st.aba];
+      if (t.dataset.x !== undefined) { const x = f.extras[Number(t.dataset.x)]; if (x) x[t.dataset.xk] = t.dataset.xk === 'valor' ? num(t.value) : t.value; recalcular(); return; }
+      if (t.type === 'date' && t.dataset.k) { mudouData(t); return; }
+      const k = t.dataset.k; if (!k || t.tagName === 'SELECT' || t.type === 'checkbox') return;
+      if (t.dataset.n) f[k] = AUTO.includes(k) && t.value.trim() === '' ? '' : num(t.value);
+      else if (t.dataset.i) f[k] = t.value === '' ? (k === 'vencManual' || k === 'dias' || k === 'avos' ? '' : 0) : Math.max(0, Math.round(Number(t.value) || 0));
+      recalcular();
+    });
+    form.addEventListener('change', e => {
+      const t = e.target, f = st.f[st.aba];
+      if (t.id === 'cl-pessoa') { st.pessoa = t.value; const p = pessoa(); if (p) preencher(p); else { st.f = { rescisao: novoR(), ferias: novoF(), decimo: novoD() }; st.dica = {}; } desenharForm(); return; }
+      if (t.id === 'cl-desl') { st.desligados = t.checked; desenharForm(); return; }
+      const k = t.dataset.k; if (!k) return;
+      if (t.type === 'checkbox') { f[k] = t.checked; desenharForm(); return; }
+      if (t.type === 'date') { mudouData(t); return; }
+      if (t.tagName === 'SELECT') {
+        f[k] = t.value;
+        if (k === 'tipo') { const T = Calc.TIPOS[t.value]; if (!T.avisos.includes(f.aviso)) f.aviso = T.avisos[0] || ''; }
+        desenharForm(); return;
+      }
+      // números: reescreve formatado ao sair do campo
+      if (t.dataset.n && !(AUTO.includes(t.dataset.k) && t.value.trim() === '')) t.value = fmtN(num(t.value));
+    });
+    form.addEventListener('click', e => {
+      const f = st.f[st.aba];
+      if (e.target.closest('#cl-x-add')) { f.extras.push({ descricao: '', valor: 0 }); desenharForm(); const ins = form.querySelectorAll('[data-xk="descricao"]'); if (ins.length) ins[ins.length - 1].focus(); return; }
+      const tir = e.target.closest('[data-x-tirar]'); if (tir) { f.extras.splice(Number(tir.dataset.xTirar), 1); desenharForm(); return; }
+      if (e.target.closest('#cl-fgts-est')) { f.fgtsSaldo = estimarFgts(f); st.dica.fgtsSaldo = DICA_FGTS; desenharForm(); }
+    });
+    $('cl-res').addEventListener('click', e => { if (e.target.closest('#cl-imp')) imprimir(); });
+  }
+
+  async function render(el, params) {
+    if (!Store.tem('pessoas')) el.innerHTML = UI.esqueleto(5);
+    [P, cad, L, FE, V] = await Promise.all([D.pessoas(), D.cad(), D.linhas().catch(() => []), D.ferias().catch(() => []), D.vales().catch(() => [])]);
+    if (params.aba && ABAS.some(a => a.v === params.aba)) st.aba = params.aba;
+    if (params.pessoa && P.some(p => p.id === params.pessoa) && params.pessoa !== st.pessoa) { st.pessoa = params.pessoa; preencher(pessoa()); }
+    if (st.pessoa && !pessoa()) st.pessoa = '';
+    el.innerHTML = '<div class="cab" data-sem-impressao><div><h1>Calculadoras</h1><p>Rescisão, férias e 13º com as tabelas de 2026. Escolha a pessoa e os dados do cadastro e da folha já entram; dá para corrigir tudo. É estimativa: o valor oficial é o da contabilidade.</p></div></div>' +
+      UI.abas('cl-abas', ABAS, st.aba) +
+      '<div class="calc"><div class="cl-form" id="cl-form"></div><section class="painel cl-res" id="cl-res" aria-live="polite"></section></div>';
+    UI.ligarAbas('cl-abas', v => { st.aba = v; trocarUrl('#/calculadoras?aba=' + v); desenharForm(); });
+    ligar();
+    desenharForm();
+  }
+  return { titulo: 'Calculadoras', render, abaAtual: () => st.aba };
 })();
 
 /* ===================================================================== início */
