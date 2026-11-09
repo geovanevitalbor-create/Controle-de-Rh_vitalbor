@@ -13,12 +13,12 @@
      ===================================================================== -->
 <meta name="rh-supabase-url" content="https://cawzivyyfustseghxvzc.supabase.co">
 <meta name="rh-supabase-chave" content="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhd3ppdnl5ZnVzdHNlZ2h4dnpjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM2Nzk0NTAsImV4cCI6MjEwOTI1NTQ1MH0.VqP1FY8OWqyM6pZ2KzO8tw84A8uP8G_NjLeAkKr28hs">
-<meta name="rh-versao" content="05/11/2026 17:10">
+<meta name="rh-versao" content="09/11/2026 13:31">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="no-referrer">
 <meta name="robots" content="noindex, nofollow">
 <meta name="color-scheme" content="light dark">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-wL8fYZ5B05Fi0XxHrx4E6bDmqiUBifvsIArulfp2+fM=' 'sha256-eg2tvUmM0zPDPLE96KiUs0GVGiLBCVrsK7K+OLqFI78=' 'sha256-xjovIafD6+3ikRQ+8+grn9jD4j7GA6LnyN6jFLquimw=' 'sha256-W1eZ5vjGgGYyB6xbQu4U7tKkBvp69I9QwVTwwLFWaUY=' 'sha256-/qvfMJdw7SS7oxpUZ4Ns3Iz2OccFryfVK1hbBBu4Uns=' 'sha256-1MB+4stA+zzQcsX6/T4jmwwWCTNs0Ree4uUyU1wq5tg='; style-src 'unsafe-inline'; font-src data:; img-src data: blob:; connect-src https://cawzivyyfustseghxvzc.supabase.co; base-uri 'none'; form-action 'none'; object-src 'none'; manifest-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-wL8fYZ5B05Fi0XxHrx4E6bDmqiUBifvsIArulfp2+fM=' 'sha256-eg2tvUmM0zPDPLE96KiUs0GVGiLBCVrsK7K+OLqFI78=' 'sha256-xjovIafD6+3ikRQ+8+grn9jD4j7GA6LnyN6jFLquimw=' 'sha256-W1eZ5vjGgGYyB6xbQu4U7tKkBvp69I9QwVTwwLFWaUY=' 'sha256-/qvfMJdw7SS7oxpUZ4Ns3Iz2OccFryfVK1hbBBu4Uns=' 'sha256-SNN2usBilJR7jdCdpMUPzBlqV7Ea2b7UthbmXIa5E0s='; style-src 'unsafe-inline'; font-src data:; img-src data: blob:; connect-src https://cawzivyyfustseghxvzc.supabase.co; base-uri 'none'; form-action 'none'; object-src 'none'; manifest-src 'none'">
 <title>Vitalbor RH</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 26'%3E%3Cpath d='M2 2h30l-5 5H2zM2 10h26l-5 5H2zM2 18h20l-4 5H2z' fill='%23F58634'/%3E%3C/svg%3E">
 <script>(function(){try{var t=localStorage.getItem('vb_tema');if(!t)t=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
@@ -336,6 +336,33 @@ body.menu-mini .lat-exp,body.menu-mini .lat-sub{display:none;}
 .per-custom{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto;gap:8px;align-items:end;padding:4px 8px 6px;}
 .per-custom label{display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--ink-2);min-width:0;}
 .per-custom .inp{height:36px;padding:0 8px;font-size:13px;min-width:0;}
+#ind-leg:empty{display:none;}
+.t-pessoas th.destaque,.t-pessoas td.destaque{background:var(--brand-softer);}
+.t-pessoas tbody tr{cursor:pointer;}
+.t-pessoas tfoot tr.tot td{position:static;background:var(--surface-2);border-top:2px solid var(--line-2);font-size:13px;}
+.t-pessoas tfoot tr:last-child td{white-space:normal;}
+.det-nav{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:2px 0 6px;}
+.det-nav b{font-size:14px;}
+.det-nav .btn svg{width:15px;height:15px;}
+.det-lista{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:6px;}
+.det-lista .dl{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:8px 12px;border-bottom:1px solid var(--line);font-size:13px;}
+.det-lista .dl:last-child{border-bottom:none;}
+.det-lista .dl small{display:block;color:var(--ink-3);font-size:11.5px;margin-top:1px;}
+.det-lista .dl b{font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:550;}
+.det-lista .dl.tot{background:var(--surface-2);font-weight:650;}
+.det-lista .dl.tot b{font-weight:700;}
+.det-rub{border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:6px;}
+.t-rub{width:100%;}
+.t-rub td,.t-rub th{font-size:12.5px;vertical-align:top;}
+.t-rub td small{display:block;margin-top:3px;color:var(--ink-3);font-size:11.5px;}
+.t-rub .tag{font-size:10.5px;padding:1px 7px;}
+.t-rub tr.g td{background:var(--surface-2);font-weight:650;font-size:12px;}
+.t-rub tr.g .ok{color:var(--ok-ink);font-weight:600;} .t-rub tr.g .ruim{color:var(--bad-ink);font-weight:600;}
+.ponte-pdf{display:flex;align-items:flex-start;gap:8px;margin:14px 0 0;font-size:12.5px;color:var(--ink-2);line-height:1.5;}
+.ponte-pdf svg{width:15px;height:15px;flex:none;margin-top:2px;fill:none;stroke:var(--ink-3);stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;}
+.ponte-pdf b{color:var(--ink);font-weight:600;}
+.ponte-pdf .dif{color:var(--bad-ink);font-weight:600;}
+.per-custom select.inp{padding-right:26px;background-position:calc(100% - 14px) 50%,calc(100% - 9px) 50%;}
 .per-custom .btn{height:36px;}
 .per-erro{padding:0 10px 4px;font-size:12px;color:var(--bad-ink);}
 .per-erro:empty{display:none;}
@@ -758,6 +785,11 @@ button.stat:hover{background:var(--surface-2);}
 .cas .tr{position:relative;height:14px;}
 .cas .tr i{position:absolute;top:0;bottom:0;border-radius:3px;transform-origin:left;animation:cresceX .7s var(--ease) both;}
 .cas .v{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:550;}
+.cas.clic{cursor:pointer;border-radius:8px;transition:background var(--d1);}
+.cas.clic:hover,.cas.clic:focus-visible{background:var(--brand-softer);outline:none;}
+.cas.clic:focus-visible{box-shadow:0 0 0 2px var(--brand);}
+.cas .v svg{display:inline-block;width:13px;height:13px;margin-left:6px;vertical-align:-1px;fill:none;stroke:var(--ink-3);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;opacity:0;transition:opacity var(--d1);}
+.cas.clic:hover .v svg,.cas.clic:focus-visible .v svg{opacity:1;}
 .cas.total{font-weight:650;}
 .cas.total .tr{height:18px;}
 .cas.total .v{font-weight:700;}
@@ -1539,45 +1571,67 @@ const ICONES = {
 const ic = (k, extra) => '<svg viewBox="0 0 24 24" aria-hidden="true"' + (extra || '') + '>' + (ICONES[k] || '') + '</svg>';
 
 /* =====================================================================
-   PERÍODO — o filtro de datas de Indicadores e Desligamentos.
-   O que tem data exata (admissão, desligamento, quadro) usa o intervalo
-   de dias. O que vem da folha (horas extras, faltas, custo) só existe por
-   mês: usa os meses FECHADOS do período — "30 dias" na folha é o último
-   mês fechado. A tela sempre mostra quais datas e meses entraram na conta.
-   p = { tipo: 'dias', n } | { tipo: 'meses', n } | { tipo: 'ano' } | { tipo: 'custom', ini, fim }
-   comps = meses de folha fechados, em ordem ('AAAA-MM')
+   PERÍODO — o filtro de Indicadores e Desligamentos, sempre em MESES
+   FECHADOS: o mês corrente nunca entra (a folha dele não fechou e o mês não
+   acabou), então "Mês anterior" é o último mês que terminou. Quadro,
+   admissões e desligamentos usam os dias desses meses; horas extras, faltas
+   e custo usam os meses da folha já importados dentro do período. A tela
+   sempre diz o que entrou na conta.
+   p = { tipo: 'mes' } | { tipo: 'meses', n } | { tipo: 'ano' } | { tipo: 'custom', de: 'AAAA-MM', ate: 'AAAA-MM' }
+       | { tipo: 'atual' } — o mês corrente até hoje (só em Desligamentos, onde a data é exata)
+   comps = meses da folha importados, em ordem ('AAAA-MM')
    ===================================================================== */
 const Periodo = {
-  PRESETS: [
-    { g: 'Dias', itens: [{ tipo: 'dias', n: 30 }, { tipo: 'dias', n: 60 }, { tipo: 'dias', n: 90 }, { tipo: 'dias', n: 120 }] },
-    { g: 'Meses fechados da folha', itens: [{ tipo: 'meses', n: 6 }, { tipo: 'meses', n: 12 }, { tipo: 'ano' }] }
-  ],
-  anoDe: comps => (comps[comps.length - 1] || Dt.hoje()).slice(0, 4),
-  rotulo(p, comps) { return p.tipo === 'dias' ? 'Últimos ' + p.n + ' dias' : p.tipo === 'meses' ? 'Últimos ' + p.n + ' meses' : p.tipo === 'ano' ? 'Ano de ' + Periodo.anoDe(comps) : 'Personalizado'; },
-  intervalo(p, comps) {
-    const hoje = Dt.hoje();
-    if (p.tipo === 'dias') return { ini: Dt.soma(hoje, -(p.n - 1)), fim: hoje };
-    if (p.tipo === 'meses') {
-      if (!comps.length) { const ini = Dt.somaMeses(Dt.comp(hoje), -(p.n - 1)) + '-01'; return { ini, fim: hoje }; }   // ainda sem folha: meses do calendário até hoje
-      // os n meses do calendário que terminam no último mês fechado da folha: com poucos meses importados,
-      // o quadro e as entradas e saídas continuam cobrindo o período todo (antes encolhiam para os meses da folha)
-      const ult = comps[comps.length - 1]; return { ini: Dt.somaMeses(ult, -(p.n - 1)) + '-01', fim: Dt.fimDoMes(ult) };
-    }
-    if (p.tipo === 'ano') return { ini: Periodo.anoDe(comps) + '-01-01', fim: hoje };
-    return p.ini <= p.fim ? { ini: p.ini, fim: p.fim } : { ini: p.fim, fim: p.ini };
+  PRESETS: [{ tipo: 'mes' }, { tipo: 'meses', n: 3 }, { tipo: 'meses', n: 6 }, { tipo: 'meses', n: 12 }, { tipo: 'ano' }],
+  /** o último mês que terminou (o anterior ao de hoje) */
+  fechado: () => Dt.somaMeses(Dt.comp(Dt.hoje()), -1),
+  /** primeiro e último mês do período ('AAAA-MM') */
+  limites(p) {
+    const f = Periodo.fechado();
+    if (!p) return { de: Dt.somaMeses(f, -11), ate: f };
+    if (p.tipo === 'atual') { const c = Dt.comp(Dt.hoje()); return { de: c, ate: c }; }
+    if (p.tipo === 'mes') return { de: f, ate: f };
+    if (p.tipo === 'meses') return { de: Dt.somaMeses(f, -((p.n || 12) - 1)), ate: f };
+    if (p.tipo === 'ano') return { de: f.slice(0, 4) + '-01', ate: f };
+    // personalizado: na ordem certa e nunca depois do último mês fechado
+    let de = /^\d{4}-\d{2}$/.test(p.de || '') ? p.de : f, ate = /^\d{4}-\d{2}$/.test(p.ate || '') ? p.ate : f;
+    if (de > ate) { const t = de; de = ate; ate = t; }
+    if (ate > f) ate = f;
+    if (de > ate) de = ate;
+    return { de, ate };
   },
-  /** meses fechados da folha que entram no período */
-  meses(p, comps) {
-    if (p.tipo === 'dias') return comps.slice(-Math.max(1, Math.round(p.n / 30)));
-    if (p.tipo === 'meses') { const ini = Periodo.intervalo(p, comps).ini.slice(0, 7); return comps.filter(c => c >= ini); }
-    if (p.tipo === 'ano') { const y = Periodo.anoDe(comps); return comps.filter(c => c.startsWith(y)); }
-    const { ini, fim } = Periodo.intervalo(p, comps);   // personalizado: entra o mês com pelo menos metade dos dias no intervalo
-    return comps.filter(c => { const a = c + '-01' > ini ? c + '-01' : ini, b = Dt.fimDoMes(c) < fim ? Dt.fimDoMes(c) : fim; return b >= a && Dt.entre(a, b) + 1 >= Dt.diasNoMes(c) / 2; });
+  rotulo(p) { return !p ? 'Últimos 12 meses' : p.tipo === 'mes' ? 'Mês anterior' : p.tipo === 'meses' ? 'Últimos ' + p.n + ' meses' : p.tipo === 'ano' ? 'Ano de ' + Periodo.fechado().slice(0, 4) : p.tipo === 'atual' ? 'Este mês' : 'Personalizado'; },
+  /** os dias do período: do dia 1 do primeiro mês ao último dia do último ("Este mês" vai até hoje) */
+  intervalo(p) { const { de, ate } = Periodo.limites(p); return { ini: de + '-01', fim: p && p.tipo === 'atual' ? Dt.hoje() : Dt.fimDoMes(ate) }; },
+  /** meses da folha importados que entram no período */
+  meses(p, comps) { const { de, ate } = Periodo.limites(p); return comps.filter(c => c >= de && c <= ate); },
+  /** "out/26" · "ago a out/26" · "nov/25 a out/26" */
+  faixaMeses(de, ate) {
+    if (de === ate) return Fmt.mesCurto(de);
+    return de.slice(0, 4) === ate.slice(0, 4) ? MES3[Number(de.slice(5)) - 1] + ' a ' + Fmt.mesCurto(ate) : Fmt.mesCurto(de) + ' a ' + Fmt.mesCurto(ate);
   },
-  /** fatias do intervalo para os gráficos: semanas (segunda a domingo) até 120 dias, meses acima */
+  /** texto curto do período (embaixo do nome no botão e ao lado de cada atalho) */
+  faixaDe(p) { if (p && p.tipo === 'atual') return '01 a ' + Fmt.dataCurta(Dt.hoje()); const { de, ate } = Periodo.limites(p); return Periodo.faixaMeses(de, ate); },
+  /** meses para o personalizado, do mais novo ao mais antigo: 3 anos para trás (ou desde a primeira folha, se for antes) */
+  lista(comps, comAtual) {
+    const f = Periodo.fechado(), ult = comAtual ? Dt.comp(Dt.hoje()) : f;
+    let ini = Dt.somaMeses(f, -35); if (comps.length && comps[0] < ini) ini = comps[0];
+    return Dt.meses(ini, ult).reverse();
+  },
+  /** De quando em diante o cadastro conhece quem saiu. O cadastro começa só com os ativos e cada extrato
+      importado traz quem saiu naquele mês; então, com os extratos importados em sequência até o último,
+      o quadro no fim do mês M está completo para M >= (primeiro extrato da sequência − 1) e as admissões e
+      os desligamentos dentro do mês M para M >= primeiro extrato. Sem extrato importado, não dá para saber. */
+  completo(comps) {
+    if (!comps.length) return null;
+    let i = comps.length - 1;
+    while (i > 0 && Dt.somaMeses(comps[i - 1], 1) === comps[i]) i--;
+    return { quadro: Dt.somaMeses(comps[i], -1), movimento: comps[i], extrato: comps[i] };
+  },
+  /** fatias para os gráficos: um mês só → semanas (segunda a domingo); mais de um → meses */
   fatias(ini, fim) {
     const F = [];
-    if (Dt.entre(ini, fim) + 1 <= 120) {
+    if (Dt.comp(ini) === Dt.comp(fim)) {
       let d = ini, guarda = 0;
       while (d <= fim && guarda++ < 60) { const dom = Dt.soma(d, (7 - Dt.de(d).getDay()) % 7), f = dom < fim ? dom : fim; F.push({ ini: d, fim: f, rot: Fmt.dataCurta(d), tit: 'Semana de ' + Fmt.dataCurta(d) + ' a ' + Fmt.dataCurta(f) }); d = Dt.soma(f, 1); }
       return { por: 'semana', F };
@@ -1597,13 +1651,17 @@ const Periodo = {
     const aa = d => Fmt.dataCurta(d) + '/' + d.slice(2, 4);
     return aa(ini) + ' a ' + aa(fim);
   },
-  igual: (a, b) => !!a && !!b && a.tipo === b.tipo && a.n === b.n && a.ini === b.ini && a.fim === b.fim,
+  igual: (a, b) => !!a && !!b && a.tipo === b.tipo && (a.n || 0) === (b.n || 0) && (a.de || '') === (b.de || '') && (a.ate || '') === (b.ate || ''),
   /** frase que diz exatamente o que entrou na conta */
   explicar(p, comps, oQueTemData, oQueEhFolha) {
-    const { ini, fim } = Periodo.intervalo(p, comps), M = Periodo.meses(p, comps), dias = Dt.entre(ini, fim) + 1;
-    let s = '<b>' + Fmt.data(ini) + ' a ' + Fmt.data(fim) + '</b> · ' + Fmt.int(dias) + ' dias. ' + oQueTemData + ' usam essas datas.';
-    if (oQueEhFolha) s += ' ' + oQueEhFolha + (M.length ? ' vêm da folha de <b>' + (M.length === 1 ? Fmt.mesCurto(M[0]) : Fmt.mesCurto(M[0]) + ' a ' + Fmt.mesCurto(M[M.length - 1])) + '</b> (' + M.length + (M.length === 1 ? ' mês fechado' : ' meses fechados') + ').'
-      : comps.length ? ': nenhum mês fechado da folha cabe nesse intervalo (o último fechado é ' + Fmt.mesCurto(comps[comps.length - 1]) + ').' : ' aparecem depois que o primeiro extrato da folha for importado.');
+    if (p && p.tipo === 'atual') return '<b>Este mês</b>, de 01/' + Dt.hoje().slice(5, 7) + ' até hoje (' + Fmt.dataCurta(Dt.hoje()) + '). ' + oQueTemData + ' usam essas datas: o mês ainda não acabou.';
+    const { de, ate } = Periodo.limites(p), n = Dt.meses(de, ate).length, M = Periodo.meses(p, comps);
+    let s = '<b>' + Periodo.faixaMeses(de, ate) + '</b> · ' + (n === 1 ? '1 mês fechado' : n + ' meses fechados') + ' (o mês atual não entra). ' + oQueTemData + ' usam esses meses.';
+    if (oQueEhFolha) {
+      const falta = Dt.meses(de, ate).filter(c => !comps.includes(c) && (!comps.length || c > comps[comps.length - 1]));
+      s += ' ' + oQueEhFolha + (M.length ? ' vêm da folha de <b>' + Periodo.faixaMeses(M[0], M[M.length - 1]) + '</b> (' + (M.length === 1 ? '1 mês importado' : M.length + ' meses importados') + ')' + (falta.length ? '; ' + (falta.length === 1 ? Fmt.mesCurto(falta[0]) + ' ainda não foi importado' : Periodo.faixaMeses(falta[0], falta[falta.length - 1]) + ' ainda não foram importados') : '') + '.'
+        : comps.length ? ': nenhum mês da folha importado nesse período (o último importado é ' + Fmt.mesCurto(comps[comps.length - 1]) + ').' : ' aparecem depois que o primeiro extrato da folha for importado.');
+    }
     return s;
   }
 };
@@ -1636,7 +1694,7 @@ const Config = (function () {
 })();
 
 const Base = {
-  PARAM: { va_dia: 0, va_dias_mes: 22, aviso_aniversario: 3, aviso_experiencia: 15, aviso_ferias: 60, inss_empresa: 0.2, rat: 0.03, terceiros: 0.058, fgts: 0.08, he_adicional: 0.6, noturno_adicional: 0.2, dissidio_mes: 5, vale_dia: 20, vale_pct: 0.4, empresa: { razao: '', cnpj: '', cidade: '' }, linhas_onibus: [] },
+  PARAM: { va_dia: 0, va_dias_mes: 22, va_mes: 0, aviso_aniversario: 3, aviso_experiencia: 15, aviso_ferias: 60, inss_empresa: 0.2, rat: 0.03, terceiros: 0.058, fgts: 0.08, he_adicional: 0.6, noturno_adicional: 0.2, dissidio_mes: 5, vale_dia: 20, vale_pct: 0.4, empresa: { razao: '', cnpj: '', cidade: '' }, linhas_onibus: [] },
   SETORES: [],      // nomes, na ordem do cadastro
   SETORES_REG: [],  // { id, nome, ordem }
   TURNOS: [],       // { id, nome, horario, noturno }
@@ -1758,24 +1816,51 @@ const Regras = {
   },
   fimFerias(inicio, dias) { return Dt.soma(inicio, dias - 1); },
   pagarAte(inicio) { return Dt.soma(inicio, -2); },
+  /** vale-alimentação: valor FIXO por mês (Cadastros › Vale-alimentação; decisão de 09/11/2026: R$ 560 para todos).
+      Sem valor definido = R$ 0,00 (a tela avisa). Por pessoa: em branco = o padrão da empresa; 0 = não recebe */
+  vaPadrao() { return r2(Base.PARAM.va_mes || 0); },
+  vaMes(p) { return p && p.va_mes !== null && p.va_mes !== undefined && p.va_mes !== '' ? r2(Number(p.va_mes) || 0) : Regras.vaPadrao(); },
+  /** a conta de UMA linha da folha (uma pessoa num mês), com as mesmas regras do total do mês:
+      o total do mês é a soma destas contas, então cada número da Composição fecha com a soma das pessoas */
+  contaLinha(x) {
+    const P = Base.PARAM, fatorEnc = 1 + P.inss_empresa + P.rat + P.terceiros + P.fgts, n = k => Number(x[k]) || 0;
+    const baseProv = n('salario_mes') + n('he_valor') + n('noturno_valor');
+    const o = { fatorEnc, baseProv: r2(baseProv) };
+    o.patronal = r2(n('inss_empresa') + n('rat') + n('terceiros'));
+    o.encargos = r2(o.patronal + n('fgts'));
+    o.prov13 = r2(baseProv / 12 * fatorEnc);
+    o.provFerias = r2(baseProv / 12 * 4 / 3 * fatorEnc);
+    o.provisoes = r2(o.prov13 + o.provFerias);
+    o.feriasComEnc = r2(n('ferias_valor') * fatorEnc);
+    o.provLiq = r2(o.provisoes - o.feriasComEnc);
+    o.custoFolha = r2(n('bruto') - n('ajustes') + o.encargos);
+    o.custo = r2(o.custoFolha + o.provLiq + n('va'));
+    o.outrosProv = r2(n('bruto') - n('ajustes') - n('salario_mes') - n('he_valor') - n('noturno_valor') - n('ferias_valor') - n('rescisao_valor') - n('afastamento_valor'));
+    o.outrosDesc = r2(n('descontos') - n('inss') - n('adiantamento') - n('vt') - n('consignado') - n('faltas_valor') - n('irrf'));
+    o.ratTer = r2(n('rat') + n('terceiros'));
+    return o;
+  },
   /** totais de um mês da folha a partir das linhas por pessoa */
   totalizar(L, comp) {
-    const P = Base.PARAM, t = { comp, pessoas: L.filter(x => x.bruto > 0).length };
+    const t = { comp, pessoas: L.filter(x => x.bruto > 0).length };
     ['bruto', 'descontos', 'liquido', 'salario_mes', 'he_valor', 'he_horas', 'he_dsr', 'noturno_valor', 'noturno_horas', 'ferias_valor', 'rescisao_valor', 'afastamento_valor', 'faltas_valor', 'faltas_horas', 'atestados_dias', 'inss', 'irrf', 'vt', 'adiantamento', 'consignado', 'fgts', 'inss_empresa', 'rat', 'terceiros', 'va', 'horas_previstas', 'ajustes']
       .forEach(k => { t[k] = r2(soma(L, x => x[k])); });
     t.patronal = r2(t.inss_empresa + t.rat + t.terceiros);
     t.encargos = r2(t.patronal + t.fgts);
-    const fatorEnc = 1 + P.inss_empresa + P.rat + P.terceiros + P.fgts;
-    const baseProv = t.salario_mes + t.he_valor + t.noturno_valor;
-    t.prov13 = r2(baseProv / 12 * fatorEnc);
-    t.provFerias = r2(baseProv / 12 * 4 / 3 * fatorEnc);
+    // provisões e férias com encargos: soma das contas de cada pessoa (arredondadas como na tela por pessoa)
+    const C = L.map(x => Regras.contaLinha(x));
+    t.prov13 = r2(soma(C, c => c.prov13));
+    t.provFerias = r2(soma(C, c => c.provFerias));
     t.provisoes = r2(t.prov13 + t.provFerias);
-    t.feriasComEnc = r2(t.ferias_valor * fatorEnc);
+    t.feriasComEnc = r2(soma(C, c => c.feriasComEnc));
     // ajustes = rubricas técnicas do Domínio (estornos, estouros, salário-família, acidente pago pelo INSS): não são custo
     t.custoFolha = r2(t.bruto - t.ajustes + t.encargos);
     t.custo = r2(t.custoFolha + t.provisoes - t.feriasComEnc + t.va);
     t.adicionais = r2(t.noturno_valor);
     t.outrosProv = r2(t.bruto - t.ajustes - t.salario_mes - t.he_valor - t.noturno_valor - t.ferias_valor - t.rescisao_valor - t.afastamento_valor);
+    t.outrosDesc = r2(t.descontos - t.inss - t.adiantamento - t.vt - t.consignado - t.faltas_valor - t.irrf);
+    t.ratTer = r2(t.rat + t.terceiros);
+    t.provLiq = r2(t.provisoes - t.feriasComEnc);
     t.horasPerdidas = r2(t.faltas_horas + t.atestados_dias * 8.8);
     t.absenteismo = t.horas_previstas ? t.horasPerdidas / t.horas_previstas * 100 : 0;
     t.absControlavel = t.horas_previstas ? t.faltas_horas / t.horas_previstas * 100 : 0;
@@ -1892,7 +1977,7 @@ const API = (function () {
   const AUD_TAB = { rh_usuarios: 'Usuários', rh_parametros: 'Parâmetros', rh_setores: 'Setores', rh_turnos: 'Turnos', rh_cargos: 'Cargos', rh_cargos_salario: 'Salário da categoria', rh_colaboradores: 'Funcionários', rh_colaboradores_privado: 'Dados pessoais (CPF, PIX, salário)', rh_ferias: 'Férias', rh_brindes: 'Brindes', rh_tarefas: 'Agenda', rh_armarios: 'Armários', rh_mapa: 'Mapa da fábrica', rh_extratos: 'Extratos da folha', rh_folha: 'Folha', rh_vales: 'Vales adiantamento', rh_vale_parcelas: 'Parcelas de vale', 'auth.users': 'Login' };
   const AUD_OP = { INSERT: 'incluiu', UPDATE: 'alterou', DELETE: 'excluiu', CRIAR_LOGIN: 'criou o login', SENHA: 'definiu uma senha nova', EMAIL: 'trocou o e-mail de login', BLOQUEIO: 'bloqueou o login', DESBLOQUEIO: 'desbloqueou o login' };
   const AUD_FORA = new Set(['id', 'criado_em', 'atualizado_em']);
-  const AUD_MOEDA = new Set(['salario', 'salario_mes', 'valor', 'va_dia', 'va', 'quitado_valor', 'bruto', 'liquido', 'descontos', 'adiantamento']);
+  const AUD_MOEDA = new Set(['salario', 'salario_mes', 'valor', 'va_dia', 'va_mes', 'va', 'quitado_valor', 'bruto', 'liquido', 'descontos', 'adiantamento']);
   const AUD_ACENTO = { admissao: 'admissão', salario: 'salário', observacoes: 'observações', situacao: 'situação', matricula: 'matrícula', responsavel: 'responsável', concluida: 'concluída', funcao: 'função', experiencia: 'experiência', inicio: 'início', periodo: 'período', numero: 'número', maquina: 'máquina', maquinas: 'máquinas', onibus: 'ônibus', horario: 'horário', mes: 'mês', titulo: 'título', decisao: 'decisão', aniversario: 'aniversário', ferias: 'férias', razao: 'razão', dissidio: 'dissídio', rescisao: 'rescisão', previstas: 'previstas' };
   const audCampo = k => k.replace(/_id$/, '').split('_').map(w => AUD_ACENTO[w] || w).join(' ');
   function audValor(k, v) {
@@ -1947,7 +2032,7 @@ const API = (function () {
     ]);
     const P = par || {};
     Base.PARAM = {
-      va_dia: num(P.va_dia), va_dias_mes: num(P.va_dias_mes) || 22, aviso_aniversario: num(P.aviso_aniversario), aviso_experiencia: num(P.aviso_experiencia), aviso_ferias: num(P.aviso_ferias),
+      va_dia: num(P.va_dia), va_dias_mes: num(P.va_dias_mes) || 22, va_mes: num(P.va_mes), aviso_aniversario: num(P.aviso_aniversario), aviso_experiencia: num(P.aviso_experiencia), aviso_ferias: num(P.aviso_ferias),
       inss_empresa: num(P.inss_empresa), rat: num(P.rat), terceiros: num(P.terceiros), fgts: num(P.fgts), he_adicional: num(P.he_adicional), noturno_adicional: num(P.noturno_adicional),
       dissidio_mes: num(P.dissidio_mes) || 5, vale_dia: num(P.vale_dia) || 20, vale_pct: num(P.vale_pct),
       empresa: { razao: P.empresa_razao || '', cnpj: P.empresa_cnpj || '', cidade: P.empresa_cidade || '' }, linhas_onibus: P.linhas_onibus || []
@@ -1975,7 +2060,7 @@ const API = (function () {
       experiencia_fim: r.experiencia_fim, decisao_experiencia: r.decisao_experiencia,
       vale_transporte: !!r.vale_transporte, linha_onibus: r.linha_onibus, uniforme: r.uniforme || '', bota: r.bota || '',
       // dados que só Gestor e RH leem (para Consulta chegam vazios: o banco nem manda)
-      cpf: pv ? pv.cpf || '' : null, pix: pv ? pv.pix || '' : null, salario: pv ? num(pv.salario) : null, va_dia: pv ? num(pv.va_dia) : null, observacoes: pv ? pv.observacoes || '' : null
+      cpf: pv ? pv.cpf || '' : null, pix: pv ? pv.pix || '' : null, salario: pv ? num(pv.salario) : null, va_dia: pv ? num(pv.va_dia) : null, va_mes: pv && pv.va_mes !== null && pv.va_mes !== undefined ? num(pv.va_mes) : null, observacoes: pv ? pv.observacoes || '' : null
     };
   }
   const feriasDe = f => ({ id: f.id, colaborador_id: f.colaborador_id, inicio: f.inicio, dias: num(f.dias), abono: !!f.abono, periodo_inicio: f.periodo_inicio, criado_em: local(f.criado_em), criado_por: f.criado_por });
@@ -2014,10 +2099,10 @@ const API = (function () {
     if (o.brinde && o.brinde.por) o.brinde.por_nome = nomeUsuario(o.brinde.por).split(' ')[0];
     o.ferias_info = Regras.ferias(p, ref, cache.ferias);
     o.turno_nome = (Base.TURNOS.find(t => t.id === p.turno) || {}).nome || '—';
-    o.custo_mensal = p.salario === null ? null : r2(p.salario * (1 + P.inss_empresa + P.rat + P.terceiros + P.fgts) + p.va_dia * P.va_dias_mes);
+    o.custo_mensal = p.salario === null ? null : r2(p.salario * (1 + P.inss_empresa + P.rat + P.terceiros + P.fgts) + Regras.vaMes(p));
     return o;
   }
-  const CAMPOS = { nome: 'nome', matricula: 'matrícula', cpf: 'CPF', nascimento: 'nascimento', telefone: 'telefone', email: 'e-mail', cargo_id: 'cargo', turno: 'turno', admissao: 'admissão', salario: 'salário', va_dia: 'vale-alimentação', vale_transporte: 'vale-transporte', linha_onibus: 'linha de ônibus', uniforme: 'uniforme', bota: 'bota', pix: 'PIX', observacoes: 'observações', afastado_desde: 'afastamento', desligamento: 'desligamento', motivo: 'motivo do desligamento' };
+  const CAMPOS = { nome: 'nome', matricula: 'matrícula', cpf: 'CPF', nascimento: 'nascimento', telefone: 'telefone', email: 'e-mail', cargo_id: 'cargo', turno: 'turno', admissao: 'admissão', salario: 'salário', va_dia: 'vale-alimentação por dia', va_mes: 'vale-alimentação', vale_transporte: 'vale-transporte', linha_onibus: 'linha de ônibus', uniforme: 'uniforme', bota: 'bota', pix: 'PIX', observacoes: 'observações', afastado_desde: 'afastamento', desligamento: 'desligamento', motivo: 'motivo do desligamento' };
 
   // ------------------------------------------------------------ vales adiantamento
   const ONDE_TXT = { vale: 'vale', folha: 'pagamento', '13': '13º' };
@@ -2054,9 +2139,11 @@ const API = (function () {
   async function linhasFolha(filtro) {
     if (!editor()) return [];
     const c = cliente();
-    const L = await todas(() => { let b = c.from('rh_folha').select('*'); if (filtro) b = filtro(b); return b.order('comp').order('colaborador_id'); });
-    return L.map(x => { const o = { comp: x.comp, colaborador_id: x.colaborador_id, setor: x.setor || '—', funcao: x.funcao || '—' }; NUM_FOLHA.forEach(k => { o[k] = num(x[k]); }); return o; });
+    // colunas certas (sem as linhas do PDF, que só a tela de detalhe da pessoa busca): a lista fica leve
+    const L = await todas(() => { let b = c.from('rh_folha').select('comp,colaborador_id,setor,funcao,' + NUM_FOLHA.join(',')); if (filtro) b = filtro(b); return b.order('comp').order('colaborador_id'); });
+    return L.map(linhaFolhaDe);
   }
+  function linhaFolhaDe(x) { const o = { comp: x.comp, colaborador_id: x.colaborador_id, setor: x.setor || '—', funcao: x.funcao || '—' }; NUM_FOLHA.forEach(k => { o[k] = num(x[k]); }); return o; }
   async function nomesFolha() {
     const L = await todas(() => cliente().from('rh_colaboradores').select('id,nome,matricula,turno_id').order('id'));
     return new Map(L.map(x => [x.id, x]));
@@ -2158,7 +2245,7 @@ const API = (function () {
         const p = {
           id: d.id || null, matricula: String(d.matricula || '').trim(), nome: d.nome, nascimento: d.nascimento || '', telefone: d.telefone || '', email: d.email || '',
           cargo_id: d.cargo_id, turno: d.turno, admissao: d.admissao, vale_transporte: !!d.vale_transporte, linha_onibus: d.vale_transporte ? d.linha_onibus || '' : '',
-          uniforme: d.uniforme || '', bota: d.bota ? String(d.bota) : '', cpf: d.cpf || '', pix: d.pix || '', salario: num(d.salario), va_dia: num(d.va_dia), observacoes: d.observacoes || ''
+          uniforme: d.uniforme || '', bota: d.bota ? String(d.bota) : '', cpf: d.cpf || '', pix: d.pix || '', salario: num(d.salario), va_dia: num(d.va_dia), va_mes: d.va_mes === null || d.va_mes === undefined || d.va_mes === '' ? null : num(d.va_mes), observacoes: d.observacoes || ''
         };
         if (d.id && 'desligamento' in d) { p.desligamento = d.desligamento || ''; p.motivo = d.desligamento ? d.motivo || '' : ''; }
         if (d.id && 'afastado_desde' in d) p.afastado_desde = d.afastado_desde || '';
@@ -2243,11 +2330,12 @@ const API = (function () {
       },
       async salvarParam(p) {
         await garantirBase();
-        const up = {}, de = Base.PARAM.va_dia;
-        ['va_dia', 'va_dias_mes', 'aviso_aniversario', 'aviso_experiencia', 'aviso_ferias', 'vale_dia', 'vale_pct', 'linhas_onibus', 'motivos_desligamento', 'maquinas'].forEach(k => { if (p[k] !== undefined) up[k] = p[k]; });
+        const up = {}, de = Base.PARAM.va_dia, deMes = Regras.vaPadrao();
+        ['va_dia', 'va_dias_mes', 'va_mes', 'aviso_aniversario', 'aviso_experiencia', 'aviso_ferias', 'vale_dia', 'vale_pct', 'linhas_onibus', 'motivos_desligamento', 'maquinas'].forEach(k => { if (p[k] !== undefined) up[k] = p[k]; });
         if (p.empresa) { up.empresa_razao = p.empresa.razao; up.empresa_cnpj = p.empresa.cnpj; up.empresa_cidade = p.empresa.cidade; }
         await q(cliente().from('rh_parametros').update(up).eq('id', 1).select('id').single());
         if (p.va_dia !== undefined && Math.abs(de - p.va_dia) > 0.004) registrar('alterou', 'o vale-alimentação por dia', 'Cadastros', { de: Fmt.brl(de), para: Fmt.brl(p.va_dia) });
+        if (p.va_mes !== undefined && Math.abs(deMes - p.va_mes) > 0.004) registrar('alterou', 'o vale-alimentação por mês', 'Cadastros', { de: Fmt.brl(deMes), para: Fmt.brl(p.va_mes) });
         else registrar('alterou', p.empresa ? 'os dados da empresa' : (p.linhas_onibus || p.motivos_desligamento || p.maquinas) ? 'as listas do sistema' : 'os parâmetros', 'Cadastros');
         await carregarBase();
         return copia(Base.PARAM);
@@ -2286,7 +2374,9 @@ const API = (function () {
         const comps = [...new Set(L.map(x => x.comp))].sort();
         return comps.map(cp => {
           const e = (ex || []).find(x => x.comp === cp);
-          return Object.assign(Regras.totalizar(L.filter(x => x.comp === cp), cp), { extrato: e ? { comp: cp, arquivo: e.arquivo || '—', emitido_em: e.emitido_em, importado_em: local(e.importado_em), importado_por: nomeUsuario(e.importado_por), situacao: e.situacao || 'conferido', nota: e.nota || '' } : { comp: cp, arquivo: '—', emitido_em: null, importado_em: null, importado_por: '', situacao: 'conferido', nota: '' } });
+          // totais: o que o PDF somava (para a ponte com o "Total Geral Proventos"); só existe nos meses importados depois de 09/11/2026
+          const tot = e && e.totais && typeof e.totais === 'object' && e.totais.proventos_pdf !== undefined && e.totais.proventos_pdf !== null ? e.totais : null;
+          return Object.assign(Regras.totalizar(L.filter(x => x.comp === cp), cp), { extrato: e ? { comp: cp, arquivo: e.arquivo || '—', emitido_em: e.emitido_em, importado_em: local(e.importado_em), importado_por: nomeUsuario(e.importado_por), situacao: e.situacao || 'conferido', nota: e.nota || '', totais: tot } : { comp: cp, arquivo: '—', emitido_em: null, importado_em: null, importado_por: '', situacao: 'conferido', nota: '', totais: null } });
         });
       },
       async pessoasDoMes(comp) {
@@ -2294,6 +2384,14 @@ const API = (function () {
         return L.map(x => { const p = N.get(x.colaborador_id) || {}; return Object.assign(x, { nome: p.nome || '—', matricula: p.matricula || '', turno: p.turno_id }); });
       },
       async daPessoa(id) { return linhasFolha(b => b.eq('colaborador_id', id)); },
+      /** uma pessoa num mês, com as linhas do PDF do Domínio (rubricas) quando foram guardadas na importação */
+      async detalhe(comp, id) {
+        if (!editor()) return null;
+        const [r, N] = await Promise.all([q(cliente().from('rh_folha').select('*').eq('comp', comp).eq('colaborador_id', id).maybeSingle()), nomesFolha()]);
+        if (!r) return null;
+        const p = N.get(id) || {};
+        return Object.assign(linhaFolhaDe(r), { nome: p.nome || '—', matricula: p.matricula || '', turno: p.turno_id, rubricas: Array.isArray(r.rubricas) ? r.rubricas : null });
+      },
       async linhas() {
         const [L, N] = await Promise.all([linhasFolha(), editor() ? nomesFolha() : Promise.resolve(new Map())]);
         return L.map(x => { const p = N.get(x.colaborador_id) || {}; return Object.assign(x, { nome: p.nome || '—', turno: p.turno_id }); });
@@ -3037,41 +3135,42 @@ const UI = (function () {
   function avatar(nome, cls) { return '<span class="avatar suave ' + (cls || 'sm') + '" aria-hidden="true">' + esc(Fmt.iniciais(nome)) + '</span>'; }
   function tagSituacao(s) { return s === 'Ativo' ? '<span class="tag ok">Ativo</span>' : s === 'Afastado' ? '<span class="tag warn">Afastado</span>' : s === 'Inativo' ? '<span class="tag">Desligado</span>' : '<span class="tag">' + esc(s) + '</span>'; }
 
-  // ------------------------------------------------------------ filtro de período
-  // Botão que mostra o período escolhido + painel com atalhos em linhas (marca de
-  // seleção) e, depois de uma linha fina, as datas personalizadas.
-  function periodo(id, p, comps) {
-    const iv = Periodo.intervalo(p, comps);
+  // ------------------------------------------------------------ filtro de período (meses fechados)
+  // Botão que mostra o período escolhido + painel com os atalhos em linhas (marca de
+  // seleção) e, depois de uma linha fina, o personalizado por mês (De / Até).
+  // opts.atual: oferece também "Este mês (até hoje)" — só onde a data é exata (Desligamentos).
+  function periodo(id, p) {
     return '<div class="rel per"><button type="button" class="per-btn" id="' + id + '" aria-haspopup="dialog" aria-expanded="false">' + ic('calendario') +
-      '<span class="per-t"><b>' + esc(Periodo.rotulo(p, comps)) + '</b><small>' + Periodo.faixa(iv.ini, iv.fim) + '</small></span>' + ic('baixo') + '</button>' +
+      '<span class="per-t"><b>' + esc(Periodo.rotulo(p)) + '</b><small>' + esc(Periodo.faixaDe(p)) + '</small></span>' + ic('baixo') + '</button>' +
       '<div class="suspenso a-esq per-menu" id="' + id + '-menu" role="dialog" aria-label="Escolher o período" hidden></div></div>';
   }
-  function ligarPeriodo(id, getP, comps, aoMudar) {
-    const btn = document.getElementById(id), menu = document.getElementById(id + '-menu'), hoje = Dt.hoje();
+  function ligarPeriodo(id, getP, comps, aoMudar, opts) {
+    opts = opts || {};
+    const btn = document.getElementById(id), menu = document.getElementById(id + '-menu');
     const montar = () => {
-      const p = getP(), iv = Periodo.intervalo(p, comps);
-      return Periodo.PRESETS.map(g => '<div class="per-g">' + esc(g.g) + '</div>' + g.itens.map(x => {
-        const ix = Periodo.intervalo(x, comps), on = Periodo.igual(x, p);
-        return '<button type="button" class="op per-op" data-per=\'' + JSON.stringify(x) + '\' aria-pressed="' + on + '"><span class="per-ck">' + (on ? ic('check') : '') + '</span><span>' + esc(Periodo.rotulo(x, comps)) + '</span><small>' + Periodo.faixa(ix.ini, ix.fim, true) + '</small></button>';
-      }).join('')).join('') +
+      const p = getP(), lim = Periodo.limites(p), meses = Periodo.lista(comps);
+      const itens = (opts.atual ? [{ tipo: 'atual' }] : []).concat(Periodo.PRESETS);
+      const op = (c, sel) => '<option value="' + c + '"' + (c === sel ? ' selected' : '') + '>' + esc(Fmt.mesCurto(c)) + '</option>';
+      return '<div class="per-g">Meses fechados</div>' + itens.map(x => {
+        const on = Periodo.igual(x, p);
+        return '<button type="button" class="op per-op" data-per=\'' + JSON.stringify(x) + '\' aria-pressed="' + on + '"><span class="per-ck">' + (on ? ic('check') : '') + '</span><span>' + esc(Periodo.rotulo(x) + (x.tipo === 'atual' ? ' (até hoje)' : '')) + '</span><small>' + esc(Periodo.faixaDe(x)) + '</small></button>';
+      }).join('') +
         '<hr><div class="per-g">Personalizado' + (p.tipo === 'custom' ? ' <span class="per-ck">' + ic('check') + '</span>' : '') + '</div>' +
-        '<div class="per-custom"><label><span>Início</span><input type="date" class="inp" id="' + id + '-ini" value="' + iv.ini + '" max="' + hoje + '"></label><label><span>Fim</span><input type="date" class="inp" id="' + id + '-fim" value="' + iv.fim + '" max="' + hoje + '"></label>' +
-        '<button type="button" class="btn btn-pri btn-sm" id="' + id + '-ok">Aplicar</button></div><div class="per-erro" id="' + id + '-erro" role="alert"></div>';
+        '<div class="per-custom"><label><span>De</span><select class="inp" id="' + id + '-de">' + meses.map(c => op(c, lim.de)).join('') + '</select></label>' +
+        '<label><span>Até</span><select class="inp" id="' + id + '-ate">' + meses.map(c => op(c, lim.ate)).join('') + '</select></label>' +
+        '<button type="button" class="btn btn-pri btn-sm" id="' + id + '-ok">Aplicar</button></div>';
     };
     btn.addEventListener('click', e => { e.stopPropagation(); alternarSuspenso(btn, menu, montar); });
     const aplicar = () => {
-      const a = document.getElementById(id + '-ini').value, b = document.getElementById(id + '-fim').value, er = document.getElementById(id + '-erro');
-      if (!a || !b) { er.textContent = 'Escolha as duas datas.'; return; }
-      if (a > b) { er.textContent = 'O início precisa ser antes do fim.'; return; }
-      if (b > hoje) { er.textContent = 'O fim não pode passar de hoje.'; return; }
-      fecharSuspenso(); aoMudar({ tipo: 'custom', ini: a, fim: b });
+      let de = document.getElementById(id + '-de').value, ate = document.getElementById(id + '-ate').value;
+      if (de > ate) { const t = de; de = ate; ate = t; }   // escolheu ao contrário: vale do mais antigo ao mais novo
+      fecharSuspenso(); aoMudar({ tipo: 'custom', de, ate });
     };
     menu.addEventListener('click', e => {
       const o = e.target.closest('[data-per]');
       if (o) { fecharSuspenso(); aoMudar(JSON.parse(o.dataset.per)); return; }
       if (e.target.closest('#' + id + '-ok')) aplicar();
     });
-    menu.addEventListener('keydown', e => { if (e.key === 'Enter' && e.target.matches('input')) { e.preventDefault(); aplicar(); } });
   }
 
   // ------------------------------------------------------------ brinde de aniversário
@@ -3820,19 +3919,38 @@ Telas.indicadores = (function () {
   document.addEventListener('setor', e => { if (st.setor === e.detail.de) st.setor = e.detail.para; });
   let P, F, L, cad, g = null;
 
-  // período: datas exatas para quadro/entradas/saídas; meses fechados da folha para o resto
+  // período (sempre meses fechados): os dias desses meses para quadro/entradas/saídas; os meses da folha importados para o resto
   const todas = () => F.map(f => f.comp);
   const comps = () => Periodo.meses(st.per, todas());
-  const intervalo = () => Periodo.intervalo(st.per, todas());
+  const intervalo = () => Periodo.intervalo(st.per);
   const ateHoje = f => f.fim < Dt.hoje() ? f.fim : Dt.hoje();
   const SEM_FOLHA = { vazio: true };
   const filtroP = p => !st.setor || p.setor === st.setor;
+  const semTurno = p => !p.turno || !cad.turnos.some(t => t.id === p.turno);   // quem o extrato cadastrou (o Domínio não informa o turno) e quem ficou sem
   function totais() {   // totais por mês respeitando o setor escolhido
     return comps().map(c => st.setor ? Regras.totalizar(L.filter(x => x.comp === c && x.setor === st.setor), c) : F.find(f => f.comp === c));
   }
   const rotMes = c => MES3[Number(c.slice(5)) - 1];
   const kpi = (k, v, s, cls) => '<div class="kpi ' + (cls || '') + '"><span class="k">' + k + '</span><span class="v">' + v + '</span><span class="s">' + (s || '') + '</span></div>';
-  function agruparSoma(lin, chave, valor) { const m = {}; lin.forEach(x => { const k = chave(x); m[k] = (m[k] || 0) + valor(x); }); return Object.keys(m).map(k => ({ k, v: m[k] })).sort((a, b) => b.v - a.v); }
+  // chave vazia (null/undefined) vira "—", que o ranking mostra como "Sem setor", "Sem turno"...
+  function agruparSoma(lin, chave, valor) { const m = {}; lin.forEach(x => { let k = chave(x); if (k === null || k === undefined || k === '') k = '—'; m[k] = (m[k] || 0) + valor(x); }); return Object.keys(m).map(k => ({ k, v: m[k] })).sort((a, b) => b.v - a.v); }
+  /** fatias do gráfico só com os meses em que o cadastro está completo: o cadastro começou só com os ativos e
+      quem saiu antes da sequência de extratos importados não existe no sistema (ver Periodo.completo).
+      lim = 'quadro' (fim do mês) ou 'movimento' (dentro do mês) */
+  function fatiasCompletas(lim) {
+    const { ini, fim } = intervalo(), FT = Periodo.fatias(ini, fim), cp = Periodo.completo(todas());
+    if (!cp) return { FT, fora: [], cp };
+    const dentro = FT.F.filter(f => Dt.comp(f.ini) >= cp[lim]);
+    const fora = [...new Set(FT.F.filter(f => Dt.comp(f.ini) < cp[lim]).map(f => Dt.comp(f.ini)))];
+    return { FT: { por: FT.por, F: dentro }, fora, cp };
+  }
+  function avisoFora(fora, cp, lim) {
+    if (!fora.length) return '';
+    const um = fora.length === 1;
+    return '<b>' + Periodo.faixaMeses(fora[0], fora[fora.length - 1]) + '</b> ' + (um ? 'ficou' : 'ficaram') + ' de fora: ' +
+      (lim === 'quadro' ? 'antes de ' + Fmt.mesCurto(cp.quadro) + ' o sistema não sabe quem já tinha saído' : 'quem entrou e saiu antes de ' + Fmt.mesCurto(cp.movimento) + ' não está no sistema') +
+      ' — o cadastro começou só com os ativos e os extratos importados em sequência começam em ' + Fmt.mesCurto(cp.extrato) + '. Cada extrato anterior que você importar completa mais um mês.';
+  }
   /** grupo sem nome ("—": quem o extrato cadastrou com um cargo que não existe no cadastro, por exemplo) */
   const SEM_GRUPO = { setor: 'Sem setor', cargo: 'Sem cargo', turno: 'Sem turno', motivo: 'Sem motivo' };
   function ranking(r) { return UI.ranking((r.R || []).map(x => x.rot === '—' || x.rot === '' || x.rot == null ? Object.assign({}, x, { rot: SEM_GRUPO[r.lado] || 'Sem informação' }) : x), { posicao: r.posicao }); }
@@ -3840,29 +3958,45 @@ Telas.indicadores = (function () {
   // ------------------------------------------------------------ cada aba devolve: kpis, gráfico principal, lado
   const A = {
     quadro() {
-      const C = comps(), at = P.filter(p => (p.situacao_ref === 'Ativo' || p.situacao_ref === 'Afastado') && filtroP(p));
-      const exp = at.filter(p => p.exp && p.exp.estado === 'em').length, idades = at.map(p => p.idade).filter(x => x !== null && x !== undefined);
-      const k = kpi('Pessoas ativas hoje', Fmt.int(at.length), at.filter(p => p.situacao_ref === 'Afastado').length + ' afastada(s) pelo INSS') +
-        kpi('Em experiência', Fmt.int(exp), Fmt.pct(exp / (at.length || 1) * 100, 0) + ' do quadro') +
-        kpi('Tempo médio de casa', at.length ? Fmt.dias(media(at, p => p.tempo_casa)).replace(/ e (\d+) (mês|meses)/, '<small> e $1 m</small>') : '—', at.length ? 'metade tem até ' + Fmt.dias(mediana(at.map(p => p.tempo_casa))) : 'ninguém ativo') +
+      const { FT, fora, cp } = fatiasCompletas('quadro');
+      if (!FT.F.length) return { incompleto: avisoFora(fora, cp, 'quadro') };
+      // os números e a divisão são do ÚLTIMO DIA do período (não de hoje): seguem o filtro
+      const ref = ateHoje({ fim: intervalo().fim }), sit = p => Regras.situacaoNa(p, ref);
+      const casa = p => Regras.tempoCasa(p, ref), idade = p => Regras.idade(p, ref);
+      const at = P.filter(p => (sit(p) === 'Ativo' || sit(p) === 'Afastado') && filtroP(p));
+      const exp = at.filter(p => { const e = Regras.experiencia(p, ref); return e && e.estado === 'em'; }).length;
+      const idades = at.map(idade).filter(x => x !== null && x !== undefined), afast = at.filter(p => sit(p) === 'Afastado').length;
+      const k = kpi('Quadro em ' + Fmt.data(ref), Fmt.int(at.length), afast + ' afastada(s) pelo INSS') +
+        kpi('Em experiência', Fmt.int(exp), Fmt.pct(exp / (at.length || 1) * 100, 0) + ' do quadro em ' + Fmt.dataCurta(ref)) +
+        kpi('Tempo médio de casa', at.length ? Fmt.dias(media(at, casa)).replace(/ e (\d+) (mês|meses)/, '<small> e $1 m</small>') : '—', at.length ? 'metade tem até ' + Fmt.dias(mediana(at.map(casa))) : 'ninguém no quadro') +
         kpi('Idade média', idades.length ? Fmt.int(media(idades)) + ' anos' : '—', idades.length ? 'de ' + Math.min.apply(null, idades) + ' a ' + Math.max.apply(null, idades) + ' anos' : 'sem data de nascimento');
       const modo = st.modo.quadro || 'total';
-      const iv = intervalo(), FT = Periodo.fatias(iv.ini, iv.fim);
       const titulos = FT.F.map(f => f.tit), cats = FT.F.map(f => f.rot);
       let principal;
       if (modo === 'total') principal = { tipo: 'linhas', cfg: { cats, titulos, area: true, series: [{ id: 'q', nome: 'Pessoas', cor: 'var(--s1)', valores: FT.F.map(f => quadroNaData(P, ateHoje(f), filtroP)) }], fmt: v => Fmt.int(v) + ' pessoas', fmtEixo: Fmt.int, fmtRotulo: Fmt.int, rotuloA11y: 'Quadro de pessoal por ' + FT.por } };
-      else principal = { tipo: 'barras', cfg: { cats, titulos, empilhar: true, series: cad.turnos.map((t, i) => ({ id: t.id, nome: t.nome, cor: 'var(--s' + (i + 1) + ')', valores: FT.F.map(f => quadroNaData(P, ateHoje(f), p => filtroP(p) && p.turno === t.id)) })), fmt: v => Fmt.int(v), fmtEixo: Fmt.int, rotulo: 'ult', rotuloA11y: 'Quadro por turno' } };
+      else {
+        // "Sem turno" entra na pilha: sem ele, quem saiu (cadastrado pelo extrato, sem turno) sumia dos meses antigos
+        const series = cad.turnos.map((t, i) => ({ id: t.id, nome: t.nome, cor: 'var(--s' + (i + 1) + ')', valores: FT.F.map(f => quadroNaData(P, ateHoje(f), p => filtroP(p) && p.turno === t.id)) }));
+        const sem = { id: 'sem-turno', nome: 'Sem turno', cor: 'var(--ink-3)', valores: FT.F.map(f => quadroNaData(P, ateHoje(f), p => filtroP(p) && semTurno(p))) };
+        if (soma(sem.valores)) series.push(sem);
+        principal = { tipo: 'barras', cfg: { cats, titulos, empilhar: true, series, fmt: v => Fmt.int(v), fmtEixo: Fmt.int, rotulo: 'ult', rotuloA11y: 'Quadro por turno' } };
+      }
       const lado = st.lado.quadro || 'setor';
       let R;
       if (lado === 'setor') R = agruparSoma(at, p => p.setor, () => 1).map(x => ({ rot: x.k, v: x.v, txt: Fmt.int(x.v), extra: Fmt.pct(x.v / at.length * 100, 0), acao: 'setor:' + x.k }));
-      else if (lado === 'turno') R = cad.turnos.map(t => { const n = at.filter(p => p.turno === t.id).length; return { rot: t.nome, sub: t.horario, v: n, txt: Fmt.int(n), extra: Fmt.pct(n / at.length * 100, 0) }; });
-      else if (lado === 'casa') { const F_ = [['Até 3 meses', 0, 90], ['3 a 12 meses', 90, 365], ['1 a 2 anos', 365, 730], ['2 a 5 anos', 730, 1826], ['5 a 10 anos', 1826, 3652], ['Mais de 10 anos', 3652, 1e9]]; R = F_.map(f => { const n = at.filter(p => p.tempo_casa >= f[1] && p.tempo_casa < f[2]).length; return { rot: f[0], v: n, txt: Fmt.int(n), extra: Fmt.pct(n / at.length * 100, 0) }; }); }
-      else { const F_ = [['18 a 24', 18, 25], ['25 a 34', 25, 35], ['35 a 44', 35, 45], ['45 a 54', 45, 55], ['55 ou mais', 55, 200]]; R = F_.map(f => { const n = at.filter(p => p.idade >= f[1] && p.idade < f[2]).length; return { rot: f[0] + ' anos', v: n, txt: Fmt.int(n), extra: Fmt.pct(n / at.length * 100, 0) }; }); }
-      return { k, principal, titulo: FT.por === 'semana' ? 'Quadro semana a semana' : 'Quadro mês a mês', sub: 'pessoas no último dia de cada ' + FT.por + ' (ou hoje)', modos: [{ v: 'total', rot: 'Total' }, { v: 'turno', rot: 'Por turno' }], modo, ladoTit: 'Como o quadro se divide', lados: [{ v: 'setor', rot: 'Setor' }, { v: 'turno', rot: 'Turno' }, { v: 'casa', rot: 'Tempo de casa' }, { v: 'idade', rot: 'Idade' }], lado, R,
-        insight: (() => { const rec = at.filter(p => p.tempo_casa < 365).length; return '<b>' + Fmt.pct(rec / (at.length || 1) * 100, 0) + '</b> do quadro tem menos de 1 ano de casa. ' + (rec / (at.length || 1) > 0.3 ? 'É muita gente nova: treinamento e integração pesam na produtividade.' : 'O time é bem experiente.'); })() };
+      else if (lado === 'turno') {
+        R = cad.turnos.map(t => { const n = at.filter(p => p.turno === t.id).length; return { rot: t.nome, sub: t.horario, v: n, txt: Fmt.int(n), extra: Fmt.pct(n / at.length * 100, 0) }; });
+        const n = at.filter(semTurno).length; if (n) R.push({ rot: 'Sem turno', v: n, txt: Fmt.int(n), extra: Fmt.pct(n / at.length * 100, 0) });
+      }
+      else if (lado === 'casa') { const F_ = [['Até 3 meses', 0, 90], ['3 a 12 meses', 90, 365], ['1 a 2 anos', 365, 730], ['2 a 5 anos', 730, 1826], ['5 a 10 anos', 1826, 3652], ['Mais de 10 anos', 3652, 1e9]]; R = F_.map(f => { const n = at.filter(p => casa(p) >= f[1] && casa(p) < f[2]).length; return { rot: f[0], v: n, txt: Fmt.int(n), extra: Fmt.pct(n / at.length * 100, 0) }; }); }
+      else { const F_ = [['18 a 24', 18, 25], ['25 a 34', 25, 35], ['35 a 44', 35, 45], ['45 a 54', 45, 55], ['55 ou mais', 55, 200]]; R = F_.map(f => { const n = at.filter(p => idade(p) >= f[1] && idade(p) < f[2]).length; return { rot: f[0] + ' anos', v: n, txt: Fmt.int(n), extra: Fmt.pct(n / at.length * 100, 0) }; }); }
+      return { k, principal, legenda: modo === 'turno', aviso: avisoFora(fora, cp, 'quadro'), titulo: FT.por === 'semana' ? 'Quadro semana a semana' : 'Quadro mês a mês', sub: 'pessoas no último dia de cada ' + FT.por, modos: [{ v: 'total', rot: 'Total' }, { v: 'turno', rot: 'Por turno' }], modo, ladoTit: 'Como o quadro se divide em ' + Fmt.dataCurta(ref), lados: [{ v: 'setor', rot: 'Setor' }, { v: 'turno', rot: 'Turno' }, { v: 'casa', rot: 'Tempo de casa' }, { v: 'idade', rot: 'Idade' }], lado, R,
+        insight: (() => { const rec = at.filter(p => casa(p) < 365).length; return '<b>' + Fmt.pct(rec / (at.length || 1) * 100, 0) + '</b> do quadro em ' + Fmt.dataCurta(ref) + ' tinha menos de 1 ano de casa. ' + (rec / (at.length || 1) > 0.3 ? 'É muita gente nova: treinamento e integração pesam na produtividade.' : 'O time é bem experiente.'); })() };
     },
     movimento() {
-      const { ini, fim } = intervalo(), FT = Periodo.fatias(ini, fim);
+      const { FT, fora, cp } = fatiasCompletas('movimento');
+      if (!FT.F.length) return { incompleto: avisoFora(fora, cp, 'movimento') };
+      const ini = FT.F[0].ini, fim = FT.F[FT.F.length - 1].fim;   // só a parte do período em que o cadastro está completo
       const adm = P.filter(p => filtroP(p) && p.admissao >= ini && p.admissao <= fim), des = P.filter(p => filtroP(p) && p.desligamento && p.desligamento >= ini && p.desligamento <= fim);
       const qFim = FT.F.map(f => quadroNaData(P, ateHoje(f), filtroP));
       const admF = FT.F.map(f => adm.filter(p => p.admissao >= f.ini && p.admissao <= f.fim).length), desF = FT.F.map(f => des.filter(p => p.desligamento >= f.ini && p.desligamento <= f.fim).length);
@@ -3879,7 +4013,7 @@ Telas.indicadores = (function () {
       if (lado === 'motivo') R = agruparSoma(des, p => p.motivo, () => 1).map(x => ({ rot: x.k, v: x.v, txt: Fmt.int(x.v), extra: Fmt.pct(x.v / (des.length || 1) * 100, 0) }));
       else if (lado === 'setor') R = agruparSoma(des, p => p.setor, () => 1).map(x => ({ rot: x.k, v: x.v, txt: Fmt.int(x.v), sub: Fmt.pct(x.v / (P.filter(p => p.setor === x.k && (p.situacao_ref !== 'Inativo')).length || 1) * 100, 0) + ' do setor' }));
       else { const F_ = [['Até 45 dias', 0, 46], ['46 a 90 dias', 46, 91], ['3 a 12 meses', 91, 366], ['1 a 3 anos', 366, 1096], ['Mais de 3 anos', 1096, 1e9]]; R = F_.map(f => { const n = des.filter(p => { const d = Dt.entre(p.admissao, p.desligamento); return d >= f[1] && d < f[2]; }).length; return { rot: f[0], v: n, txt: Fmt.int(n) }; }); }
-      return { k, principal, legenda: true, titulo: 'Admissões e desligamentos', sub: 'por ' + FT.por, ladoTit: 'Quem saiu', lados: [{ v: 'motivo', rot: 'Motivo' }, { v: 'setor', rot: 'Setor' }, { v: 'casa', rot: 'Tempo de casa' }], lado, R,
+      return { k, principal, legenda: true, aviso: avisoFora(fora, cp, 'movimento'), titulo: 'Admissões e desligamentos', sub: 'por ' + FT.por, ladoTit: 'Quem saiu', lados: [{ v: 'motivo', rot: 'Motivo' }, { v: 'setor', rot: 'Setor' }, { v: 'casa', rot: 'Tempo de casa' }], lado, R,
         insight: rapido ? '<b>' + rapido + ' de ' + des.length + '</b> desligamentos aconteceram nos primeiros 90 dias: vale olhar a seleção e a integração antes do salário.' : 'Ninguém saiu nos primeiros 90 dias no período.' };
     },
     horas() {
@@ -3896,7 +4030,7 @@ Telas.indicadores = (function () {
       const lado = st.lado.horas || 'setor';
       let R;
       if (lado === 'setor') R = agruparSoma(lin, x => x.setor, x => x.he_horas).map(x => ({ rot: x.k, v: x.v, txt: Fmt.int(x.v) + ' h', extra: Fmt.pct(x.v / (h || 1) * 100, 0), acao: 'setor:' + x.k }));
-      else if (lado === 'turno') R = agruparSoma(lin, x => (cad.turnos.find(t => t.id === x.turno) || {}).nome || x.turno, x => x.he_horas).map(x => ({ rot: x.k, v: x.v, txt: Fmt.int(x.v) + ' h', extra: Fmt.pct(x.v / (h || 1) * 100, 0) }));
+      else if (lado === 'turno') R = agruparSoma(lin, x => (cad.turnos.find(t => t.id === x.turno) || {}).nome || '—', x => x.he_horas).map(x => ({ rot: x.k, v: x.v, txt: Fmt.int(x.v) + ' h', extra: Fmt.pct(x.v / (h || 1) * 100, 0) }));
       else R = agruparSoma(lin, x => x.colaborador_id, x => x.he_horas).slice(0, 10).map(x => { const p = P.find(k => k.id === x.k) || {}; return { rot: Fmt.primeiroUltimo(p.nome), sub: p.setor, v: x.v, txt: Fmt.int(x.v) + ' h', extra: Fmt.int(x.v / C.length) + ' h/mês', alerta: acima40.has(x.k) ? '+40 h num mês' : '', acao: 'pessoa:' + x.k }; });
       const top = agruparSoma(lin, x => x.setor, x => x.he_horas)[0];
       return { k, principal, titulo: 'Horas extras por mês', sub: 'inclui o DSR no valor', modos: [{ v: 'horas', rot: 'Horas' }, { v: 'valor', rot: 'Valor (R$)' }], modo, ladoTit: 'Onde estão as horas', lados: [{ v: 'setor', rot: 'Setor' }, { v: 'turno', rot: 'Turno' }, { v: 'pessoa', rot: 'Pessoa' }], lado, R, posicao: lado === 'pessoa',
@@ -3925,7 +4059,7 @@ Telas.indicadores = (function () {
       // bruto sem os ajustes técnicos do Domínio (estornos, salário-família, acidente): é a base que vira custo
       const custo = soma(T, t => t.custo), pes = media(T, t => t.pessoas), enc = soma(T, t => t.encargos), br = soma(T, t => t.bruto - t.ajustes);
       const k = kpi('Custo total', Fmt.brlCompacto(custo), 'com encargos, provisões e VA') + kpi('Custo médio por pessoa', Fmt.brl0(custo / C.length / (pes || 1)), 'por mês') +
-        kpi('Encargos sobre a folha', Fmt.pct(enc / (br || 1) * 100, 1), 'INSS, RAT, terceiros e FGTS') + kpi('Vale-alimentação', Fmt.brlCompacto(soma(T, t => t.va)), Fmt.brl(Base.PARAM.va_dia) + ' por dia');
+        kpi('Encargos sobre a folha', Fmt.pct(enc / (br || 1) * 100, 1), 'INSS, RAT, terceiros e FGTS') + kpi('Vale-alimentação', Fmt.brlCompacto(soma(T, t => t.va)), Fmt.brl(Regras.vaPadrao()) + ' por pessoa/mês');
       const modo = st.modo.custo || 'comp';
       const cats = C.map(rotMes), titulos = C.map(Fmt.mesTitulo);
       let principal;
@@ -3950,10 +4084,13 @@ Telas.indicadores = (function () {
   function desenharAba(animar) {
     const r = A[st.aba]();
     const box = document.getElementById('ind-corpo');
-    if (r.vazio) {
+    if (r.vazio || r.incompleto) {
       if (g) { g.destruir(); g = null; }
-      box.innerHTML = '<section class="painel"><div class="painel-corpo">' + (F.length
-        ? UI.vazio('Nenhum mês fechado da folha nesse período', 'Horas extras, faltas e custo vêm da folha, que fecha por mês. A última fechada é ' + Fmt.mes(F[F.length - 1].comp) + '. Escolha um período que inclua um mês fechado, por exemplo "Últimos 30 dias".', 'calendario')
+      const sug = F.length && Periodo.PRESETS.find(x => Periodo.meses(x, todas()).length);
+      box.innerHTML = '<section class="painel"><div class="painel-corpo">' + (r.incompleto
+        ? '<div class="vazio">' + ic('calendario') + '<b>Esse período é anterior aos dados completos</b><span>' + r.incompleto + '</span></div>'
+        : F.length
+        ? UI.vazio('Nenhum mês da folha importado nesse período', 'Horas extras, faltas e custo vêm do extrato do Domínio, importado mês a mês. O último importado é ' + Fmt.mes(F[F.length - 1].comp) + '.' + (sug ? ' Escolha, por exemplo, "' + Periodo.rotulo(sug) + '".' : ''), 'calendario')
         : UI.vazio('A folha ainda não foi importada', 'Horas extras, faltas e custo vêm do extrato mensal do Domínio. Quando o primeiro mês for importado, os gráficos aparecem aqui.', 'carteira')) + '</div></section>';
       return;
     }
@@ -3961,7 +4098,8 @@ Telas.indicadores = (function () {
       '<section class="kpis" style="margin-bottom:16px">' + r.k + '</section>' +
       '<div class="grade g-2-1">' +
         '<section class="painel"><div class="painel-cab"><div><h2>' + esc(r.titulo) + '</h2><span class="sub">' + esc(r.sub) + '</span></div><div class="acoes">' + (r.modos ? UI.seg('ind-modo', r.modos, r.modo, 'sm') : '') + '<button type="button" class="btn btn-ghost btn-sm" id="ind-tab" aria-pressed="false">' + ic('tabela') + 'Tabela</button></div></div>' +
-          '<div class="painel-corpo">' + (r.legenda ? '<div id="ind-leg" style="margin-bottom:10px">' + Graf.legenda(r.principal.cfg.series, null, true) + '</div>' : '') + '<div id="ind-graf"></div><div id="ind-tabela" hidden></div><div class="insight">' + ic('lampada') + '<span>' + r.insight + '</span></div></div></section>' +
+          '<div class="painel-corpo">' + (r.aviso ? '<div class="insight aviso-ins" id="ind-aviso">' + ic('alerta') + '<span>' + r.aviso + '</span></div>' : '') +
+          '<div id="ind-leg" style="margin-bottom:10px">' + (r.legenda ? Graf.legenda(r.principal.cfg.series, null, true) : '') + '</div><div id="ind-graf"></div><div id="ind-tabela" hidden></div><div class="insight" id="ind-ins">' + ic('lampada') + '<span>' + r.insight + '</span></div></div></section>' +
         '<section class="painel"><div class="painel-cab"><h2>' + esc(r.ladoTit) + '</h2></div><div class="painel-corpo" style="padding-top:10px">' + UI.seg('ind-lado', r.lados, r.lado, 'sm') + '<div id="ind-rank" style="margin-top:10px">' + ranking(r) + '</div></div></section>' +
       '</div>';
     r.principal.cfg.altura = 300;
@@ -3971,7 +4109,13 @@ Telas.indicadores = (function () {
     const leg = document.getElementById('ind-leg');
     if (leg) leg.addEventListener('click', e => { const b = e.target.closest('[data-serie]'); if (!b) return; if (g.alternar(b.dataset.serie)) b.setAttribute('aria-pressed', String(!g.ocultas.has(b.dataset.serie))); });
     document.getElementById('ind-tab').addEventListener('click', e => { const on = e.currentTarget.getAttribute('aria-pressed') !== 'true'; e.currentTarget.setAttribute('aria-pressed', String(on)); e.currentTarget.innerHTML = ic(on ? 'grafico' : 'tabela') + (on ? 'Gráfico' : 'Tabela'); const t = document.getElementById('ind-tabela'); t.hidden = !on; document.getElementById('ind-graf').hidden = on; if (on) t.innerHTML = Graf.tabela(g.cfg, g.ocultas); });
-    document.getElementById('ind-rank').addEventListener('click', e => { const b = e.target.closest('[data-acao]'); if (!b) return; const [t, v] = b.dataset.acao.split(':'); if (t === 'setor') App.ir('colaboradores', { setor: v }); if (t === 'pessoa') Telas.colaboradores.ficha(v); });
+    // clicar num setor filtra a própria tela (clicar de novo no mesmo setor tira o filtro); numa pessoa, abre a ficha
+    document.getElementById('ind-rank').addEventListener('click', e => {
+      const b = e.target.closest('[data-acao]'); if (!b) return;
+      const i = b.dataset.acao.indexOf(':'), t = b.dataset.acao.slice(0, i), v = b.dataset.acao.slice(i + 1);
+      if (t === 'setor') { aplicarSetor(st.setor === v ? '' : v); return; }
+      if (t === 'pessoa') Telas.colaboradores.ficha(v);
+    });
   }
   function atualizarPrincipal() {
     const r = A[st.aba]();
@@ -3981,7 +4125,13 @@ Telas.indicadores = (function () {
     else { g.destruir(); const el = document.getElementById('ind-graf'); g = App.graf(r.principal.tipo === 'barras' ? Graf.barras(el, r.principal.cfg) : Graf.linhas(el, r.principal.cfg)); }
     const leg = document.getElementById('ind-leg'); if (leg) leg.innerHTML = r.legenda ? Graf.legenda(r.principal.cfg.series, g.ocultas, true) : '';
     const t = document.getElementById('ind-tabela'); if (!t.hidden) t.innerHTML = Graf.tabela(g.cfg, g.ocultas);
-    const ins = document.querySelector('#ind-corpo .insight span'); if (ins) ins.innerHTML = r.insight;
+    const ins = document.querySelector('#ind-ins span'); if (ins) ins.innerHTML = r.insight;
+  }
+  /** filtro de setor (o select e o clique no ranking) */
+  function aplicarSetor(v) {
+    st.setor = v || '';
+    const s = document.getElementById('ind-setor'); if (s) s.value = st.setor;
+    desenharAba();
   }
 
   async function render(el, params) {
@@ -3990,19 +4140,22 @@ Telas.indicadores = (function () {
     if (!Store.tem('linhas')) el.innerHTML = UI.esqueleto(5);
     [P, F, L, cad] = await Promise.all([D.pessoas(), D.folha(), D.linhas(), D.cad()]);
     const ult = F.length ? F[F.length - 1].comp : null;
+    // "Sem setor" (cargo que não existe no cadastro, comum em quem o extrato cadastrou) também filtra
+    const opSetores = cad.setores.map(s => ({ v: s, rot: s })).concat(P.some(p => p.setor === '—') || L.some(x => x.setor === '—') ? [{ v: '—', rot: 'Sem setor' }] : []);
+    if (st.setor && !opSetores.some(o => o.v === st.setor)) st.setor = '';
     el.innerHTML =
-      '<div class="cab"><div><h1>Indicadores</h1><p>' + (ult ? 'Folha fechada até ' + esc(Fmt.mes(ult)) + '. ' : App.editor() ? 'A folha ainda não foi importada: por enquanto, só quadro e movimento de pessoal. ' : '') + 'O período e o setor escolhidos valem para todos os números da tela.</p></div></div>' +
-      '<div class="filtros" id="ind-filtros"><span id="ind-per-box">' + UI.periodo('ind-per', st.per, todas()) + '</span>' +
-        '<select class="inp" id="ind-setor" aria-label="Setor"><option value="">Todos os setores</option>' + cad.setores.map(s => '<option' + (s === st.setor ? ' selected' : '') + '>' + esc(s) + '</option>').join('') + '</select></div>' +
+      '<div class="cab"><div><h1>Indicadores</h1><p>' + (ult ? 'Folha importada até ' + esc(Fmt.mes(ult)) + '. ' : App.editor() ? 'A folha ainda não foi importada: por enquanto, só quadro e movimento de pessoal. ' : '') + 'O período (sempre meses fechados) e o setor escolhidos valem para todos os números da tela.</p></div></div>' +
+      '<div class="filtros" id="ind-filtros"><span id="ind-per-box">' + UI.periodo('ind-per', st.per) + '</span>' +
+        '<select class="inp" id="ind-setor" aria-label="Setor"><option value="">Todos os setores</option>' + opSetores.map(o => '<option value="' + esc(o.v) + '"' + (o.v === st.setor ? ' selected' : '') + '>' + esc(o.rot) + '</option>').join('') + '</select></div>' +
       '<p class="per-info" id="ind-per-info"></p>' +
       UI.abas('ind-abas', abas(), st.aba) + '<div id="ind-corpo"></div>';
     const pintarPeriodo = () => {
-      document.getElementById('ind-per-box').innerHTML = UI.periodo('ind-per', st.per, todas());
+      document.getElementById('ind-per-box').innerHTML = UI.periodo('ind-per', st.per);
       UI.ligarPeriodo('ind-per', () => st.per, todas(), p => { st.per = p; pintarPeriodo(); desenharAba(); });
       document.getElementById('ind-per-info').innerHTML = ic('calendario') + '<span>' + Periodo.explicar(st.per, todas(), 'Quadro, admissões e desligamentos', App.editor() ? 'Horas extras, faltas e custo' : null) + '</span>';
     };
     pintarPeriodo();
-    document.getElementById('ind-setor').addEventListener('change', e => { st.setor = e.target.value; desenharAba(); });
+    document.getElementById('ind-setor').addEventListener('change', e => aplicarSetor(e.target.value));
     UI.ligarAbas('ind-abas', v => { st.aba = v; trocarUrl('#/indicadores?aba=' + v); const c = document.getElementById('ind-corpo'); c.classList.remove('entra'); void c.offsetWidth; desenharAba(); c.style.animation = 'sobe .35s var(--ease) both'; setTimeout(() => { c.style.animation = ''; }, 400); });
     desenharAba();
   }
@@ -4173,7 +4326,7 @@ Telas.colaboradores = (function () {
       fc('Matrícula', esc(p.matricula)) + fc('Admissão', Fmt.data(p.admissao) + ' <span class="dim">· ' + esc(Fmt.dias(p.tempo_casa)) + '</span>') +
       fc('Cargo', esc(p.funcao)) + fc('Setor e turno', esc(p.setor) + ' · ' + esc(p.turno_nome)) +
       (ed ? fc('Salário', Fmt.brl(p.salario) + (cg && Math.abs(cg.salario - p.salario) > 0.5 ? ' <span class="dim">· categoria ' + Fmt.brl(cg.salario) + '</span>' : '')) +
-        fc('Vale-alimentação', Fmt.brl(p.va_dia) + '/dia <span class="dim">· ≈ ' + Fmt.brl(p.va_dia * Base.PARAM.va_dias_mes) + '/mês</span>') +
+        fc('Vale-alimentação', Fmt.brl(Regras.vaMes(p)) + ' por mês <span class="dim">· ' + (p.va_mes === null || p.va_mes === undefined ? 'padrão da empresa' : Number(p.va_mes) === 0 ? 'não recebe' : 'valor próprio da pessoa') + '</span>') +
         fc('Custo mensal estimado', Fmt.brl(p.custo_mensal) + ' <span class="dim">salário + encargos + VA</span>') : '') +
       fc('Experiência', p.exp ? (p.exp.estado === 'sem_decisao' ? '<b style="color:var(--bad-ink)">terminou em ' + Fmt.data(p.exp.fim90) + ' sem decisão</b>' : '45 dias em ' + Fmt.data(p.exp.fim45) + ' · 90 dias em ' + Fmt.data(p.exp.fim90)) : 'concluída') +
       fc('Aniversário', p.nascimento ? Fmt.dataCurta(p.nascimento) + ' <span class="dim">· ' + p.idade + ' anos</span>' + (p.brinde && p.situacao_ref !== 'Inativo' && p.brinde.dia <= Dt.soma(Dt.hoje(), 7) && p.brinde.dia >= Dt.soma(Dt.hoje(), -60) ? '<div style="margin-top:8px">' + UI.brinde(p) + '</div>' : '') : '<span class="dim">sem data de nascimento</span>') +
@@ -4186,8 +4339,9 @@ Telas.colaboradores = (function () {
       (p.exp && p.situacao_ref !== 'Inativo' ? '<div class="insight" style="margin-top:16px">' + ic('relogio') + '<span>' + (p.exp.estado === 'sem_decisao' ? 'O contrato de experiência terminou e ninguém registrou a decisão. Pela CLT, passado o prazo sem desligamento, o contrato vira por prazo indeterminado.' : 'Próxima decisão da experiência em <b>' + p.exp.faltamMarco + ' dias</b> (' + Fmt.data(p.exp.proximoMarco) + ').') + '</span></div>' + '<div style="display:flex;gap:8px;margin-top:10px" data-so-editor><button class="btn btn-ok btn-sm" type="button" data-dec="efetivar">' + ic('check') + 'Efetivar</button><button class="btn btn-perigo btn-sm" type="button" data-dec="desligar">Desligar no fim da experiência</button></div>' : '') +
       (p.observacoes ? '<div class="sec-t">Observações</div><p style="margin:4px 0 0;color:var(--ink-2);white-space:pre-wrap">' + esc(p.observacoes) + '</p>' : '');
     const folhaH = fl.length ? '<div class="sec-t">Líquido mês a mês <span class="dim" style="font-weight:500">· passe o mouse para ver horas extras e bruto</span></div><div id="fc-graf" style="margin-top:6px"></div>' +
-      '<div class="tab-graf" style="margin-top:12px"><table class="t"><thead><tr><th><span>Mês</span></th><th class="n"><span>Bruto</span></th><th class="n"><span>Horas extras</span></th><th class="n"><span>Faltas</span></th><th class="n"><span>Descontos</span></th><th class="n"><span>Líquido</span></th></tr></thead><tbody>' +
-      fl.slice().reverse().map(x => '<tr><td>' + Fmt.mesCurto(x.comp) + '</td><td class="n">' + Fmt.brl(x.bruto) + '</td><td class="n">' + (x.he_horas ? Fmt.int(x.he_horas) + ' h' : '—') + '</td><td class="n">' + (x.faltas_horas ? Fmt.dec(x.faltas_horas, 1) + ' h' : '—') + '</td><td class="n">' + Fmt.brl(x.descontos) + '</td><td class="n"><b>' + Fmt.brl(x.liquido) + '</b></td></tr>').join('') + '</tbody></table></div>' : UI.vazio('Sem folha importada para esta pessoa', 'Os meses aparecem aqui depois que o extrato do Domínio for importado.');
+      '<div class="sec-t">Mês a mês <span class="dim" style="font-weight:500">· clique num mês para ver a conta completa (encargos, provisões, VA) e as linhas do PDF</span></div>' +
+      '<div class="tab-graf" style="margin-top:6px"><table class="t" id="fc-folha"><thead><tr><th><span>Mês</span></th><th class="n"><span>Bruto</span></th><th class="n"><span>Horas extras</span></th><th class="n"><span>Faltas</span></th><th class="n"><span>Descontos</span></th><th class="n"><span>Líquido</span></th><th class="n"><span>Custo</span></th></tr></thead><tbody>' +
+      fl.slice().reverse().map(x => '<tr data-det-mes="' + x.comp + '" tabindex="0" style="cursor:pointer"><td>' + Fmt.mesCurto(x.comp) + '</td><td class="n">' + Fmt.brl(x.bruto) + '</td><td class="n">' + (x.he_horas ? Fmt.int(x.he_horas) + ' h' : '—') + '</td><td class="n">' + (x.faltas_horas ? Fmt.dec(x.faltas_horas, 1) + ' h' : '—') + '</td><td class="n">' + Fmt.brl(x.descontos) + '</td><td class="n"><b>' + Fmt.brl(x.liquido) + '</b></td><td class="n dim">' + Fmt.brl(Regras.contaLinha(x).custo) + '</td></tr>').join('') + '</tbody></table></div>' : UI.vazio('Sem folha importada para esta pessoa', 'Os meses aparecem aqui depois que o extrato do Domínio for importado.');
     const fi = p.ferias_info;
     const feriasH = '<div class="sec-t">Períodos aquisitivos</div>' + (fi.completos.length ? '<div class="tab-graf"><table class="t"><thead><tr><th><span>Período</span></th><th class="n"><span>Saldo</span></th><th><span>Conceder até</span></th><th><span>Situação</span></th></tr></thead><tbody>' +
       fi.completos.map(x => '<tr><td>' + Fmt.data(x.ini) + ' a ' + Fmt.data(x.fim) + '</td><td class="n">' + x.saldo + ' dias</td><td>' + Fmt.data(x.limite) + '</td><td>' + (x.saldo === 0 ? '<span class="tag ok">gozado</span>' : x.agendadas.length ? '<span class="tag brand">agendado</span>' : x.limite < Dt.hoje() ? '<span class="tag bad">vencido</span>' : Dt.entre(Dt.hoje(), x.limite) <= 60 ? '<span class="tag warn">vence em ' + Dt.entre(Dt.hoje(), x.limite) + 'd</span>' : '<span class="tag">pendente</span>') + '</td></tr>').join('') + '</tbody></table></div>' : '<p class="dim">Ainda não completou 12 meses de casa: o primeiro período aquisitivo termina em ' + Fmt.data(fi.periodos[0].fim) + '.</p>') +
@@ -4205,6 +4359,10 @@ Telas.colaboradores = (function () {
     const mostrarAba = a => {
       const c = document.getElementById('fc-corpo'); c.innerHTML = corpo[a]; c.style.animation = 'none'; void c.offsetWidth; c.style.animation = 'sobe .3s var(--ease) both';
       if (gf) { gf.destruir(); gf = null; }
+      if (a === 'folha' && fl.length) {
+        const tf = document.getElementById('fc-folha'), abrir = e => { const tr = e.target.closest('tr[data-det-mes]'); if (tr) Telas.folha.detalhe(id, tr.dataset.detMes); };
+        tf.addEventListener('click', abrir); tf.addEventListener('keydown', e => { if (e.key === 'Enter') abrir(e); });
+      }
       if (a === 'folha' && fl.length) gf = Graf.barras(document.getElementById('fc-graf'), { cats: fl.map(x => MES3[Number(x.comp.slice(5)) - 1]), titulos: fl.map(x => Fmt.mesTitulo(x.comp)), series: [{ id: 'l', nome: 'Líquido', cor: 'var(--s1)', valores: fl.map(x => x.liquido) }], fmt: Fmt.brl, altura: 190, rotulo: 'ult', fmtRotulo: Fmt.brlCompacto, dicaExtra: i => (fl[i].he_horas ? Fmt.int(fl[i].he_horas) + ' h extras · ' : '') + 'bruto ' + Fmt.brl(fl[i].bruto) });
     };
     UI.ligarAbas('fc-abas', mostrarAba);
@@ -4259,7 +4417,7 @@ Telas.colaboradores = (function () {
           '<div class="campo largo"><label for="nf-cargo">Cargo *</label><select id="nf-cargo"><option value="">Escolha o cargo</option>' + opCargos + '</select><span class="dica" id="nf-setor">' + (ed ? 'Setor: ' + esc(ed.setor) : 'O setor vem junto com o cargo.') + '</span><span class="erro" data-erro="cargo"></span></div>' +
           '<div class="campo largo"><span class="rotulo">Turno *</span>' + op('turno', cad.turnos.map(t => [t.id, t.nome]), ed ? ed.turno : '') + '<span class="dica" id="nf-turno-h"></span><span class="erro" data-erro="turno"></span></div>' +
           '<div class="campo"><label for="nf-sal">Salário (R$)</label><input id="nf-sal" type="number" step="0.01" min="0" inputmode="decimal" value="' + (ed ? ed.salario : '') + '"><span class="dica" id="nf-sal-h">Vem do cargo; dá para mudar.</span></div>' +
-          '<div class="campo"><label for="nf-va">Vale-alimentação por dia (R$)</label><input id="nf-va" type="number" step="0.01" min="0" inputmode="decimal" value="' + (ed ? ed.va_dia : P_.va_dia) + '"><span class="dica" id="nf-va-h"></span></div>' +
+          '<div class="campo"><label for="nf-va">Vale-alimentação por mês (R$)</label><input id="nf-va" type="number" step="0.01" min="0" inputmode="decimal" placeholder="' + Fmt.dec(Regras.vaPadrao(), 2) + ' (padrão)" value="' + (ed && ed.va_mes !== null && ed.va_mes !== undefined ? ed.va_mes : '') + '"><span class="dica" id="nf-va-h"></span></div>' +
           '<div class="campo"><span class="rotulo">Custo mensal estimado</span><div style="height:40px;display:flex;align-items:center;font-size:18px;font-weight:650;font-stretch:var(--semi)" id="nf-custo">—</div><span class="dica">salário + encargos + VA</span></div>' +
         '</div></section>' +
         '<section class="passo"><h3><i>3</i>Benefícios e uniforme <span class="dim" style="font-weight:500;font-size:12.5px">opcional</span></h3><div class="campos">' +
@@ -4283,16 +4441,16 @@ Telas.colaboradores = (function () {
     let salMexido = !!ed;
     const cargoAtual = () => cad.cargos.find(c => c.id === $n('nf-cargo').value);
     function atualizar() {
-      const c = cargoAtual(), va = Number($n('nf-va').value) || 0;
+      const c = cargoAtual(), vaTxt = $n('nf-va').value.trim(), va = Regras.vaMes({ va_mes: vaTxt === '' ? null : vaTxt });
       $n('nf-setor').textContent = c ? 'Setor: ' + c.setor : 'O setor vem junto com o cargo.';
       if (c && !salMexido) $n('nf-sal').value = Number(c.salario || 0).toFixed(2);
       const s2 = Number($n('nf-sal').value) || 0;
       $n('nf-sal-h').innerHTML = c ? (Math.abs(s2 - c.salario) > 0.005 ? '<span class="tag warn">diferente da categoria</span> categoria: ' + Fmt.brl(c.salario) + ' · <button type="button" class="link" id="nf-sal-volta" style="font-size:12px">usar o da categoria</button>' : 'Salário da categoria (Cadastros). Dá para mudar.') : 'Vem do cargo; dá para mudar.';
-      $n('nf-va-h').innerHTML = (Math.abs(va - P_.va_dia) > 0.005 ? '<span class="tag warn">diferente do padrão</span> padrão ' + Fmt.brl(P_.va_dia) + ' · ' : '') + '≈ ' + Fmt.brl(va * P_.va_dias_mes) + ' por mês (' + P_.va_dias_mes + ' dias)';
+      $n('nf-va-h').innerHTML = vaTxt === '' ? 'Em branco = o padrão da empresa (' + Fmt.brl(Regras.vaPadrao()) + ' por mês). 0 = não recebe.' : Number(vaTxt) === 0 ? '<span class="tag warn">não recebe VA</span> apague para voltar ao padrão' : (Math.abs(va - Regras.vaPadrao()) > 0.005 ? '<span class="tag warn">diferente do padrão</span> padrão ' + Fmt.brl(Regras.vaPadrao()) + ' · apague para voltar ao padrão' : 'igual ao padrão da empresa');
       const adm = $n('nf-adm').value;
       $n('nf-exp').textContent = adm && !ed ? 'Experiência: 45 dias em ' + Fmt.data(Dt.soma(adm, 44)) + ', 90 dias em ' + Fmt.data(Dt.soma(adm, 89)) : '';
       const enc = 1 + P_.inss_empresa + P_.rat + P_.terceiros + P_.fgts;
-      $n('nf-custo').textContent = s2 ? Fmt.brl(s2 * enc + va * P_.va_dias_mes) : '—';
+      $n('nf-custo').textContent = s2 ? Fmt.brl(s2 * enc + va) : '—';
       const t = cad.turnos.find(x => x.id === valores.turno); $n('nf-turno-h').textContent = t ? t.horario + (t.noturno ? ' · tem adicional noturno' : '') : '';
       $n('nf-linha-c').hidden = valores.vt !== 'sim';
       if (ed) $n('nf-mot-c').hidden = !$n('nf-desl').value;
@@ -4331,7 +4489,7 @@ Telas.colaboradores = (function () {
       g.querySelectorAll('[data-erro]').forEach(x => { x.textContent = erros[x.dataset.erro] || ''; const c = x.closest('.campo'); if (c) c.classList.toggle('invalido', !!erros[x.dataset.erro]); });
       if (Object.keys(erros).length) { $n('nf-msg').textContent = 'Corrija os campos marcados.'; const f = g.querySelector('.invalido input, .invalido select'); if (f) f.focus(); return; }
       const b = $n('nf-salvar'); b.disabled = true; b.textContent = 'Salvando…';
-      const dados = { nome: Fmt.nome(nome), matricula: mat, cpf, nascimento: nasc, telefone: $n('nf-tel').value, email: $n('nf-email').value.trim(), cargo_id: $n('nf-cargo').value, turno: valores.turno, admissao: adm, salario: Number($n('nf-sal').value) || cargoAtual().salario || 0, va_dia: Number($n('nf-va').value) || 0, vale_transporte: valores.vt === 'sim', linha_onibus: valores.vt === 'sim' ? $n('nf-linha').value.trim() : null, uniforme: valores.uniforme, bota: $n('nf-bota').value, pix: $n('nf-pix').value.trim(), observacoes: $n('nf-obs').value };
+      const dados = { nome: Fmt.nome(nome), matricula: mat, cpf, nascimento: nasc, telefone: $n('nf-tel').value, email: $n('nf-email').value.trim(), cargo_id: $n('nf-cargo').value, turno: valores.turno, admissao: adm, salario: Number($n('nf-sal').value) || cargoAtual().salario || 0, va_dia: ed ? ed.va_dia || 0 : 0, va_mes: $n('nf-va').value.trim() === '' ? null : Number($n('nf-va').value) || 0, vale_transporte: valores.vt === 'sim', linha_onibus: valores.vt === 'sim' ? $n('nf-linha').value.trim() : null, uniforme: valores.uniforme, bota: $n('nf-bota').value, pix: $n('nf-pix').value.trim(), observacoes: $n('nf-obs').value };
       if (ed) Object.assign(dados, { id: ed.id, desligamento: desl, motivo: mot, afastado_desde: afast });
       try {
         const p = await API.colaboradores.salvar(dados);
@@ -4577,13 +4735,28 @@ Telas.ferias = (function () {
    completo e conferência. O seletor de mês vale para todas as abas.
    ===================================================================== */
 Telas.folha = (function () {
-  const st = { aba: 'visao', mes: null, comp: 'liq', q: '', ord: { k: 'bruto', d: -1 }, mm: 'mensal' };
+  const st = { aba: 'visao', mes: null, comp: 'liq', q: '', ord: { k: 'bruto', d: -1 }, mm: 'mensal', vis: 'resumo', rastro: null };
   let F = [], g = null;
   const cor = { liq: 'var(--s1)', desc: 'var(--s3)', enc: 'var(--s2)', prov: 'var(--s4)' };
   const atual = () => st.mes === 'ano' ? somar(F) : F.find(f => f.comp === st.mes);
   const anterior = () => { const i = F.findIndex(f => f.comp === st.mes); return i > 0 ? F[i - 1] : null; };
   function somar(L) { const o = { comp: 'ano', pessoas: Math.round(media(L, f => f.pessoas)) }; Object.keys(L[0]).forEach(k => { if (typeof L[0][k] === 'number' && k !== 'pessoas' && k !== 'absenteismo' && k !== 'absControlavel') o[k] = r2(soma(L, f => f[k])); }); o.custoMedio = o.custo / L.length / (o.pessoas || 1); return o; }
   const rotSel = () => st.mes === 'ano' ? 'os últimos 12 meses' : Fmt.mes(st.mes);
+  /** a ponte da folha do RH até o "Total Geral Proventos" do PDF: o RH guarda só os empregados — o pró-labore
+      dos sócios e quem foi marcado "não importar" ficam de fora (os totais do PDF são guardados na importação) */
+  function ponte(x) {
+    const ano = st.mes === 'ano';
+    const T = ano ? (F.every(f => f.extrato && f.extrato.totais) ? F.map(f => f.extrato.totais) : null) : (x.extrato && x.extrato.totais ? [x.extrato.totais] : null);
+    if (!T) return 'Só os empregados: o "Total Geral Proventos" do PDF soma também o pró-labore dos sócios, que fica fora do RH.' + (ano ? '' : ' Importe este mês de novo para ver a conta fechando com o PDF.');
+    const s = k => r2(soma(T, t => t[k] || 0)), pdf = s('proventos_pdf'), pl = s('prolabore'), ni = s('nao_importados'), npl = s('prolabore_pessoas'), nni = s('nao_importados_pessoas');
+    let h = '"Total Geral Proventos" do PDF: <b>' + Fmt.brl(pdf) + '</b> = ' + Fmt.brl(x.bruto) + ' dos empregados';
+    if (pl > 0.009) h += ' + ' + Fmt.brl(pl) + ' de pró-labore ' + (!ano && npl ? (npl === 1 ? 'do sócio' : 'dos ' + npl + ' sócios') : 'dos sócios');
+    if (ni > 0.009) h += ' + ' + Fmt.brl(ni) + (!ano && nni ? ' de ' + nni + (nni === 1 ? ' pessoa que você marcou' : ' pessoas que você marcou') + ' "não importar"' : ' de quem foi marcado "não importar"');
+    const dif = r2(pdf - x.bruto - pl - ni);
+    if (Math.abs(dif) > 0.009) h += ' · <span class="dif">não fecha por ' + Fmt.brl(dif) + ': importe o mês de novo</span>';
+    return h;
+  }
+  const notaPonte = x => '<p class="ponte-pdf">' + ic('doc') + '<span>' + ponte(x) + '</span></p>';
   const stIcon = s => s === 'conferido' ? '<i class="ponto ok"></i>' : s === 'atencao' ? '<i class="ponto warn"></i>' : '<i class="ponto bad"></i>';
 
   function seletorMeses() {
@@ -4599,11 +4772,12 @@ Telas.folha = (function () {
     return '<div class="heroi-folha">' +
       '<section class="painel"><div class="painel-corpo" style="padding:20px 22px">' +
         '<div class="rotulo" style="margin-bottom:12px">' + esc(st.mes === 'ano' ? 'Soma dos últimos 12 meses' : Fmt.mesTitulo(st.mes)) + (st.mes !== 'ano' ? ' · ' + (x.extrato ? stIcon(x.extrato.situacao) + ' <span class="dim" style="font-weight:500">' + esc(x.extrato.nota) + '</span>' : '') : '') + '</div>' +
-        '<div class="par"><div class="n"><span>Folha bruta</span><b id="fo-bruto">' + Fmt.brl(x.bruto) + '</b><small>total de proventos ' + (a ? UI.delta(x.bruto, a.bruto, { bomSobe: false, vs }) : '') + '</small></div>' +
+        '<div class="par"><div class="n"><span>Folha bruta</span><b id="fo-bruto">' + Fmt.brl(x.bruto) + '</b><small>proventos dos empregados ' + (a ? UI.delta(x.bruto, a.bruto, { bomSobe: false, vs }) : '') + '</small></div>' +
         '<div class="seta">' + ic('seta') + '</div>' +
         '<div class="n"><span>Folha líquida</span><b id="fo-liq">' + Fmt.brl(x.liquido) + '</b><small>' + Fmt.pct(liqPct) + ' do bruto</small></div></div>' +
         '<div class="prop"><i style="width:' + liqPct + '%;background:var(--s1)"></i><i style="width:' + (100 - liqPct) + '%;background:var(--s3);animation-delay:.12s"></i></div>' +
         '<div class="legenda"><span class="it"><i class="sw" style="background:var(--s1)"></i>Líquido ' + Fmt.pct(liqPct) + '</span><span class="it"><i class="sw" style="background:var(--s3)"></i>Descontos ' + Fmt.pct(100 - liqPct) + ' · ' + Fmt.brl(x.descontos) + '</span></div>' +
+        notaPonte(x) +
       '</div></section>' +
       '<section class="painel"><div class="stats">' +
         stat('Custo total', Fmt.brl(x.custo), 'com encargos, provisões e VA', a ? UI.delta(x.custo, a.custo, { bomSobe: false }) : '', 'composicao') +
@@ -4611,7 +4785,7 @@ Telas.folha = (function () {
         stat('Saiu para as pessoas', Fmt.brl(x.saiuPessoas), 'líquido + adiantamento', '') +
         stat('Horas extras', Fmt.brl(x.he_valor), Fmt.int(x.he_horas) + ' h · ' + Fmt.pct(x.he_valor / (x.bruto || 1) * 100) + ' do bruto', a ? UI.delta(x.he_valor, a.he_valor, { bomSobe: false }) : '', 'pessoas') +
         stat(st.mes === 'ano' ? 'Pessoas (média)' : 'Pessoas no extrato', Fmt.int(x.pessoas), 'custo médio ' + Fmt.brl0(st.mes === 'ano' ? x.custoMedio : x.custoMedio), '', 'pessoas') +
-        stat('Vale-alimentação', Fmt.brl(x.va), Fmt.brl(Base.PARAM.va_dia) + ' por dia', '') +
+        stat('Vale-alimentação', Fmt.brl(x.va), x.va > 0.009 ? Fmt.brl(Regras.vaPadrao()) + ' por pessoa no mês' : Regras.vaPadrao() > 0 ? 'não lançado: importe o mês de novo' : 'defina o valor em Cadastros', '') +
       '</div></section></div>' +
       '<section class="painel"><div class="painel-cab"><div><h2>Mês a mês</h2><span class="sub">Clique num mês do gráfico para escolher</span></div><div class="acoes">' + UI.seg('fo-mm', [{ v: 'mensal', rot: 'Mensal' }, { v: 'acum', rot: 'Acumulado' }], st.mm, 'sm') + '<div id="fo-leg"></div><button type="button" class="btn btn-ghost btn-sm" id="fo-tab" aria-pressed="false">' + ic('tabela') + 'Tabela</button></div></div>' +
       '<div class="painel-corpo"><div id="fo-graf"></div><div id="fo-tabela" hidden></div></div></section>';
@@ -4647,50 +4821,137 @@ Telas.folha = (function () {
   }
   function composicao() {
     const x = atual();
-    const lado = st.comp;
-    const linha = (rot, sub, v, segs, total, sinal) => '<div class="cas' + (total ? ' total' : '') + '"><span class="r">' + esc(rot) + (sub ? '<small>' + esc(sub) + '</small>' : '') + '</span><span class="tr">' + segs.map((s, i) => '<i style="left:' + s[0] + '%;width:' + Math.max(0.4, s[1] - s[0]) + '%;background:' + s[2] + ';animation-delay:' + (i * 60) + 'ms"></i>').join('') + '</span><span class="v">' + (sinal || '') + Fmt.brl(Math.abs(v)) + '</span></div>';
+    const lado = st.comp, mes = st.mes !== 'ano';
+    // cada linha leva para "Por pessoa" com a coluna dela: o total aqui = a soma das pessoas lá (rastro até o PDF)
+    const linha = (rot, sub, v, segs, total, sinal, k, vis) => '<div class="cas' + (total ? ' total' : '') + (k && mes ? ' clic" role="button" tabindex="0" data-rastro="' + k + '" data-vis="' + vis + '" data-rot="' + esc(rot) + '" title="Ver quem compõe este valor' : '') + '"><span class="r">' + esc(rot) + (sub ? '<small>' + esc(sub) + '</small>' : '') + '</span><span class="tr">' + segs.map((s, i) => '<i style="left:' + s[0] + '%;width:' + Math.max(0.4, s[1] - s[0]) + '%;background:' + s[2] + ';animation-delay:' + (i * 60) + 'ms"></i>').join('') + '</span><span class="v">' + (sinal || '') + Fmt.brl(Math.abs(v)) + (k && mes ? ic('seta') : '') + '</span></div>';
     let h = '';
     if (lado === 'liq') {
       const esc_ = x.bruto || 1, pc = v => v / esc_ * 100;
       let resto = x.bruto;
-      h += linha('Folha bruta', 'total de proventos', x.bruto, [[0, pc(x.liquido), cor.liq], [pc(x.liquido) + .3, 100, cor.desc]], true);
-      const DESC = [['INSS dos empregados', 'retido de cada pessoa', x.inss], ['Adiantamentos já pagos', 'vale do dia 20', x.adiantamento], ['Vale-transporte (6%)', 'parte paga pela pessoa', x.vt], ['Crédito do trabalhador', 'consignado repassado ao banco', x.consignado], ['Faltas e atrasos', Fmt.int(x.faltas_horas) + ' h descontadas', x.faltas_valor], ['Imposto de renda', 'IRRF', x.irrf]];
+      h += linha('Folha bruta', 'proventos dos empregados', x.bruto, [[0, pc(x.liquido), cor.liq], [pc(x.liquido) + .3, 100, cor.desc]], true, '', 'bruto', 'proventos');
+      const DESC = [['INSS dos empregados', 'retido de cada pessoa', x.inss, 'inss'], ['Adiantamentos já pagos', 'vale do dia 20', x.adiantamento, 'adiantamento'], ['Vale-transporte (6%)', 'parte paga pela pessoa', x.vt, 'vt'], ['Crédito do trabalhador', 'consignado repassado ao banco', x.consignado, 'consignado'], ['Faltas e atrasos', Fmt.int(x.faltas_horas) + ' h descontadas', x.faltas_valor, 'faltas_valor'], ['Imposto de renda', 'IRRF', x.irrf, 'irrf']];
       // o resto dos descontos do extrato (líquido de rescisão pago à parte, adiantamento de férias, contribuições...): sem esta linha a cascata não fecha no líquido
       const outrosDesc = r2(x.descontos - DESC.reduce((s, d) => s + d[2], 0));
-      if (outrosDesc > 0.009) DESC.push(['Outros descontos', 'rescisão paga à parte, adiantamento de férias e demais rubricas', outrosDesc]);
-      DESC.forEach(([r, s, v]) => { if (!v) return; h += linha(r, s + ' · ' + Fmt.pct(v / esc_ * 100) + ' do bruto', v, [[pc(resto - v), pc(resto), cor.desc]], false, '− '); resto -= v; });
-      h += linha('Folha líquida', 'a pagar no fechamento', x.liquido, [[0, pc(x.liquido), cor.liq]], true);
+      if (outrosDesc > 0.009) DESC.push(['Outros descontos', 'rescisão paga à parte, adiantamento de férias e demais rubricas', outrosDesc, 'outrosDesc']);
+      DESC.forEach(([r, s, v, k]) => { if (!v) return; h += linha(r, s + ' · ' + Fmt.pct(v / esc_ * 100) + ' do bruto', v, [[pc(resto - v), pc(resto), cor.desc]], false, '− ', k, 'descontos'); resto -= v; });
+      h += linha('Folha líquida', 'a pagar no fechamento', x.liquido, [[0, pc(x.liquido), cor.liq]], true, '', 'liquido', 'descontos');
     } else {
       const fim = x.custoFolha + Math.max(0, x.provisoes - x.feriasComEnc) + x.va, esc_ = Math.max(fim, x.custo, x.bruto) || 1, pc = v => v / esc_ * 100;
       let cum = x.bruto;
       const brC = x.bruto - x.ajustes, liqC = Math.min(x.liquido, brC);   // bruto que vira custo (sem os ajustes técnicos do Domínio)
-      h += linha('Folha bruta', 'total de proventos', x.bruto, [[0, pc(x.liquido), cor.liq], [pc(x.liquido) + .3, pc(x.bruto), cor.desc]], true);
-      if (x.ajustes > 0.009) { h += linha('Ajustes do Domínio', 'estornos, estouros, salário-família e acidente: não são custo da empresa', x.ajustes, [[pc(cum - x.ajustes), pc(cum), cor.desc]], false, '− '); cum -= x.ajustes; }
-      [['INSS da empresa', '20% sobre a folha', x.inss_empresa], ['RAT e terceiros', '3% + 5,8%', x.rat + x.terceiros], ['FGTS', '8%', x.fgts]].forEach(([r, s, v]) => { h += linha(r, s, v, [[pc(cum), pc(cum + v), cor.enc]], false, '+ '); cum += v; });
-      h += linha('Custo da folha', x.ajustes > 0.009 ? 'bruto sem os ajustes + encargos' : 'bruto + encargos', x.custoFolha, [[0, pc(liqC), cor.liq], [pc(liqC) + .3, pc(brC), cor.desc], [pc(brC) + .3, pc(x.custoFolha), cor.enc]], true);
+      h += linha('Folha bruta', 'proventos dos empregados', x.bruto, [[0, pc(x.liquido), cor.liq], [pc(x.liquido) + .3, pc(x.bruto), cor.desc]], true, '', 'bruto', 'proventos');
+      if (x.ajustes > 0.009) { h += linha('Ajustes do Domínio', 'estornos, estouros, salário-família e acidente: não são custo da empresa', x.ajustes, [[pc(cum - x.ajustes), pc(cum), cor.desc]], false, '− ', 'ajustes', 'proventos'); cum -= x.ajustes; }
+      [['INSS da empresa', '20% sobre a base do INSS', x.inss_empresa, 'inss_empresa'], ['RAT e terceiros', '3% + 5,8% sobre a base do INSS', x.rat + x.terceiros, 'ratTer'], ['FGTS', '8% (valor do extrato)', x.fgts, 'fgts']].forEach(([r, s, v, k]) => { h += linha(r, s, v, [[pc(cum), pc(cum + v), cor.enc]], false, '+ ', k, 'custo'); cum += v; });
+      h += linha('Custo da folha', x.ajustes > 0.009 ? 'bruto sem os ajustes + encargos' : 'bruto + encargos', x.custoFolha, [[0, pc(liqC), cor.liq], [pc(liqC) + .3, pc(brC), cor.desc], [pc(brC) + .3, pc(x.custoFolha), cor.enc]], true, '', 'custoFolha', 'custo');
       const prov = x.provisoes - x.feriasComEnc;
-      h += linha('Provisões de 13º e férias', 'estimativa, já sem as férias pagas no mês', prov, [[pc(Math.min(cum, cum + prov)), pc(Math.max(cum, cum + prov)), cor.prov]], false, prov >= 0 ? '+ ' : '− '); cum += prov;
-      h += linha('Vale-alimentação', Fmt.brl(Base.PARAM.va_dia) + ' por dia trabalhado', x.va, [[pc(cum), pc(cum + x.va), cor.prov]], false, '+ '); cum += x.va;
-      h += linha('Custo total', 'por competência', x.custo, [[0, pc(liqC), cor.liq], [pc(liqC) + .3, pc(brC), cor.desc], [pc(brC) + .3, pc(x.custoFolha), cor.enc], [pc(x.custoFolha) + .3, pc(x.custo), cor.prov]], true);
+      h += linha('Provisões de 13º e férias', 'estimativa, já sem as férias pagas no mês', prov, [[pc(Math.min(cum, cum + prov)), pc(Math.max(cum, cum + prov)), cor.prov]], false, prov >= 0 ? '+ ' : '− ', 'provLiq', 'custo'); cum += prov;
+      h += linha('Vale-alimentação', x.va > 0.009 ? Fmt.brl(Regras.vaPadrao()) + ' por pessoa no mês (valor fixo)' : Regras.vaPadrao() > 0 ? 'não lançado neste mês: importe o extrato de novo para entrar ' + Fmt.brl(Regras.vaPadrao()) + ' por pessoa' : 'sem valor: defina em Cadastros › Vale-alimentação', x.va, [[pc(cum), pc(cum + x.va), cor.prov]], false, '+ ', 'va', 'custo'); cum += x.va;
+      h += linha('Custo total', 'por competência', x.custo, [[0, pc(liqC), cor.liq], [pc(liqC) + .3, pc(brC), cor.desc], [pc(brC) + .3, pc(x.custoFolha), cor.enc], [pc(x.custoFolha) + .3, pc(x.custo), cor.prov]], true, '', 'custo', 'custo');
     }
-    const prov = [['Salários', x.salario_mes], ['Horas extras + DSR', x.he_valor], ['Adicional noturno', x.noturno_valor], ['Férias + 1/3', x.ferias_valor], ['Rescisões', x.rescisao_valor], ['Afastamentos (15 dias)', x.afastamento_valor], ['Outros proventos', x.outrosProv], ['Ajustes do Domínio (não são custo)', x.ajustes]].filter(p => p[1] > 0.009);
-    return '<div class="grade g-3-2"><section class="painel"><div class="painel-cab"><div><h2>' + (lado === 'liq' ? 'Do bruto ao líquido' : 'Do bruto ao custo') + '</h2><span class="sub">' + esc(rotSel()) + '</span></div>' + UI.seg('fo-comp', [{ v: 'liq', rot: 'Bruto → líquido' }, { v: 'custo', rot: 'Bruto → custo' }], lado, 'sm') + '</div><div class="painel-corpo"><div class="cascata">' + h + '</div></div></section>' +
-      '<section class="painel"><div class="painel-cab"><div><h2>Do que é feito o bruto</h2><span class="sub">proventos por grupo</span></div></div><div class="painel-corpo" style="padding-top:8px">' + UI.ranking(prov.map(p => ({ rot: p[0], v: p[1], txt: Fmt.brl(p[1]), extra: Fmt.pct(p[1] / (x.bruto || 1) * 100) }))) + '</div></section></div>';
+    const prov = [['Salários', x.salario_mes, 'salario_mes'], ['Horas extras + DSR', x.he_valor, 'he_valor'], ['Adicional noturno', x.noturno_valor, 'noturno_valor'], ['Férias + 1/3', x.ferias_valor, 'ferias_valor'], ['Rescisões', x.rescisao_valor, 'rescisao_valor'], ['Afastamentos (15 dias)', x.afastamento_valor, 'afastamento_valor'], ['Outros proventos', x.outrosProv, 'outrosProv'], ['Ajustes do Domínio (não são custo)', x.ajustes, 'ajustes']].filter(p => p[1] > 0.009);
+    return '<div class="grade g-3-2"><section class="painel"><div class="painel-cab"><div><h2>' + (lado === 'liq' ? 'Do bruto ao líquido' : 'Do bruto ao custo') + '</h2><span class="sub">' + esc(rotSel()) + (mes ? ' · clique numa linha para ver quem compõe o valor' : '') + '</span></div>' + UI.seg('fo-comp', [{ v: 'liq', rot: 'Bruto → líquido' }, { v: 'custo', rot: 'Bruto → custo' }], lado, 'sm') + '</div><div class="painel-corpo"><div class="cascata" id="fo-cascata">' + h + '</div>' + notaPonte(x) + '</div></section>' +
+      '<section class="painel"><div class="painel-cab"><div><h2>Do que é feito o bruto</h2><span class="sub">proventos por grupo' + (mes ? ' · clique para ver por pessoa' : '') + '</span></div></div><div class="painel-corpo" style="padding-top:8px" id="fo-prov">' + UI.ranking(prov.map(p => ({ rot: p[0], v: p[1], txt: Fmt.brl(p[1]), extra: Fmt.pct(p[1] / (x.bruto || 1) * 100), acao: mes ? 'rastro:' + p[2] : '' }))) + '</div></section></div>';
   }
+  /** de um total da Composição para a tabela por pessoa, com a coluna em destaque e o valor do total para conferir */
+  function rastrear(k, vis, rot) {
+    const x = atual(), c = COLS[vis].find(cc => cc[0] === k);
+    st.vis = vis; st.ord = { k, d: -1 }; st.q = ''; st.rastro = { comp: st.mes, k, rot: rot || (c ? c[1] : k), total: x[k] };
+    trocarAba('pessoas');
+  }
+
+  // ------------------------------------------------------------ por pessoa: todos os números de cada um, com rastro até o PDF
+  const VIS = [{ v: 'resumo', rot: 'Resumo' }, { v: 'proventos', rot: 'Proventos' }, { v: 'descontos', rot: 'Descontos' }, { v: 'custo', rot: 'Encargos e custo' }];
+  const COLS = {
+    resumo: [['bruto', 'Bruto'], ['he_horas', 'Horas extras', 'h'], ['descontos', 'Descontos'], ['liquido', 'Líquido', 'b'], ['custo', 'Custo total']],
+    proventos: [['salario_mes', 'Salário'], ['he_valor', 'HE + DSR'], ['noturno_valor', 'Ad. noturno'], ['ferias_valor', 'Férias + 1/3'], ['rescisao_valor', 'Rescisão'], ['afastamento_valor', 'Afastam.'], ['outrosProv', 'Outros'], ['ajustes', 'Ajustes*'], ['bruto', 'Bruto', 'b']],
+    descontos: [['inss', 'INSS'], ['irrf', 'IRRF'], ['vt', 'Vale-transp.'], ['adiantamento', 'Adiantam.'], ['consignado', 'Crédito trab.'], ['faltas_valor', 'Faltas'], ['outrosDesc', 'Outros'], ['descontos', 'Descontos'], ['liquido', 'Líquido', 'b']],
+    custo: [['base_inss', 'Base INSS'], ['inss_empresa', 'INSS empresa'], ['ratTer', 'RAT + terc.'], ['fgts', 'FGTS'], ['provLiq', 'Provisões'], ['va', 'VA'], ['custo', 'Custo total', 'b']]
+  };
+  const NOTA_VIS = {
+    resumo: 'Custo total = bruto − ajustes + encargos + provisões − férias pagas no mês (com encargos) + VA: a mesma conta da Composição, pessoa por pessoa.',
+    proventos: '*Ajustes: estornos, estouros, salário-família e acidente pago pelo INSS — entram no bruto do Domínio, mas não são custo da empresa.',
+    descontos: 'Outros: rescisão paga à parte, adiantamento de férias e as demais rubricas de desconto do extrato.',
+    custo: 'INSS empresa, RAT e terceiros = alíquota × base do INSS da pessoa; FGTS = valor do extrato; provisões de 13º e férias = (salário + HE + noturno) ÷ 12 × encargos, já sem as férias pagas no mês. VA: valor fixo por pessoa no mês, lançado na importação do extrato.'
+  };
+  const comConta = x => Object.assign(x, Regras.contaLinha(x));
+  const valCel = (x, c) => c[2] === 'h' ? (x[c[0]] ? Fmt.int(x[c[0]]) + ' h' : '<span class="dim">—</span>') : Math.abs(x[c[0]]) < 0.005 ? '<span class="dim">—</span>' : (c[2] === 'b' ? '<b>' + Fmt.brl(x[c[0]]) + '</b>' : Fmt.brl(x[c[0]]));
   async function porPessoa() {
     if (st.mes === 'ano') return '<section class="painel">' + UI.vazio('Escolha um mês', 'A tabela por pessoa mostra um mês de cada vez. Clique num mês no seletor acima.', 'calendario') + '</section>';
-    const L = await API.folha.pessoasDoMes(st.mes);
+    const L = (await API.folha.pessoasDoMes(st.mes)).map(comConta);
     const q = norm(st.q);
     const M = L.filter(x => !q || norm(x.nome + ' ' + x.funcao + ' ' + x.setor).includes(q));
-    const custo = x => x.bruto + x.inss_empresa + x.rat + x.terceiros + x.fgts + x.va;
-    M.forEach(x => { x.custo = r2(custo(x)); });
+    const cols = COLS[st.vis] || COLS.resumo;
+    if (!cols.some(c => c[0] === st.ord.k) && st.ord.k !== 'nome') st.ord = { k: cols[cols.length - 1][0], d: -1 };
     const k = st.ord.k; M.sort((a, b) => (k === 'nome' ? norm(a.nome).localeCompare(norm(b.nome)) : (a[k] - b[k])) * st.ord.d);
     const max = Math.max.apply(null, L.map(x => x.bruto).concat([1]));
-    const th = (k, rot, n) => '<th class="' + (n ? 'n' : '') + '" aria-sort="' + (st.ord.k === k ? (st.ord.d > 0 ? 'ascending' : 'descending') : 'none') + '"><button type="button" data-ord="' + k + '">' + esc(rot) + '<i class="seta">' + (st.ord.k === k ? (st.ord.d > 0 ? '↑' : '↓') : '↕') + '</i></button></th>';
-    return '<section class="painel" style="overflow:hidden"><div class="painel-cab" style="padding-bottom:12px"><div><h2>Por pessoa</h2><span class="sub">' + esc(Fmt.mesTitulo(st.mes)) + ' · ' + L.length + ' pessoas no extrato</span></div><label class="busca" style="min-width:260px"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg><input class="inp" id="fo-q" type="search" placeholder="Buscar pessoa, cargo ou setor" value="' + esc(st.q) + '"></label></div>' +
-      '<div class="tabela-caixa alta"><table class="t"><thead><tr>' + th('nome', 'Pessoa') + '<th class="esconde-movel"><span><span class="legenda"><span class="it"><i class="sw" style="background:var(--s1)"></i>líquido</span><span class="it"><i class="sw" style="background:var(--s3)"></i>descontos</span></span></span></th>' + th('bruto', 'Bruto', 1) + th('he_horas', 'Horas extras', 1) + th('descontos', 'Descontos', 1) + th('liquido', 'Líquido', 1) + th('custo', 'Custo*', 1) + '</tr></thead><tbody>' +
-      (M.length ? M.map(x => '<tr data-abrir="' + x.colaborador_id + '"><td><div class="pessoa">' + UI.avatar(x.nome) + '<div><b>' + esc(x.nome) + '</b><small>' + esc(x.funcao) + ' · ' + esc(x.setor) + '</small></div></div></td><td class="esconde-movel" style="width:22%"><span class="mini-barra"><i style="left:0;width:' + (Math.max(0, x.liquido) / max * 100) + '%;background:var(--s1)"></i><i style="left:calc(' + (Math.max(0, x.liquido) / max * 100) + '% + 2px);width:' + (x.descontos / max * 100) + '%;background:var(--s3)"></i></span></td><td class="n">' + Fmt.brl(x.bruto) + '</td><td class="n">' + (x.he_horas ? Fmt.int(x.he_horas) + ' h' : '<span class="dim">—</span>') + '</td><td class="n">' + Fmt.brl(x.descontos) + '</td><td class="n"><b>' + Fmt.brl(x.liquido) + '</b></td><td class="n dim">' + Fmt.brl(x.custo) + '</td></tr>').join('') : '<tr><td colspan="7">' + UI.vazio('Ninguém com "' + st.q + '"', '', 'busca') + '</td></tr>') +
-      '</tbody><tfoot><tr><td colspan="7">*Custo estimado: bruto + INSS da empresa, RAT, terceiros, FGTS e VA da pessoa no mês. Bruto da lista: <b>' + Fmt.brl(soma(M, x => x.bruto)) + '</b> · líquido <b>' + Fmt.brl(soma(M, x => x.liquido)) + '</b></td></tr></tfoot></table></div></section>';
+    const rs = st.rastro && st.rastro.comp === st.mes ? st.rastro : null;
+    const dest = c => rs && rs.k === c[0] ? ' destaque' : '';
+    const th = (kk, rot, n, cls) => '<th class="' + (n ? 'n' : '') + (cls || '') + '" aria-sort="' + (st.ord.k === kk ? (st.ord.d > 0 ? 'ascending' : 'descending') : 'none') + '"><button type="button" data-ord="' + kk + '">' + esc(rot) + '<i class="seta">' + (st.ord.k === kk ? (st.ord.d > 0 ? '↑' : '↓') : '↕') + '</i></button></th>';
+    const barra = st.vis === 'resumo';
+    const somaCol = c => soma(M, x => x[c[0]]);
+    const rastroH = rs ? '<div class="insight" id="fo-rastro" style="margin:0 18px 12px">' + ic('lista') + '<span><b>' + esc(rs.rot) + '</b> de ' + esc(Fmt.mes(st.mes)) + ' na Composição: <b>' + Fmt.brl(rs.total) + '</b>. ' + (q ? 'A busca está filtrando a lista.' : 'É a soma da coluna em destaque: ' + Fmt.brl(soma(M, x => x[rs.k])) + ' de ' + M.length + ' pessoas' + (Math.abs(soma(M, x => x[rs.k]) - rs.total) < 0.01 ? ' ✓' : '')) + ' Clique numa pessoa para ver a conta dela e as linhas do PDF. <button type="button" class="lnk" id="fo-rastro-x">tirar o destaque</button></span></div>' : '';
+    return '<section class="painel" style="overflow:hidden"><div class="painel-cab" style="padding-bottom:12px;flex-wrap:wrap;gap:10px"><div><h2>Por pessoa</h2><span class="sub">' + esc(Fmt.mesTitulo(st.mes)) + ' · ' + L.length + ' pessoas no extrato · clique numa pessoa para ver a conta completa</span></div>' +
+      '<div class="acoes" style="flex-wrap:wrap">' + UI.seg('fo-vis', VIS, st.vis, 'sm') + '<label class="busca" style="min-width:220px"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg><input class="inp" id="fo-q" type="search" placeholder="Buscar pessoa, cargo ou setor" value="' + esc(st.q) + '"></label><button class="btn btn-sec btn-sm" type="button" id="fo-csv-p">' + ic('baixar') + 'CSV do mês</button></div></div>' + rastroH +
+      '<div class="tabela-caixa alta"><table class="t t-pessoas"><thead><tr>' + th('nome', 'Pessoa') + (barra ? '<th class="esconde-movel"><span><span class="legenda"><span class="it"><i class="sw" style="background:var(--s1)"></i>líquido</span><span class="it"><i class="sw" style="background:var(--s3)"></i>descontos</span></span></span></th>' : '') + cols.map(c => th(c[0], c[1], 1, dest(c))).join('') + '</tr></thead><tbody>' +
+      (M.length ? M.map(x => '<tr data-det="' + x.colaborador_id + '" tabindex="0"><td><div class="pessoa">' + UI.avatar(x.nome) + '<div><b>' + esc(x.nome) + '</b><small>' + esc(x.funcao) + ' · ' + esc(x.setor) + '</small></div></div></td>' +
+        (barra ? '<td class="esconde-movel" style="width:20%"><span class="mini-barra"><i style="left:0;width:' + (Math.max(0, x.liquido) / max * 100) + '%;background:var(--s1)"></i><i style="left:calc(' + (Math.max(0, x.liquido) / max * 100) + '% + 2px);width:' + (Math.max(0, x.descontos) / max * 100) + '%;background:var(--s3)"></i></span></td>' : '') +
+        cols.map(c => '<td class="n' + dest(c) + '">' + valCel(x, c) + '</td>').join('') + '</tr>').join('') : '<tr><td colspan="' + (cols.length + (barra ? 2 : 1)) + '">' + UI.vazio('Ninguém com "' + st.q + '"', '', 'busca') + '</td></tr>') +
+      '</tbody><tfoot><tr class="tot"><td><b>' + (q ? 'Soma das ' + M.length + ' pessoas filtradas' : 'Total do mês (' + M.length + ' pessoas)') + '</b></td>' + (barra ? '<td class="esconde-movel"></td>' : '') + cols.map(c => '<td class="n' + dest(c) + '"><b>' + (c[2] === 'h' ? Fmt.int(somaCol(c)) + ' h' : Fmt.brl(somaCol(c))) + '</b></td>').join('') + '</tr>' +
+      '<tr><td colspan="' + (cols.length + (barra ? 2 : 1)) + '">' + esc(NOTA_VIS[st.vis] || '') + (q ? '' : ' Os totais desta linha são os mesmos da Composição.') + '</td></tr></tfoot></table></div></section>';
+  }
+  function csvPessoas() {
+    return API.folha.pessoasDoMes(st.mes).then(L => {
+      const C = [['nome', 'Pessoa'], ['matricula', 'Matrícula'], ['funcao', 'Cargo'], ['setor', 'Setor'], ['dias', 'Dias'], ['salario', 'Salário contratual'], ['salario_mes', 'Salário do mês'], ['he_horas', 'HE (h)'], ['he_valor', 'HE + DSR'], ['he_dsr', 'DSR das HE'], ['noturno_horas', 'Noturno (h)'], ['noturno_valor', 'Adicional noturno'], ['ferias_valor', 'Férias + 1/3'], ['rescisao_valor', 'Rescisão'], ['afastamento_valor', 'Afastamento'], ['outrosProv', 'Outros proventos'], ['ajustes', 'Ajustes do Domínio'], ['bruto', 'Bruto'],
+        ['inss', 'INSS'], ['irrf', 'IRRF'], ['vt', 'Vale-transporte'], ['adiantamento', 'Adiantamento'], ['consignado', 'Crédito do trabalhador'], ['faltas_horas', 'Faltas (h)'], ['faltas_valor', 'Faltas (R$)'], ['outrosDesc', 'Outros descontos'], ['descontos', 'Descontos'], ['liquido', 'Líquido'],
+        ['base_inss', 'Base do INSS'], ['inss_empresa', 'INSS empresa'], ['rat', 'RAT'], ['terceiros', 'Terceiros'], ['fgts', 'FGTS'], ['custoFolha', 'Custo da folha'], ['prov13', 'Provisão 13º'], ['provFerias', 'Provisão férias'], ['feriasComEnc', 'Férias pagas com encargos'], ['va', 'VA'], ['custo', 'Custo total']];
+      const txt = v => typeof v === 'number' ? String(r2(v)).replace('.', ',') : '"' + String(v === null || v === undefined ? '' : v).replace(/"/g, '""') + '"';
+      const linhas = [C.map(c => c[1])].concat(L.map(comConta).sort((a, b) => norm(a.nome).localeCompare(norm(b.nome))).map(x => C.map(c => txt(x[c[0]]))));
+      UI.baixarCsv('folha-por-pessoa-' + st.mes + '.csv', linhas.map(l => l.join(';')).join('\r\n'), 'Folha por pessoa de ' + Fmt.mesCurto(st.mes) + ' exportada');
+    });
+  }
+  /** a conta completa de uma pessoa num mês: bruto → líquido, bruto → custo (com a fórmula de cada linha)
+      e as linhas do PDF do Domínio, com onde cada uma entrou */
+  const ONDE = { salario: 'Salário', prolabore: 'Pró-labore', he: 'Horas extras', he_dsr: 'DSR das horas extras', noturno: 'Adicional noturno', noturno_dsr: 'DSR do noturno', ferias: 'Férias + 1/3', rescisao: 'Rescisão', afastamento: 'Afastamento (15 dias)', ajuste: 'Ajuste (não é custo)', outros: 'Outros proventos',
+    inss: 'INSS', irrf: 'IRRF', vt: 'Vale-transporte', consignado: 'Crédito do trabalhador', adiantamento: 'Adiantamento', faltas_horas: 'Faltas', faltas_dias: 'Faltas', faltas_dsr: 'Faltas (DSR)', outros_desc: 'Outros descontos' };
+  async function detalhe(id, comp) {
+    comp = comp || st.mes;
+    const [x0, Lp] = await Promise.all([API.folha.detalhe(comp, id), API.folha.daPessoa(id)]);
+    if (!x0) { UI.toast('Esta pessoa não está na folha de ' + Fmt.mes(comp), 'aviso'); return; }
+    const x = comConta(x0), P = Base.PARAM, meses = Lp.map(l => l.comp).sort(), i = meses.indexOf(comp);
+    const pct = v => Fmt.dec(v * 100, v * 100 % 1 ? 1 : 0).replace(/,0$/, '') + '%';
+    const lin = (rot, v, sub, cls, sinal) => Math.abs(v) < 0.005 && !cls ? '' : '<div class="dl' + (cls ? ' ' + cls : '') + '"><span>' + esc(rot) + (sub ? '<small>' + sub + '</small>' : '') + '</span><b>' + (sinal || '') + Fmt.brl(Math.abs(v)) + '</b></div>';
+    const liqH = lin('Salário', x.salario_mes, x.dias ? Fmt.dec(x.dias, 0) + ' dias · salário contratual ' + Fmt.brl(x.salario) : '') + lin('Horas extras + DSR', x.he_valor, x.he_horas ? Fmt.dec(x.he_horas, 1) + ' h' + (x.he_dsr ? ' · DSR ' + Fmt.brl(x.he_dsr) : '') : '') + lin('Adicional noturno', x.noturno_valor, x.noturno_horas ? Fmt.dec(x.noturno_horas, 1) + ' h' : '') +
+      lin('Férias + 1/3', x.ferias_valor) + lin('Rescisão', x.rescisao_valor) + lin('Afastamento (15 dias)', x.afastamento_valor, x.atestados_dias ? Fmt.dec(x.atestados_dias, 0) + ' dias' : '') + lin('Outros proventos', x.outrosProv) + lin('Ajustes do Domínio', x.ajustes, 'entram no bruto, não são custo') +
+      lin('Bruto', x.bruto, 'total de proventos da pessoa', 'tot') +
+      lin('INSS', x.inss, '', '', '− ') + lin('IRRF', x.irrf, '', '', '− ') + lin('Vale-transporte', x.vt, '', '', '− ') + lin('Adiantamento (vale do dia 20)', x.adiantamento, '', '', '− ') + lin('Crédito do trabalhador', x.consignado, '', '', '− ') + lin('Faltas e atrasos', x.faltas_valor, x.faltas_horas ? Fmt.dec(x.faltas_horas, 1) + ' h' : '', '', '− ') + lin('Outros descontos', x.outrosDesc, '', '', '− ') +
+      lin('Líquido', x.liquido, 'descontos ' + Fmt.brl(x.descontos), 'tot');
+    const custoH = lin('Bruto', x.bruto) + lin('Ajustes do Domínio', x.ajustes, 'não são custo', '', '− ') +
+      lin('INSS da empresa', x.inss_empresa, pct(P.inss_empresa) + ' × base do INSS ' + Fmt.brl(x.base_inss), '', '+ ') + lin('RAT', x.rat, pct(P.rat) + ' × base do INSS', '', '+ ') + lin('Terceiros', x.terceiros, pct(P.terceiros) + ' × base do INSS', '', '+ ') + lin('FGTS', x.fgts, 'valor do extrato (8% da base do FGTS)', '', '+ ') +
+      lin('Custo da folha', x.custoFolha, '', 'tot') +
+      lin('Provisão do 13º', x.prov13, '(salário + HE + noturno) ' + Fmt.brl(x.baseProv) + ' ÷ 12 × ' + Fmt.dec(x.fatorEnc, 3) + ' de encargos', '', '+ ') + lin('Provisão de férias + 1/3', x.provFerias, Fmt.brl(x.baseProv) + ' ÷ 12 × 4/3 × ' + Fmt.dec(x.fatorEnc, 3), '', '+ ') + lin('Férias pagas no mês (com encargos)', x.feriasComEnc, 'já estavam provisionadas', '', '− ') +
+      lin('Vale-alimentação', x.va, x.va > 0.009 ? 'valor fixo do mês' : Regras.vaPadrao() > 0 ? 'não lançado neste mês: importe o extrato de ' + esc(Fmt.mes(comp)) + ' de novo' : 'sem valor: defina em Cadastros › Vale-alimentação', 'sempre', '+ ') +
+      lin('Custo total', x.custo, 'por competência', 'tot');
+    const R = x.rubricas, sp = R ? r2(soma(R.filter(r => r.t === 'P'), r => r.v)) : 0, sd = R ? r2(soma(R.filter(r => r.t === 'D'), r => r.v)) : 0;
+    const okP = R && Math.abs(sp - x.bruto) < 0.01, okD = R && Math.abs(sd - x.descontos) < 0.01;
+    const grupoRub = (t, rot, tot, ok, alvo) => { const G = R.filter(r => r.t === t); return !G.length ? '' : '<tr class="g"><td colspan="2">' + rot + '</td><td class="n">' + Fmt.brl(tot) + ' <span class="' + (ok ? 'ok' : 'ruim') + '">' + (ok ? '= ' + alvo + ' ✓' : '≠ ' + alvo) + '</span></td></tr>' +
+      G.map(r => '<tr><td class="num">' + esc(r.c) + '</td><td>' + esc(r.d) + '<small>' + (r.r ? 'ref. ' + esc(r.r) + ' · ' : '') + 'entrou em <span class="tag' + (r.g === 'ajuste' ? ' warn' : r.t === 'D' ? '' : ' brand') + '">' + esc(ONDE[r.g] || r.g) + '</span></small></td><td class="n">' + (t === 'D' ? '− ' : '') + Fmt.brl(r.v) + '</td></tr>').join(''); };
+    const rubH = R ? '<div class="det-rub"><table class="t t-rub"><thead><tr><th><span>Cód.</span></th><th><span>Rubrica do Domínio</span></th><th class="n"><span>Valor</span></th></tr></thead><tbody>' +
+      grupoRub('P', 'Proventos', sp, okP, 'bruto') + grupoRub('D', 'Descontos', sd, okD, 'descontos') + '</tbody></table></div>'
+      : '<p class="dim">As linhas do PDF passam a ser guardadas nas importações a partir desta versão. Para ver as deste mês, importe o extrato de ' + esc(Fmt.mes(comp)) + ' de novo (substitui o mês, sem perder nada).</p>';
+    const nav = '<div class="det-nav"><button type="button" class="btn btn-ghost btn-sm" data-det-mes="' + (i > 0 ? meses[i - 1] : '') + '"' + (i > 0 ? '' : ' disabled') + '>' + ic('voltar') + (i > 0 ? Fmt.mesCurto(meses[i - 1]) : '') + '</button><b>' + esc(Fmt.mesTitulo(comp)) + '</b><button type="button" class="btn btn-ghost btn-sm" data-det-mes="' + (i >= 0 && i < meses.length - 1 ? meses[i + 1] : '') + '"' + (i >= 0 && i < meses.length - 1 ? '' : ' disabled') + '>' + (i >= 0 && i < meses.length - 1 ? Fmt.mesCurto(meses[i + 1]) : '') + ic('seta') + '</button></div>';
+    const html = '<div class="gav-cab">' + UI.avatar(x.nome, 'lg') + '<div class="tit"><h2 id="gav-titulo">' + esc(x.nome) + '</h2><p>' + esc(x.funcao === '—' ? 'sem cargo' : x.funcao) + ' · ' + esc(x.setor === '—' ? 'sem setor' : x.setor) + (x.matricula ? ' · matr. ' + esc(x.matricula) : '') + '</p></div><button class="btn btn-ghost btn-ico fechar" type="button" data-fechar aria-label="Fechar">' + ic('x') + '</button></div>' +
+      '<div class="gav-corpo" id="det-corpo">' + nav +
+        '<div class="sec-t">Do bruto ao líquido</div><div class="det-lista">' + liqH + '</div>' +
+        '<div class="sec-t">Do bruto ao custo da empresa</div><div class="det-lista">' + custoH + '</div>' +
+        '<div class="sec-t">Linhas do extrato do Domínio</div>' + rubH +
+      '</div>' +
+      '<div class="gav-pe"><span class="msg">Os números são os do extrato de ' + esc(Fmt.mesCurto(comp)) + '; encargos e provisões, pela regra da Composição.</span><button class="btn btn-sec" type="button" data-det-ficha>' + ic('usuario') + 'Ver ficha</button></div>';
+    const g = UI.abrirGaveta(html);
+    g.addEventListener('click', e => {
+      if (e.target.closest('[data-fechar]')) { UI.fecharGaveta(); return; }
+      const m = e.target.closest('[data-det-mes]'); if (m && m.dataset.detMes) { detalhe(id, m.dataset.detMes); return; }
+      if (e.target.closest('[data-det-ficha]')) Telas.colaboradores.ficha(id, 'folha');
+    });
   }
   function extrato() {
     const G = [['Folha', [['Total de proventos', 'bruto'], ['Total de descontos', 'descontos'], ['Líquido', 'liquido']]], ['Proventos', [['Salários', 'salario_mes'], ['Horas extras + DSR', 'he_valor'], ['Adicional noturno', 'noturno_valor'], ['Férias + 1/3', 'ferias_valor'], ['Rescisões', 'rescisao_valor']]],
@@ -4720,11 +4981,23 @@ Telas.folha = (function () {
     c.innerHTML = h;
     if (animar !== false) { c.style.animation = 'none'; void c.offsetWidth; c.style.animation = 'sobe .3s var(--ease) both'; }
     if (st.aba === 'visao') ligarVisao(animar);
-    if (st.aba === 'composicao') UI.ligarSeg('fo-comp', v => { st.comp = v; desenharAba(); });
+    if (st.aba === 'composicao') {
+      UI.ligarSeg('fo-comp', v => { st.comp = v; desenharAba(); });
+      const cas = document.getElementById('fo-cascata');
+      const irCas = e => { const l = e.target.closest('[data-rastro]'); if (l) rastrear(l.dataset.rastro, l.dataset.vis, l.dataset.rot); };
+      cas.addEventListener('click', irCas);
+      cas.addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && e.target.closest('[data-rastro]')) { e.preventDefault(); irCas(e); } });
+      document.getElementById('fo-prov').addEventListener('click', e => { const b = e.target.closest('[data-acao^="rastro:"]'); if (!b) return; const k = b.dataset.acao.slice(7); rastrear(k, k === 'ajustes' || k === 'outrosProv' || /_valor$|salario_mes/.test(k) ? 'proventos' : 'resumo'); });
+    }
     if (st.aba === 'pessoas' && document.getElementById('fo-q')) {
       let t = 0; document.getElementById('fo-q').addEventListener('input', e => { clearTimeout(t); t = setTimeout(async () => { st.q = e.target.value; const pos = e.target.selectionStart; await desenharAba(false); const i = document.getElementById('fo-q'); if (i) { i.focus(); i.setSelectionRange(pos, pos); } }, 220); });
       c.querySelector('thead').addEventListener('click', e => { const b = e.target.closest('[data-ord]'); if (!b) return; const k = b.dataset.ord; st.ord = st.ord.k === k ? { k, d: -st.ord.d } : { k, d: k === 'nome' ? 1 : -1 }; desenharAba(false); });
-      c.querySelector('tbody').addEventListener('click', e => { const tr = e.target.closest('tr[data-abrir]'); if (tr) Telas.colaboradores.ficha(tr.dataset.abrir, 'folha'); });
+      const tb = c.querySelector('tbody');
+      tb.addEventListener('click', e => { const tr = e.target.closest('tr[data-det]'); if (tr) detalhe(tr.dataset.det); });
+      tb.addEventListener('keydown', e => { const tr = e.target.closest('tr[data-det]'); if (tr && e.key === 'Enter') detalhe(tr.dataset.det); });
+      UI.ligarSeg('fo-vis', v => { st.vis = v; desenharAba(false); });
+      document.getElementById('fo-csv-p').addEventListener('click', csvPessoas);
+      const rx = document.getElementById('fo-rastro-x'); if (rx) rx.addEventListener('click', () => { st.rastro = null; desenharAba(false); });
     }
     if (st.aba === 'extrato') document.getElementById('fo-csv').addEventListener('click', exportar);
     if (st.aba === 'conferencia') document.getElementById('fo-imp2').addEventListener('click', importar);
@@ -4808,7 +5081,8 @@ Telas.folha = (function () {
         (ferias.length ? '<section class="passo"><h3><i>4</i>Férias informadas no extrato</h3><div class="ex-lista">' + ferias.map(r => r.x.ferias.map(f => '<div class="ex-p"><div><b>' + esc(r.pessoa ? r.pessoa.nome : Fmt.nome(r.x.nome)) + '</b><small>' + dt(f.inicio) + ' a ' + dt(f.fim) + ' · ' + (Dt.entre(f.inicio, f.fim) + 1) + ' dias · ficam registradas nas férias da pessoa (sem criar tarefas)</small></div></div>').join('')).join('') + '</div></section>' : '') +
         '<section class="passo"><h3><i>' + (ferias.length ? 5 : 4) + '</i>O que vai para o sistema</h3>' +
           (jaTem ? '<div class="insight erro-ins">' + ic('alerta') + '<span>' + esc(Fmt.mesTitulo(comp)) + ' já foi importado antes: ao gravar, o mês inteiro é substituído por este extrato.</span></div>' : '') +
-          '<div class="ex-kpis">' + [['Pessoas', String(importados.length)], ['Proventos', brl(soma('proventos'))], ['Líquido', brl(soma('liquido'))], ['FGTS', brl(soma('fgts'))], ['Horas extras', Fmt.dec(sf('he_horas'), 1) + ' h'], ['Faltas', Fmt.dec(sf('faltas_horas'), 1) + ' h']].map(([r, v]) => '<div><span>' + r + '</span><b>' + v + '</b></div>').join('') + '</div>' +
+          '<div class="ex-kpis">' + [['Pessoas', String(importados.length)], ['Proventos', brl(soma('proventos'))], ['Líquido', brl(soma('liquido'))], ['FGTS', brl(soma('fgts'))], ['Vale-alimentação', brl(importados.reduce((s, r) => s + (((r.x.rodape || {}).proventos || 0) > 0 ? Regras.vaMes(r.pessoa ? P.find(q => q.id === r.pessoa.id) : null) : 0), 0))], ['Horas extras', Fmt.dec(sf('he_horas'), 1) + ' h'], ['Faltas', Fmt.dec(sf('faltas_horas'), 1) + ' h']].map(([r, v]) => '<div><span>' + r + '</span><b>' + v + '</b></div>').join('') + '</div>' +
+          (Regras.vaPadrao() > 0 ? '' : '<div class="insight aviso-ins" style="margin-top:10px">' + ic('alerta') + '<span>O vale-alimentação está sem valor (Cadastros › Vale-alimentação): o VA deste mês vai entrar como R$ 0,00. Defina o valor antes de gravar.</span></div>') +
           '<p class="dim ex-sub">Proventos do PDF: ' + brl(a.totais.proventos) + ' (inclui ' + brl(cont.reduce((s, x) => s + ((x.rodape || {}).proventos || 0), 0)) + ' de pró-labore' + (sem.filter(r => dec[r.x.codigo] && dec[r.x.codigo].acao === 'ignorar').length ? ' e as pessoas que você escolheu não importar' : '') + ').</p></section>');
       rodape();
     }
@@ -4850,11 +5124,21 @@ Telas.folha = (function () {
           alvo = { chave: 'd' + x.codigo };
           novos.push({ chave: alvo.chave, nome: Fmt.nome(x.nome), cpf: x.cpf, admissao: x.admissao, desligamento: d.acao === 'desligado' ? d.data : null, motivo: d.acao === 'desligado' ? x.motivo : '', cargo_id: cg ? cg.id : null, salario: x.salario, codigo_dominio: x.codigo });
         }
-        linhas.push(Object.assign({}, alvo, { setor, funcao }, Extrato.paraFolha(x, Base.PARAM)));
+        // as linhas do PDF ficam guardadas com a pessoa: dá para rastrear cada número até a rubrica do Domínio
+        const rubricas = x.rubricas.map(r => ({ c: r.codigo, d: r.descricao, r: r.ref_txt || '', v: r.valor, t: r.tipo, g: Extrato.classificar(r) }));
+        // vale-alimentação do mês: valor fixo por pessoa (o da ficha, ou o padrão da empresa) para quem recebeu salário no mês
+        const fo = Extrato.paraFolha(x, Base.PARAM), va = fo.bruto > 0 ? Regras.vaMes(r.pessoa ? P.find(q => q.id === r.pessoa.id) : null) : 0;
+        linhas.push(Object.assign({}, alvo, { setor, funcao }, fo, { va, rubricas }));
         x.ferias.forEach(f => ferias.push(Object.assign({}, alvo, { inicio: f.inicio, dias: Dt.entre(f.inicio, f.fim) + 1, periodo_inicio: periodoDasFerias(adm, f.inicio, fer) })));
       });
       const atencao = a.conferencia.filter(c => !c.ok);
-      const dados = { extrato: { comp, arquivo, emitido_em: a.cab.emissao, situacao: atencao.length ? 'atencao' : 'conferido', nota: atencao.length ? atencao.map(c => c.item + ': ' + c.detalhe).join(' · ') : a.conferencia.filter(c => !c.aviso).length + ' conferências com o PDF: tudo certo' + (a.conferencia.some(c => c.aviso) ? ' · não conferido (o PDF não traz): ' + a.conferencia.filter(c => c.aviso).map(c => c.item).join(', ') : '') }, linhas, novos, vinculos, desligamentos, ferias, correcoes };
+      // a ponte até o "Total Geral Proventos" do PDF: o que entra no RH + pró-labore dos sócios + quem não foi importado
+      const pv = x => (x.rodape || {}).proventos || 0, cont = a.pessoas.filter(x => x.tipo === 'contribuinte');
+      const ign = R.filter(r => !r.pessoa && (dec[r.x.codigo] || {}).acao === 'ignorar');
+      const nr = v => v === undefined || v === null ? null : r2(v);
+      const totais = { proventos_pdf: nr(a.totais.proventos), descontos_pdf: nr(a.totais.descontos), liquido_pdf: nr(a.totais.liquido), proventos_rh: r2(soma(linhas, l => l.bruto)),
+        prolabore: r2(soma(cont, pv)), prolabore_pessoas: cont.length, nao_importados: r2(soma(ign, r => pv(r.x))), nao_importados_pessoas: ign.length };
+      const dados = { extrato: { comp, arquivo, emitido_em: a.cab.emissao, situacao: atencao.length ? 'atencao' : 'conferido', totais, nota: atencao.length ? atencao.map(c => c.item + ': ' + c.detalhe).join(' · ') : a.conferencia.filter(c => !c.aviso).length + ' conferências com o PDF: tudo certo' + (a.conferencia.some(c => c.aviso) ? ' · não conferido (o PDF não traz): ' + a.conferencia.filter(c => c.aviso).map(c => c.item).join(', ') : '') }, linhas, novos, vinculos, desligamentos, ferias, correcoes };
       btn.disabled = true; btn.textContent = 'Gravando…';
       let r;
       try { r = await API.folha.importar(dados); }
@@ -4901,7 +5185,7 @@ Telas.folha = (function () {
     document.getElementById('fo-imp').addEventListener('click', importar);
     await desenharAba();
   }
-  return { titulo: 'Folha de pagamento', render, importar, abaAtual: () => st.aba };
+  return { titulo: 'Folha de pagamento', render, importar, detalhe, abaAtual: () => st.aba };
 })();
 
 /* =====================================================================
@@ -5050,7 +5334,11 @@ Telas.desligamentos = (function () {
   async function render(el) {
     const [P, F, cad] = await Promise.all([D.pessoas(), D.folha(), D.cad()]);
     // aqui tudo tem data exata (o dia do desligamento): números, gráfico e lista seguem o período
-    const C = F.map(f => f.comp), { ini, fim } = Periodo.intervalo(st.per, C), FT = Periodo.fatias(ini, fim), hoje = Dt.hoje();
+    const C = F.map(f => f.comp), { ini, fim } = Periodo.intervalo(st.per), FT = Periodo.fatias(ini, fim), hoje = Dt.hoje();
+    // antes da sequência de extratos importados, só aparece quem foi cadastrado à mão (o cadastro começou só com os ativos)
+    const cp = Periodo.completo(C), incompleto = cp && Dt.comp(ini) < cp.movimento;
+    // o período é de meses fechados: quem saiu neste mês não entra nele, então aparece num recado com atalho
+    const desMes = st.per.tipo === 'atual' ? [] : P.filter(p => p.desligamento && p.desligamento >= Dt.comp(hoje) + '-01' && p.desligamento <= hoje).sort((a, b) => b.desligamento.localeCompare(a.desligamento));
     const noPeriodo = p => p.desligamento && p.desligamento >= ini && p.desligamento <= fim;
     const des = P.filter(noPeriodo).sort((a, b) => b.desligamento.localeCompare(a.desligamento));
     const adm = P.filter(p => p.admissao >= ini && p.admissao <= fim).length;
@@ -5061,10 +5349,12 @@ Telas.desligamentos = (function () {
     const linhas = L => L.length ? L.map(p => '<tr data-abrir="' + p.id + '"><td><div class="pessoa">' + UI.avatar(p.nome) + '<div><b>' + esc(p.nome) + '</b><small>' + esc(p.funcao) + '</small></div></div></td><td>' + esc(p.setor) + '</td><td class="num">' + Fmt.data(p.admissao) + '</td><td class="num">' + Fmt.data(p.desligamento) + '</td><td class="n">' + esc(Fmt.diasCurto(Dt.entre(p.admissao, p.desligamento))) + '</td><td>' + esc(p.motivo) + '</td></tr>').join('') : '<tr><td colspan="6">' + UI.vazio('Ninguém com esses filtros', '', 'busca') + '</td></tr>';
     const L = filtrados();
     el.innerHTML = '<div id="de-wrap"><div class="cab"><div><h1>Desligamentos</h1><p>Quem saiu, quando e por quê. O período vale para os números, o gráfico e a lista.</p></div></div>' +
-      '<div class="filtros">' + UI.periodo('de-per', st.per, C) + '</div>' +
+      '<div class="filtros">' + UI.periodo('de-per', st.per) + '</div>' +
       '<p class="per-info">' + ic('calendario') + '<span>' + Periodo.explicar(st.per, C, 'Os números, o gráfico e a lista') + '</span></p>' +
+      (desMes.length ? '<div class="insight" id="de-mes" style="margin:0 0 16px">' + ic('calendario') + '<span>Neste mês (até hoje) ' + (desMes.length === 1 ? 'saiu' : 'saíram') + ' <b>' + desMes.length + '</b>: ' + esc(desMes.slice(0, 4).map(p => Fmt.primeiroUltimo(p.nome) + ' (' + Fmt.dataCurta(p.desligamento) + ')').join(', ')) + (desMes.length > 4 ? '…' : '') + '. O período acima é de meses fechados. <button type="button" class="lnk" id="de-ver-mes">Ver este mês</button></span></div>' : '') +
+      (incompleto ? '<div class="insight aviso-ins" style="margin-bottom:16px">' + ic('alerta') + '<span>Antes de <b>' + esc(Fmt.mesCurto(cp.movimento)) + '</b> a lista pode estar incompleta: o cadastro começou só com os ativos, e quem saiu antes dos extratos importados (que começam em ' + esc(Fmt.mesCurto(cp.extrato)) + ') só aparece se tiver sido cadastrado à mão. Cada extrato anterior que você importar traz quem saiu naquele mês.</span></div>' : '') +
       '<section class="kpis" style="margin-bottom:16px"><div class="kpi"><span class="k">Desligamentos no período</span><span class="v">' + des.length + '</span><span class="s">' + des.filter(p => p.motivo === 'Pedido de demissão').length + ' a pedido da pessoa</span></div><div class="kpi"><span class="k">Rotatividade mensal</span><span class="v">' + Fmt.pct(turn) + '</span><span class="s">média do período</span></div><div class="kpi"><span class="k">Tempo médio de casa na saída</span><span class="v" style="font-size:26px">' + esc(Fmt.dias(casa)) + '</span><span class="s">de quem saiu</span></div><div class="kpi"><span class="k">Saíram na experiência</span><span class="v">' + exp + '</span><span class="s">' + Fmt.pct(exp / (des.length || 1) * 100, 0) + ' das saídas</span></div></section>' +
-      '<div class="grade g-2-1" style="margin-bottom:16px"><section class="painel"><div class="painel-cab"><div><h2>Saídas por ' + FT.por + '</h2><span class="sub">' + Periodo.faixa(ini, fim) + '</span></div>' + UI.seg('de-modo', [{ v: 'motivo', rot: 'Por motivo' }, { v: 'total', rot: 'Total' }], st.modo, 'sm') + '</div><div class="painel-corpo"><div id="de-leg" style="margin-bottom:8px"></div><div id="de-graf"></div></div></section>' +
+      '<div class="grade g-2-1" style="margin-bottom:16px"><section class="painel"><div class="painel-cab"><div><h2>Saídas por ' + FT.por + '</h2><span class="sub">' + esc(Periodo.faixaDe(st.per)) + '</span></div>' + UI.seg('de-modo', [{ v: 'motivo', rot: 'Por motivo' }, { v: 'total', rot: 'Total' }], st.modo, 'sm') + '</div><div class="painel-corpo"><div id="de-leg" style="margin-bottom:8px"></div><div id="de-graf"></div></div></section>' +
       '<section class="painel"><div class="painel-cab"><h2>Por setor</h2></div><div class="painel-corpo" style="padding-top:8px">' + UI.ranking(cad.setores.map(s => ({ rot: s, v: des.filter(p => p.setor === s).length })).filter(x => x.v).sort((a, b) => b.v - a.v).map(x => ({ rot: x.rot, v: x.v, txt: Fmt.int(x.v), extra: Fmt.pct(x.v / (des.length || 1) * 100, 0) }))) + '</div></section></div>' +
       '<section class="painel" style="overflow:hidden"><div class="painel-cab" style="padding-bottom:12px"><div class="filtros" style="margin:0;flex:1"><label class="busca"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg><input class="inp" id="de-q" type="search" placeholder="Buscar nome, cargo ou motivo" value="' + esc(st.q) + '"></label><select class="inp" id="de-mot"><option value="">Todos os motivos</option>' + cad.motivos.map(m => '<option' + (m === st.motivo ? ' selected' : '') + '>' + esc(m) + '</option>').join('') + '</select><span class="conta" id="de-conta">' + L.length + ' pessoa' + (L.length === 1 ? '' : 's') + '</span></div></div>' +
       '<div class="tabela-caixa alta"><table class="t"><thead><tr><th><span>Pessoa</span></th><th><span>Setor</span></th><th><span>Admissão</span></th><th><span>Desligamento</span></th><th class="n"><span>Tempo de casa</span></th><th><span>Motivo</span></th></tr></thead><tbody id="de-tb">' +
@@ -5081,10 +5371,13 @@ Telas.desligamentos = (function () {
     };
     desenhar();
     UI.ligarSeg('de-modo', v => { st.modo = v; desenhar(); });
-    UI.ligarPeriodo('de-per', () => st.per, C, p => { st.per = p; render(el); });
+    UI.ligarPeriodo('de-per', () => st.per, C, p => { st.per = p; render(el); }, { atual: true });
     let t = 0; document.getElementById('de-q').addEventListener('input', e => { clearTimeout(t); t = setTimeout(() => { st.q = e.target.value; atualizarTabela(); }, 150); });
     document.getElementById('de-mot').addEventListener('change', e => { st.motivo = e.target.value; atualizarTabela(); });
-    document.getElementById('de-wrap').addEventListener('click', e => { const tr = e.target.closest('tr[data-abrir]'); if (tr) Telas.colaboradores.ficha(tr.dataset.abrir); });
+    document.getElementById('de-wrap').addEventListener('click', e => {
+      if (e.target.closest('#de-ver-mes')) { st.per = { tipo: 'atual' }; render(el); return; }
+      const tr = e.target.closest('tr[data-abrir]'); if (tr) Telas.colaboradores.ficha(tr.dataset.abrir);
+    });
   }
   return { titulo: 'Desligamentos', render };
 })();
@@ -5415,13 +5708,13 @@ Telas.cadastros = (function () {
       cad.turnos.map(t => { const n = at.filter(p => p.turno === t.id).length; return '<div class="conf-l tu-l"><div><b>' + esc(t.nome) + '</b><small>' + esc(t.horario) + '</small></div><span class="tu-tags">' + (t.noturno ? '<span class="tag info">adicional noturno</span>' : '') + '<span class="tag">' + n + ' pessoa' + (n === 1 ? '' : 's') + '</span></span><button class="btn btn-ghost btn-sm" type="button" data-turno="' + esc(t.id) + '">' + ic('lapis') + 'Editar</button></div>'; }).join('') + (cad.turnos.length ? '' : UI.vazio('Nenhum turno cadastrado', 'Crie os turnos com o botão Novo turno (ex.: 1º turno, 06:00 às 14:20).', 'relogio')) + '</div>';
   }
   function secVa(pm, at) {
-    const ex = pm.va_dia * pm.va_dias_mes, nAt = at.filter(p => p.situacao_ref === 'Ativo').length;
-    return '<div class="painel-cab"><div><h2>Vale-alimentação</h2><span class="sub">Valor por dia, por pessoa. Vem preenchido no cadastro de novo funcionário (dá para editar lá).</span></div></div><div class="painel-corpo">' +
-      '<div class="conf-l"><div><b>Valor por dia</b><small>quanto cada pessoa recebe por dia</small></div><input class="inp num" type="number" step="0.01" min="0" id="va-dia" value="' + pm.va_dia.toFixed(2) + '"></div>' +
-      '<div class="conf-l"><div><b>Dias por mês</b><small>usado para estimar o valor mensal e o custo</small></div><input class="inp num" type="number" min="1" max="31" id="va-dias" value="' + pm.va_dias_mes + '"></div>' +
-      '<div class="conf-l"><div><b>Por pessoa, por mês</b><small>estimativa</small></div><b id="va-mes" style="text-align:right;font-size:18px">' + Fmt.brl(ex) + '</b></div>' +
-      '<div class="conf-l"><div><b>Custo mensal com ' + nAt + ' ativos</b><small>estimativa, sem descontar faltas e férias</small></div><b id="va-tot" style="text-align:right;font-size:18px" data-n="' + nAt + '">' + Fmt.brl(ex * nAt) + '</b></div>' +
-      '<div class="insight">' + ic('lampada') + '<span>Ponto para decidir antes do banco: o VA é pago pelos <b>dias úteis</b> do mês ou pelos <b>dias trabalhados</b>? No segundo caso, falta e atestado descontam o vale — e o custo muda.</span></div>' +
+    // valor FIXO por mês, por pessoa (decisão do Thiago, 09/11/2026: R$ 560 para todos; os sócios ficam fora — não estão na folha do RH)
+    const ativos = at.filter(p => p.situacao_ref === 'Ativo' || p.situacao_ref === 'Afastado'), padrao = Regras.vaPadrao();
+    const proprios = ativos.filter(p => p.va_mes !== null && p.va_mes !== undefined), tot = soma(ativos, p => Regras.vaMes(p));
+    return '<div class="painel-cab"><div><h2>Vale-alimentação</h2><span class="sub">Valor fixo por mês, igual para todos. Quem tiver valor diferente (ou não receber): na ficha da pessoa › Editar.</span></div></div><div class="painel-corpo">' +
+      '<div class="conf-l"><div><b>Valor por mês, por pessoa</b><small>o padrão da empresa</small></div><input class="inp num" type="number" step="0.01" min="0" id="va-mes-v" value="' + padrao.toFixed(2) + '"></div>' +
+      '<div class="conf-l"><div><b>Custo mensal com ' + ativos.length + ' pessoas no quadro</b><small>' + (proprios.length ? proprios.length + ' com valor próprio na ficha' : 'todas no padrão') + '</small></div><b id="va-tot" style="text-align:right;font-size:18px" data-n="' + (ativos.length - proprios.length) + '" data-proprio="' + r2(soma(proprios, p => Regras.vaMes(p))) + '">' + Fmt.brl(tot) + '</b></div>' +
+      '<div class="insight">' + ic('lampada') + '<span>O VA entra no custo de cada mês <b>na importação do extrato</b>: quem está no extrato com salário no mês conta o valor do mês inteiro (inclusive quem entrou ou saiu no meio do mês). Mudou o valor? Vale para as próximas importações; para refazer um mês já importado, importe o extrato dele de novo.</span></div>' +
       '<div style="display:flex;justify-content:flex-end;margin-top:14px"><button class="btn btn-pri" type="button" id="va-salvar">' + ic('check') + 'Salvar</button></div></div>';
   }
   function secAvisos(pm) {
@@ -5476,7 +5769,7 @@ Telas.cadastros = (function () {
       UI.toast('Salário da categoria ' + c.nome + ': ' + Fmt.brl(v));
     });
     corpoEl.addEventListener('input', e => {
-      if (e.target.id === 'va-dia' || e.target.id === 'va-dias') { const d = Number(document.getElementById('va-dia').value) || 0, n = Number(document.getElementById('va-dias').value) || 0, tot = document.getElementById('va-tot'); document.getElementById('va-mes').textContent = Fmt.brl(d * n); tot.textContent = Fmt.brl(d * n * Number(tot.dataset.n)); }
+      if (e.target.id === 'va-mes-v') { const v = Number(e.target.value) || 0, tot = document.getElementById('va-tot'); tot.textContent = Fmt.brl(v * Number(tot.dataset.n) + Number(tot.dataset.proprio)); }
     });
     corpoEl.addEventListener('click', async e => {
       const ed = e.target.closest('[data-editar]'); if (ed) { e.stopPropagation(); Telas.colaboradores.novo(P.find(p => p.id === ed.dataset.editar)); return; }
@@ -5490,7 +5783,7 @@ Telas.cadastros = (function () {
       const tu = e.target.closest('[data-turno]'); if (tu) { formTurno(cad.turnos.find(x => x.id === tu.dataset.turno)); return; }
       const salvarParam = async (btn, dados, ok) => { if (btn.disabled) return false; btn.disabled = true; try { await API.cadastros.salvarParam(dados); } catch (x) { UI.toast(x.message, 'erro'); btn.disabled = false; return false; } btn.disabled = false; D.mudou('cad', 'pessoas'); UI.toast(ok); return true; };
       const vs = e.target.closest('#va-salvar');
-      if (vs) { await salvarParam(vs, { va_dia: r2(Number(document.getElementById('va-dia').value) || 0), va_dias_mes: Number(document.getElementById('va-dias').value) || 22 }, 'Vale-alimentação salvo: ' + Fmt.brl(Number(document.getElementById('va-dia').value)) + ' por dia'); return; }
+      if (vs) { const v = r2(Number(document.getElementById('va-mes-v').value) || 0); await salvarParam(vs, { va_mes: v }, 'Vale-alimentação salvo: ' + Fmt.brl(v) + ' por mês'); return; }
       const ls = e.target.closest('#li-salvar');
       if (ls) { const lista = id => [...new Set(document.getElementById(id).value.split('\n').map(x => x.trim()).filter(Boolean))]; if (await salvarParam(ls, { linhas_onibus: lista('li-linhas'), motivos_desligamento: lista('li-motivos'), maquinas: lista('li-maquinas') }, 'Listas salvas')) render(el, {}); return; }
       const em = e.target.closest('#em-salvar');
