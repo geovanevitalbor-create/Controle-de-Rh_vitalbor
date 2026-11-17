@@ -1,0 +1,23 @@
+<!--
+  Sistema de RH · e-mail de BOAS-VINDAS de quem é novo (sai quando o gestor cria o login ou marca "Mandar o acesso de novo").
+  Onde colar: Supabase › Authentication › Emails › Templates › Magic link
+    Subject (assunto):   Seu acesso ao Sistema de RH
+    Message body:        apague o que estiver lá e cole este arquivo inteiro
+  Leva a senha provisória: o sistema grava a senha nos dados do login só durante o envio e apaga logo depois.
+  O "Esqueci a senha" usa outro modelo (Reset password), com o código.
+-->
+<div style="font-family:Arial,Helvetica,sans-serif;max-width:520px;margin:0 auto;padding:8px 4px;color:#1f2430;font-size:15px;line-height:1.5">
+  <p style="margin:0 0 4px;font-size:12px;color:#3E4095;font-weight:bold;letter-spacing:.08em">SISTEMA DE RH</p>
+  {{ if .Data.senha_provisoria }}
+  <h2 style="margin:0 0 14px;font-size:21px;color:#1f2430">O seu acesso foi criado</h2>
+  <p style="margin:0 0 6px">Você recebeu acesso ao Sistema de RH. O seu login é <b>{{ .Email }}</b> e a sua senha provisória é:</p>
+  <p style="margin:0 0 20px;font-size:26px;font-weight:bold;letter-spacing:2px;font-family:Consolas,Menlo,monospace;color:#1f2430">{{ .Data.senha_provisoria }}</p>
+  <p style="margin:0 0 22px"><a href="{{ .SiteURL }}" style="display:inline-block;background:#3E4095;color:#ffffff;text-decoration:none;font-weight:bold;padding:12px 24px;border-radius:8px">Entrar no sistema</a></p>
+  <p style="margin:0 0 8px">Na primeira entrada, o sistema pede para você criar a sua senha (ou continuar com esta). A senha provisória vale até {{ .Data.senha_provisoria_ate }}.</p>
+  <p style="margin:0 0 8px;font-size:13px;color:#5b6170">Antes da tela do sistema, o Cloudflare pode pedir um código de acesso, enviado para este mesmo e-mail: é normal. Guarde a sua senha só com você.</p>
+  {{ else }}
+  <h2 style="margin:0 0 14px;font-size:21px;color:#1f2430">Acesso ao Sistema de RH</h2>
+  <p style="margin:0 0 8px">Este e-mail não traz senha. Para entrar, use a sua senha em <a href="{{ .SiteURL }}" style="color:#3E4095">{{ .SiteURL }}</a>; se esqueceu, clique em <b>Esqueci a senha</b> na tela de login.</p>
+  {{ end }}
+  <p style="margin:0;font-size:13px;color:#5b6170">Não esperava este e-mail? Ignore.</p>
+</div>
